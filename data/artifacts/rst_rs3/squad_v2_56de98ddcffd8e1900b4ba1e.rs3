@@ -1,0 +1,45 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="adversative" type="multinuc" />
+			<rel name="antithesis" type="multinuc" />
+			<rel name="causal" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="explanation" type="rst" />
+			<rel name="joint" type="multinuc" />
+			<rel name="mode" type="rst" />
+			<rel name="same-unit" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="30" relname="span">Schwarzenegger announced his candidacy in the 2003 California recall election for Governor of California on the August 6, 2003 episode of The Tonight Show with Jay Leno.</segment>
+		<segment id="2" parent="18" relname="adversative">Schwarzenegger had the most name recognition in a crowded field of candidates,</segment>
+		<segment id="3" parent="17" relname="joint">but he had never held public office</segment>
+		<segment id="4" parent="17" relname="joint">and his political views were unknown to most Californians.</segment>
+		<segment id="5" parent="26" relname="span">His candidacy immediately became national and international news,</segment>
+		<segment id="6" parent="20" relname="span">with media outlets dubbing him the "Governator"</segment>
+		<segment id="7" parent="19" relname="span">(referring to The Terminator movies,</segment>
+		<segment id="8" parent="7" relname="explanation">see above)</segment>
+		<segment id="9" parent="21" relname="span">and "The Running Man"</segment>
+		<segment id="10" parent="9" relname="elaboration">(the name of another one of his films),</segment>
+		<segment id="11" parent="24" relname="span">and calling the recall election "Total Recall"</segment>
+		<segment id="12" parent="23" relname="span">(yet another movie</segment>
+		<segment id="13" parent="12" relname="elaboration">starring Schwarzenegger).</segment>
+		<segment id="14" parent="27" relname="joint">Schwarzenegger declined to participate in several debates with other recall replacement candidates,</segment>
+		<segment id="15" parent="27" relname="joint">and appeared in only one debate on September 24, 2003.</segment>
+		<group id="29" type="multinuc" parent="1" relname="elaboration"/>
+		<group id="18" type="multinuc" parent="29" relname="joint"/>
+		<group id="17" type="multinuc" parent="18" relname="adversative"/>
+		<group id="28" type="multinuc" parent="29" relname="joint"/>
+		<group id="26" type="span" parent="28" relname="joint"/>
+		<group id="25" type="multinuc" parent="5" relname="causal"/>
+		<group id="22" type="multinuc" parent="25" relname="joint"/>
+		<group id="20" type="span" parent="22" relname="same-unit"/>
+		<group id="19" type="span" parent="6" relname="mode"/>
+		<group id="21" type="span" parent="22" relname="same-unit"/>
+		<group id="24" type="span" parent="25" relname="joint"/>
+		<group id="23" type="span" parent="11" relname="elaboration"/>
+		<group id="27" type="multinuc" parent="28" relname="joint"/>
+		<group id="30" type="span"/>
+	</body>
+</rst>

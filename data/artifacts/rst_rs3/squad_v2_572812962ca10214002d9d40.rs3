@@ -1,0 +1,22 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis" type="multinuc" />
+			<rel name="elaboration" type="rst" />
+			<rel name="joint" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="9" relname="span">St. John's was the starting point for the first non-stop transatlantic aircraft flight, by Alcock and Brown in a modified Vickers Vimy IV bomber, in June 1919,</segment>
+		<segment id="2" parent="8" relname="joint">departing from Lester's Field in St. John's</segment>
+		<segment id="3" parent="8" relname="joint">and ending in a bog near Clifden, Connemara, Ireland.</segment>
+		<segment id="4" parent="11" relname="span">In July 2005, the flight was duplicated by American aviator and adventurer Steve Fossett in a replica Vickers Vimy aircraft,</segment>
+		<segment id="5" parent="10" relname="span">with St. John's International Airport substituting for Lester's Field</segment>
+		<segment id="6" parent="5" relname="elaboration">(now an urban and residential part of the city).</segment>
+		<group id="9" type="span" parent="12" relname="joint"/>
+		<group id="8" type="multinuc" parent="1" relname="elaboration"/>
+		<group id="11" type="span" parent="12" relname="joint"/>
+		<group id="10" type="span" parent="4" relname="elaboration"/>
+		<group id="12" type="multinuc"/>
+	</body>
+</rst>

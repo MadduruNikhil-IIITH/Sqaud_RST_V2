@@ -1,0 +1,29 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="adversative" type="rst" />
+			<rel name="antithesis" type="multinuc" />
+			<rel name="context" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="explanation" type="rst" />
+			<rel name="joint" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="15" relname="context">Beginning in 1979,</segment>
+		<segment id="2" parent="10" relname="span">Nigerians participated in a brief return to democracy</segment>
+		<segment id="3" parent="2" relname="context">when Olusegun Obasanjo transferred power to the civilian regime of Shehu Shagari.</segment>
+		<segment id="4" parent="10" relname="elaboration">The Shagari government became viewed as corrupt and incompetent by virtually all sectors of Nigerian society.</segment>
+		<segment id="5" parent="14" relname="span">The military coup of Muhammadu Buhari shortly after the regime's fraudulent re-election in 1984 was generally viewed as a positive development.</segment>
+		<segment id="6" parent="7" relname="adversative">Buhari promised major reforms,</segment>
+		<segment id="7" parent="12" relname="span">but his government fared little better than its predecessor.</segment>
+		<segment id="8" parent="13" relname="joint">His regime was overthrown by another military coup in 1985.</segment>
+		<group id="15" type="multinuc" parent="16" relname="span"/>
+		<group id="11" type="span" parent="15" relname="joint"/>
+		<group id="10" type="span" parent="11" relname="span"/>
+		<group id="14" type="span" parent="15" relname="joint"/>
+		<group id="13" type="multinuc" parent="5" relname="explanation"/>
+		<group id="12" type="span" parent="13" relname="joint"/>
+		<group id="16" type="span"/>
+	</body>
+</rst>

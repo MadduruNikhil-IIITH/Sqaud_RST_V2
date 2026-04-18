@@ -1,0 +1,39 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="adversative" type="rst" />
+			<rel name="antithesis" type="multinuc" />
+			<rel name="context" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="joint" type="multinuc" />
+			<rel name="same-unit" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="26" relname="span">Slavs are the largest Indo-European ethno-linguistic group in Europe.</segment>
+		<segment id="2" parent="25" relname="span">They inhabit Central Europe, Eastern Europe, Southeast Europe, North Asia and Central Asia.</segment>
+		<segment id="3" parent="15" relname="joint">Slavs speak Indo-European Slavic languages</segment>
+		<segment id="4" parent="15" relname="joint">and share, to varying degrees, some cultural traits and historical backgrounds.</segment>
+		<segment id="5" parent="21" relname="joint">From the early 6th century they spread</segment>
+		<segment id="6" parent="20" relname="span">to inhabit most of Central and Eastern Europe and Southeast Europe,</segment>
+		<segment id="7" parent="16" relname="span">whilst Slavic mercenaries</segment>
+		<segment id="8" parent="7" relname="elaboration">fighting for the Byzantines and Arabs</segment>
+		<segment id="9" parent="17" relname="same-unit">settled Asia Minor and even as far as Syria.</segment>
+		<segment id="10" parent="18" relname="span">The East Slavs colonised Siberia and Central Asia.</segment>
+		<segment id="11" parent="10" relname="adversative">[better source needed]</segment>
+		<segment id="12" parent="22" relname="span">Presently over half of Europe's territory is inhabited by Slavic-speaking communities,</segment>
+		<segment id="13" parent="12" relname="adversative">but every Slavic ethnicity has emigrated to other continents.</segment>
+		<group id="25" type="span" parent="1" relname="elaboration"/>
+		<group id="24" type="span" parent="2" relname="elaboration"/>
+		<group id="15" type="multinuc" parent="24" relname="span"/>
+		<group id="23" type="multinuc" parent="15" relname="elaboration"/>
+		<group id="21" type="multinuc" parent="23" relname="joint"/>
+		<group id="20" type="span" parent="21" relname="joint"/>
+		<group id="19" type="multinuc" parent="6" relname="context"/>
+		<group id="17" type="multinuc" parent="19" relname="joint"/>
+		<group id="16" type="span" parent="17" relname="same-unit"/>
+		<group id="18" type="span" parent="19" relname="joint"/>
+		<group id="22" type="span" parent="23" relname="joint"/>
+		<group id="26" type="span"/>
+	</body>
+</rst>

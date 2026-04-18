@@ -1,0 +1,34 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis" type="multinuc" />
+			<rel name="context" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="explanation" type="rst" />
+			<rel name="joint" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="14" relname="span">The art of carpet weaving was particularly significant in the Ottoman Empire,</segment>
+		<segment id="2" parent="13" relname="span">carpets having an immense importance both as decorative furnishings, rich in religious and other symbolism, and as a practical consideration,</segment>
+		<segment id="3" parent="2" relname="explanation">as it was customary to remove one's shoes in living quarters.</segment>
+		<segment id="4" parent="15" relname="span">The weaving of such carpets originated in the nomadic cultures of central Asia</segment>
+		<segment id="5" parent="4" relname="context">(carpets being an easily transportable form of furnishing),</segment>
+		<segment id="6" parent="16" relname="joint">and was eventually spread to the settled societies of Anatolia.</segment>
+		<segment id="7" parent="18" relname="joint">Turks used carpets, rugs and kilims not just on the floors of a room,</segment>
+		<segment id="8" parent="17" relname="span">but also as a hanging on walls and doorways,</segment>
+		<segment id="9" parent="8" relname="elaboration">where they provided additional insulation.</segment>
+		<segment id="10" parent="19" relname="span">They were also commonly donated to mosques,</segment>
+		<segment id="11" parent="10" relname="elaboration">which often amassed large collections of them.</segment>
+		<group id="14" type="span" parent="22" relname="span"/>
+		<group id="13" type="span" parent="1" relname="explanation"/>
+		<group id="21" type="multinuc" parent="14" relname="elaboration"/>
+		<group id="16" type="multinuc" parent="21" relname="joint"/>
+		<group id="15" type="span" parent="16" relname="joint"/>
+		<group id="20" type="multinuc" parent="21" relname="joint"/>
+		<group id="18" type="multinuc" parent="20" relname="joint"/>
+		<group id="17" type="span" parent="18" relname="joint"/>
+		<group id="19" type="span" parent="20" relname="joint"/>
+		<group id="22" type="span"/>
+	</body>
+</rst>

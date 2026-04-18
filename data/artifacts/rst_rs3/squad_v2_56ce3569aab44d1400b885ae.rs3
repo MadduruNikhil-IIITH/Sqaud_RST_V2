@@ -1,0 +1,55 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis" type="multinuc" />
+			<rel name="attribution" type="rst" />
+			<rel name="causal" type="rst" />
+			<rel name="context" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="joint" type="multinuc" />
+			<rel name="restatement" type="rst" />
+			<rel name="same-unit" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="25" relname="span">In 1609, English explorer Henry Hudson re-discovered the region</segment>
+		<segment id="2" parent="22" relname="span">when he sailed his ship the Halve Maen</segment>
+		<segment id="3" parent="2" relname="restatement">("Half Moon" in Dutch)</segment>
+		<segment id="4" parent="23" relname="same-unit">into New York Harbor</segment>
+		<segment id="5" parent="23" relname="context">while searching for the Northwest Passage to the Orient for his employer, the Dutch East India Company.</segment>
+		<segment id="6" parent="27" relname="span">He proceeded to sail up what he named the North River,</segment>
+		<segment id="7" parent="26" relname="joint">also called the Mauritis River,</segment>
+		<segment id="8" parent="26" relname="joint">and now known as the Hudson River,</segment>
+		<segment id="9" parent="28" relname="span">to the site of the present-day New York State capital of Albany in the belief</segment>
+		<segment id="10" parent="9" relname="elaboration">that it might represent an oceanic tributary.</segment>
+		<segment id="11" parent="30" relname="joint">When the river narrowed</segment>
+		<segment id="12" parent="30" relname="joint">and was no longer saline,</segment>
+		<segment id="13" parent="14" relname="attribution">he realized</segment>
+		<segment id="14" parent="31" relname="span">it was not a maritime passage</segment>
+		<segment id="15" parent="33" relname="span">and sailed back downriver.</segment>
+		<segment id="16" parent="34" relname="joint">He made a ten-day exploration of the area</segment>
+		<segment id="17" parent="34" relname="joint">and claimed the region for his employer.</segment>
+		<segment id="18" parent="38" relname="joint">In 1614, the area between Cape Cod and Delaware Bay would be claimed by the Netherlands</segment>
+		<segment id="19" parent="37" relname="span">and called Nieuw-Nederland</segment>
+		<segment id="20" parent="19" relname="restatement">(New Netherland).</segment>
+		<group id="25" type="span" parent="40" relname="joint"/>
+		<group id="24" type="span" parent="1" relname="context"/>
+		<group id="23" type="multinuc" parent="24" relname="span"/>
+		<group id="22" type="span" parent="23" relname="same-unit"/>
+		<group id="39" type="multinuc" parent="40" relname="joint"/>
+		<group id="36" type="multinuc" parent="39" relname="joint"/>
+		<group id="29" type="multinuc" parent="36" relname="joint"/>
+		<group id="27" type="span" parent="29" relname="same-unit"/>
+		<group id="26" type="multinuc" parent="6" relname="elaboration"/>
+		<group id="28" type="span" parent="29" relname="same-unit"/>
+		<group id="35" type="multinuc" parent="36" relname="joint"/>
+		<group id="33" type="span" parent="35" relname="joint"/>
+		<group id="32" type="span" parent="15" relname="causal"/>
+		<group id="30" type="multinuc" parent="31" relname="context"/>
+		<group id="31" type="span" parent="32" relname="span"/>
+		<group id="34" type="multinuc" parent="35" relname="joint"/>
+		<group id="38" type="multinuc" parent="39" relname="joint"/>
+		<group id="37" type="span" parent="38" relname="joint"/>
+		<group id="40" type="multinuc"/>
+	</body>
+</rst>

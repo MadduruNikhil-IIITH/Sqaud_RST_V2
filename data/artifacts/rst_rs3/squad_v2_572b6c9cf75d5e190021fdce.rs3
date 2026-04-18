@@ -1,0 +1,56 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="adversative" type="multinuc" />
+			<rel name="antithesis" type="multinuc" />
+			<rel name="attribution" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="evaluation" type="rst" />
+			<rel name="explanation" type="rst" />
+			<rel name="joint" type="multinuc" />
+			<rel name="purpose" type="rst" />
+			<rel name="same-unit" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="22" relname="span">Plato's theory of forms or "ideas" describes ideal forms</segment>
+		<segment id="2" parent="1" relname="elaboration">(for example the platonic solids in geometry or abstracts like Goodness and Justice),</segment>
+		<segment id="3" parent="23" relname="span">as universals</segment>
+		<segment id="4" parent="3" relname="elaboration">existing independently of any particular instance.</segment>
+		<segment id="5" parent="25" relname="joint">Arne Grøn calls this doctrine "the classic example of a metaphysical idealism as a transcendent idealism",</segment>
+		<segment id="6" parent="25" relname="joint">while Simone Klein calls Plato "the earliest representative of metaphysical objective idealism".</segment>
+		<segment id="7" parent="30" relname="attribution">Nevertheless, Plato holds</segment>
+		<segment id="8" parent="27" relname="span">that matter is real,</segment>
+		<segment id="9" parent="8" relname="adversative">though transitory and imperfect,</segment>
+		<segment id="10" parent="29" relname="joint">and is perceived by our body and its senses</segment>
+		<segment id="11" parent="28" relname="span">and given existence by the eternal ideas</segment>
+		<segment id="12" parent="11" relname="elaboration">that are perceived directly by our rational soul.</segment>
+		<segment id="13" parent="32" relname="span">Plato was therefore a metaphysical and epistemological dualist, an outlook</segment>
+		<segment id="14" parent="13" relname="elaboration">that modern idealism has striven to avoid:</segment>
+		<segment id="15" parent="37" relname="span">Plato's thought cannot therefore be counted as idealist in the modern sense,</segment>
+		<segment id="16" parent="34" relname="span">although quantum physics' assertion</segment>
+		<segment id="17" parent="33" relname="span">that man's consciousness is an immutable and primary requisite</segment>
+		<segment id="18" parent="17" relname="purpose">for not merely perceiving but shaping matter, and thus his reality,</segment>
+		<segment id="19" parent="35" relname="same-unit">would give more credence to Plato's dualist position.</segment>
+		<segment id="20" parent="35" relname="adversative">[citation needed]</segment>
+		<group id="26" type="span" parent="40" relname="adversative"/>
+		<group id="24" type="multinuc" parent="26" relname="span"/>
+		<group id="22" type="span" parent="24" relname="same-unit"/>
+		<group id="23" type="span" parent="24" relname="same-unit"/>
+		<group id="25" type="multinuc" parent="24" relname="explanation"/>
+		<group id="39" type="span" parent="40" relname="adversative"/>
+		<group id="31" type="span" parent="39" relname="span"/>
+		<group id="30" type="multinuc" parent="31" relname="span"/>
+		<group id="27" type="span" parent="30" relname="joint"/>
+		<group id="29" type="multinuc" parent="30" relname="joint"/>
+		<group id="28" type="span" parent="29" relname="joint"/>
+		<group id="38" type="span" parent="31" relname="evaluation"/>
+		<group id="32" type="span" parent="38" relname="span"/>
+		<group id="37" type="span" parent="32" relname="evaluation"/>
+		<group id="36" type="span" parent="15" relname="adversative"/>
+		<group id="35" type="multinuc" parent="36" relname="span"/>
+		<group id="34" type="span" parent="35" relname="same-unit"/>
+		<group id="33" type="span" parent="16" relname="elaboration"/>
+		<group id="40" type="multinuc"/>
+	</body>
+</rst>

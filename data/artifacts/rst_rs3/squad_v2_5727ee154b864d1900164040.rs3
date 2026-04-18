@@ -1,0 +1,34 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis" type="multinuc" />
+			<rel name="attribution" type="rst" />
+			<rel name="context" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="purpose" type="rst" />
+			<rel name="restatement" type="rst" />
+			<rel name="same-unit" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="12" relname="span">Evidence from the early technical literature</segment>
+		<segment id="2" parent="1" relname="elaboration">concerning electrical recording</segment>
+		<segment id="3" parent="13" relname="same-unit">suggests</segment>
+		<segment id="4" parent="14" relname="span">that it wasn't until the 1942–1949 period that there were serious efforts</segment>
+		<segment id="5" parent="4" relname="purpose">to standardize recording characteristics within an industry.</segment>
+		<segment id="6" parent="16" relname="span">Heretofore, electrical recording technology from company to company was considered a proprietary art all the way back to the 1925 Western Electric licensed method</segment>
+		<segment id="7" parent="6" relname="elaboration">used by Columbia and Victor.</segment>
+		<segment id="8" parent="17" relname="span">For example, what Brunswick-Balke-Collender</segment>
+		<segment id="9" parent="8" relname="restatement">(Brunswick Corporation)</segment>
+		<segment id="10" parent="18" relname="same-unit">did was different from the practices of Victor.</segment>
+		<group id="15" type="span" parent="20" relname="span"/>
+		<group id="13" type="multinuc" parent="14" relname="attribution"/>
+		<group id="12" type="span" parent="13" relname="same-unit"/>
+		<group id="14" type="span" parent="15" relname="span"/>
+		<group id="19" type="span" parent="15" relname="context"/>
+		<group id="16" type="span" parent="19" relname="span"/>
+		<group id="18" type="multinuc" parent="16" relname="elaboration"/>
+		<group id="17" type="span" parent="18" relname="same-unit"/>
+		<group id="20" type="span"/>
+	</body>
+</rst>

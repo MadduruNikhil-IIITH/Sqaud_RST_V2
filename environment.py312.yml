@@ -1,0 +1,30 @@
+name: squad-rst-v2-py312
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip=24.2
+  - pandas=2.2.3
+  - numpy=1.26.4
+  - scipy=1.14.1
+  - scikit-learn=1.5.2
+  - nltk=3.9.1
+  - spacy=3.8.2
+  - stanza=1.9.2
+  - sentencepiece=0.2.0
+  - pyyaml=6.0.2
+  - rich=13.9.4
+  - tqdm=4.67.1
+  - networkx=3.4.2
+  - pytorch::pytorch
+  - pytorch::pytorch-cuda=12.1
+  - pip:
+      - transformers==5.5.3
+      - accelerate==1.13.0
+      - datasets==3.1.0
+      - evaluate==0.4.3
+      - tenacity==9.0.0
+      - isanlp-rst==3.2.0

@@ -1,0 +1,30 @@
+{
+  "feature_table_input": "data\\processed\\feature_table.csv",
+  "feature_table_output": "data\\processed\\feature_table_scored.csv",
+  "weights": {
+    "span_importance_score": 0.2,
+    "rst_tree_depth": -0.1,
+    "sentence_position_ratio": 0.05,
+    "named_entity_count": 0.1,
+    "prev_next_cohesion_score": 0.1,
+    "paragraph_discourse_continuity_score": 0.1,
+    "content_word_density": 0.1,
+    "lexical_density": 0.05,
+    "surprisal_sentence_per_token": 0.1,
+    "surprisal_word_mean": 0.05,
+    "surprisal_word_max": 0.05
+  },
+  "metrics": {
+    "has_gold": true,
+    "row_count": 159,
+    "valid_gold_rows": 159,
+    "tp": 4,
+    "fp": 24,
+    "tn": 107,
+    "fn": 24,
+    "precision": 0.14285714285714285,
+    "recall": 0.14285714285714285,
+    "f1": 0.14285714285714285,
+    "accuracy": 0.6981132075471698
+  }
+}

@@ -1,0 +1,4 @@
+Mode,ROUGE-1,ROUGE-2,ROUGE-L,BERTScore-F1,METEOR,Num_Questions
+zero_shot,0.3469,0.0417,0.2791,0.9035,0.31,4
+hybrid_salient,0.1708,0.0172,0.1547,0.878,0.2537,4
+llm_salient,0.3148,0.0417,0.2393,0.884,0.3196,4

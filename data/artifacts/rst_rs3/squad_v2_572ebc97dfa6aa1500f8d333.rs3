@@ -1,0 +1,45 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="adversative" type="multinuc" />
+			<rel name="antithesis" type="multinuc" />
+			<rel name="attribution" type="rst" />
+			<rel name="causal" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="explanation" type="rst" />
+			<rel name="joint" type="multinuc" />
+			<rel name="mode" type="rst" />
+			<rel name="restatement" type="rst" />
+			<rel name="same-unit" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="16" relname="span">The Quranic text seems to have no beginning, middle, or end,</segment>
+		<segment id="2" parent="1" relname="elaboration">its nonlinear structure being akin to a web or net.</segment>
+		<segment id="3" parent="16" relname="elaboration">The textual arrangement is sometimes considered to exhibit lack of continuity, absence of any chronological or thematic order and repetitiousness.</segment>
+		<segment id="4" parent="19" relname="same-unit">Michael Sells,</segment>
+		<segment id="5" parent="6" relname="explanation">citing the work of the critic Norman O. Brown,</segment>
+		<segment id="6" parent="18" relname="span">acknowledges Brown's observation</segment>
+		<segment id="7" parent="20" relname="span">that the seeming disorganization of Quranic literary expression</segment>
+		<segment id="8" parent="7" relname="restatement">– its scattered or fragmented mode of composition in Sells's phrase –</segment>
+		<segment id="9" parent="21" relname="span">is in fact a literary device</segment>
+		<segment id="10" parent="9" relname="elaboration">capable of delivering profound effects</segment>
+		<segment id="11" parent="22" relname="span">as if the intensity of the prophetic message were shattering the vehicle of human language</segment>
+		<segment id="12" parent="11" relname="elaboration">in which it was being communicated.</segment>
+		<segment id="13" parent="26" relname="span">Sells also addresses the much-discussed repetitiveness of the Quran,</segment>
+		<segment id="14" parent="13" relname="causal">seeing this, too, as a literary device.</segment>
+		<group id="17" type="span" parent="28" relname="adversative"/>
+		<group id="16" type="span" parent="17" relname="span"/>
+		<group id="27" type="multinuc" parent="28" relname="adversative"/>
+		<group id="25" type="span" parent="27" relname="joint"/>
+		<group id="19" type="multinuc" parent="24" relname="attribution"/>
+		<group id="18" type="span" parent="19" relname="same-unit"/>
+		<group id="24" type="multinuc" parent="25" relname="span"/>
+		<group id="20" type="span" parent="24" relname="same-unit"/>
+		<group id="23" type="span" parent="24" relname="same-unit"/>
+		<group id="21" type="span" parent="23" relname="span"/>
+		<group id="22" type="span" parent="21" relname="mode"/>
+		<group id="26" type="span" parent="27" relname="joint"/>
+		<group id="28" type="multinuc"/>
+	</body>
+</rst>

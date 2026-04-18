@@ -1,0 +1,39 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="adversative" type="rst" />
+			<rel name="antithesis" type="multinuc" />
+			<rel name="attribution" type="rst" />
+			<rel name="context" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="joint" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="15" relname="span">Other sources include fortified food and dietary supplements,</segment>
+		<segment id="2" parent="1" relname="elaboration">which come in various forms.</segment>
+		<segment id="3" parent="4" relname="attribution">A 1998 review concluded</segment>
+		<segment id="4" parent="16" relname="span">that zinc oxide, one of the most common supplements in the United States, and zinc carbonate are nearly insoluble and poorly absorbed in the body.</segment>
+		<segment id="5" parent="21" relname="span">This review cited studies</segment>
+		<segment id="6" parent="19" relname="attribution">which found</segment>
+		<segment id="7" parent="17" relname="span">low plasma zinc concentrations</segment>
+		<segment id="8" parent="7" relname="context">after zinc oxide and zinc carbonate were consumed</segment>
+		<segment id="9" parent="18" relname="span">compared with those</segment>
+		<segment id="10" parent="9" relname="elaboration">seen after consumption of zinc acetate and sulfate salts.</segment>
+		<segment id="11" parent="23" relname="joint">However, harmful excessive supplementation is a problem among the relatively affluent,</segment>
+		<segment id="12" parent="23" relname="joint">and should probably not exceed 20 mg/day in healthy people,</segment>
+		<segment id="13" parent="23" relname="adversative">although the U.S. National Research Council set a Tolerable Upper Intake of 40 mg/day.</segment>
+		<group id="15" type="span" parent="25" relname="context"/>
+		<group id="25" type="span" parent="26" relname="span"/>
+		<group id="22" type="span" parent="25" relname="span"/>
+		<group id="16" type="span" parent="22" relname="span"/>
+		<group id="21" type="span" parent="16" relname="context"/>
+		<group id="20" type="span" parent="5" relname="elaboration"/>
+		<group id="19" type="span" parent="20" relname="span"/>
+		<group id="17" type="span" parent="19" relname="span"/>
+		<group id="18" type="span" parent="17" relname="context"/>
+		<group id="24" type="span" parent="22" relname="adversative"/>
+		<group id="23" type="multinuc" parent="24" relname="span"/>
+		<group id="26" type="span"/>
+	</body>
+</rst>

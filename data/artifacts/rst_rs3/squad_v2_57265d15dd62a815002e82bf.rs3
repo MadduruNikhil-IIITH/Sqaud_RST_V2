@@ -1,0 +1,45 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis" type="multinuc" />
+			<rel name="causal" type="rst" />
+			<rel name="context" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="joint" type="multinuc" />
+			<rel name="purpose" type="rst" />
+			<rel name="restatement" type="rst" />
+			<rel name="same-unit" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="2" relname="context">When the news arrived in England</segment>
+		<segment id="2" parent="17" relname="span">it caused an outcry.</segment>
+		<segment id="3" parent="18" relname="span">In response, a combined bounty of £1,000 was offered for Every's capture by the Privy Council and East India Company,</segment>
+		<segment id="4" parent="3" relname="causal">leading to the first worldwide manhunt in recorded history.</segment>
+		<segment id="5" parent="24" relname="span">The plunder of Aurangzeb's treasure ship had serious consequences for the English East India Company.</segment>
+		<segment id="6" parent="23" relname="joint">The furious Mughal Emperor Aurangzeb ordered Sidi Yaqub and Nawab Daud Khan to attack and close four of the company's factories in India</segment>
+		<segment id="7" parent="20" relname="span">and imprison their officers,</segment>
+		<segment id="8" parent="7" relname="elaboration">who were almost lynched by a mob of angry Mughals,</segment>
+		<segment id="9" parent="21" relname="joint">blaming them for their countryman's depredations,</segment>
+		<segment id="10" parent="21" relname="joint">and threatened to put an end to all English trading in India.</segment>
+		<segment id="11" parent="27" relname="purpose">To appease Emperor Aurangzeb and particularly his Grand Vizier Asad Khan,</segment>
+		<segment id="12" parent="25" relname="span">Parliament exempted Every from all of the Acts of Grace</segment>
+		<segment id="13" parent="12" relname="restatement">(pardons)</segment>
+		<segment id="14" parent="26" relname="span">and amnesties</segment>
+		<segment id="15" parent="14" relname="elaboration">it would subsequently issue to other pirates.</segment>
+		<group id="19" type="span" parent="30" relname="joint"/>
+		<group id="17" type="span" parent="19" relname="span"/>
+		<group id="18" type="span" parent="17" relname="causal"/>
+		<group id="29" type="multinuc" parent="30" relname="joint"/>
+		<group id="24" type="span" parent="29" relname="joint"/>
+		<group id="23" type="multinuc" parent="5" relname="causal"/>
+		<group id="22" type="span" parent="23" relname="joint"/>
+		<group id="20" type="span" parent="22" relname="span"/>
+		<group id="21" type="multinuc" parent="20" relname="elaboration"/>
+		<group id="28" type="span" parent="29" relname="joint"/>
+		<group id="27" type="multinuc" parent="28" relname="span"/>
+		<group id="25" type="span" parent="27" relname="same-unit"/>
+		<group id="26" type="span" parent="27" relname="same-unit"/>
+		<group id="30" type="multinuc"/>
+	</body>
+</rst>

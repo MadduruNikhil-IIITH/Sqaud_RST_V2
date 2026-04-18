@@ -1,0 +1,47 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="adversative" type="rst" />
+			<rel name="antithesis" type="multinuc" />
+			<rel name="attribution" type="rst" />
+			<rel name="context" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="joint" type="multinuc" />
+			<rel name="purpose" type="rst" />
+			<rel name="same-unit" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="19" relname="span">The Internet was extensively used</segment>
+		<segment id="2" parent="18" relname="span">for passing information</segment>
+		<segment id="3" parent="2" relname="purpose">to aid rescue and recovery efforts.</segment>
+		<segment id="4" parent="20" relname="span">For example, the official news agency Xinhua set up an online rescue request center</segment>
+		<segment id="5" parent="4" relname="purpose">in order to find the blind spots of disaster recovery.</segment>
+		<segment id="6" parent="7" relname="attribution">After knowing</segment>
+		<segment id="7" parent="21" relname="span">that rescue helicopters had trouble landing into the epicenter area in Wenchuan,</segment>
+		<segment id="8" parent="23" relname="joint">a student proposed a landing spot online</segment>
+		<segment id="9" parent="22" relname="span">and it was chosen as the first touchdown place for the helicopters</segment>
+		<segment id="10" parent="9" relname="adversative">[not in citation given].</segment>
+		<segment id="11" parent="25" relname="span">Volunteers also set up several websites</segment>
+		<segment id="12" parent="11" relname="purpose">to help store contact information for victims and evacuees.</segment>
+		<segment id="13" parent="28" relname="span">On May 31, a rescue helicopter</segment>
+		<segment id="14" parent="13" relname="elaboration">carrying earthquake survivors and crew members</segment>
+		<segment id="15" parent="29" relname="same-unit">crashed in fog and turbulence in Wenchuan county.</segment>
+		<segment id="16" parent="29" relname="elaboration">No-one survived.</segment>
+		<group id="19" type="span" parent="32" relname="span"/>
+		<group id="18" type="span" parent="1" relname="purpose"/>
+		<group id="31" type="multinuc" parent="19" relname="elaboration"/>
+		<group id="27" type="multinuc" parent="31" relname="joint"/>
+		<group id="20" type="span" parent="27" relname="joint"/>
+		<group id="26" type="multinuc" parent="27" relname="joint"/>
+		<group id="24" type="span" parent="26" relname="joint"/>
+		<group id="21" type="span" parent="23" relname="context"/>
+		<group id="23" type="multinuc" parent="24" relname="span"/>
+		<group id="22" type="span" parent="23" relname="joint"/>
+		<group id="25" type="span" parent="26" relname="joint"/>
+		<group id="30" type="span" parent="31" relname="joint"/>
+		<group id="29" type="multinuc" parent="30" relname="span"/>
+		<group id="28" type="span" parent="29" relname="same-unit"/>
+		<group id="32" type="span"/>
+	</body>
+</rst>

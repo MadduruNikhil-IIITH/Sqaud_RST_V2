@@ -1,0 +1,33 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis" type="multinuc" />
+			<rel name="context" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="joint" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="15" relname="span">In October 1810, six months after Fryderyk's birth, the family moved to Warsaw,</segment>
+		<segment id="2" parent="13" relname="span">where his father acquired a post</segment>
+		<segment id="3" parent="2" relname="elaboration">teaching French at the Warsaw Lyceum,</segment>
+		<segment id="4" parent="14" relname="joint">then housed in the Saxon Palace.</segment>
+		<segment id="5" parent="16" relname="span">Fryderyk lived with his family in the Palace grounds.</segment>
+		<segment id="6" parent="19" relname="joint">The father played the flute and violin;</segment>
+		<segment id="7" parent="18" relname="joint">the mother played the piano</segment>
+		<segment id="8" parent="17" relname="span">and gave lessons to boys in the boarding house</segment>
+		<segment id="9" parent="8" relname="elaboration">that the Chopins kept.</segment>
+		<segment id="10" parent="21" relname="joint">Chopin was of slight build,</segment>
+		<segment id="11" parent="21" relname="joint">and even in early childhood was prone to illnesses.</segment>
+		<group id="20" type="span" parent="22" relname="joint"/>
+		<group id="16" type="span" parent="20" relname="span"/>
+		<group id="15" type="span" parent="5" relname="context"/>
+		<group id="14" type="multinuc" parent="1" relname="elaboration"/>
+		<group id="13" type="span" parent="14" relname="joint"/>
+		<group id="19" type="multinuc" parent="16" relname="elaboration"/>
+		<group id="18" type="multinuc" parent="19" relname="joint"/>
+		<group id="17" type="span" parent="18" relname="joint"/>
+		<group id="21" type="multinuc" parent="22" relname="joint"/>
+		<group id="22" type="multinuc"/>
+	</body>
+</rst>

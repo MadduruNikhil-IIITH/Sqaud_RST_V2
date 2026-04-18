@@ -1,0 +1,70 @@
+{
+  "total_original": 40,
+  "total_retained": 28,
+  "total_removed": 12,
+  "removal_reasons": {
+    "no_valid_answers": 12
+  },
+  "removal_log": [
+    {
+      "para_id": "squad_v2_5a36f18395360f001af1b36c",
+      "reason": "no_valid_answers",
+      "detail": "no questions with valid answer offsets"
+    },
+    {
+      "para_id": "squad_v2_5a361ff0788daf001a5f8736",
+      "reason": "no_valid_answers",
+      "detail": "no questions with valid answer offsets"
+    },
+    {
+      "para_id": "squad_v2_5ad68d08191832001aa7b196",
+      "reason": "no_valid_answers",
+      "detail": "no questions with valid answer offsets"
+    },
+    {
+      "para_id": "squad_v2_5a297d9803c0e7001a3e17b9",
+      "reason": "no_valid_answers",
+      "detail": "no questions with valid answer offsets"
+    },
+    {
+      "para_id": "squad_v2_5a85e66bb4e223001a8e729b",
+      "reason": "no_valid_answers",
+      "detail": "no questions with valid answer offsets"
+    },
+    {
+      "para_id": "squad_v2_5a823f0331013a001a33534f",
+      "reason": "no_valid_answers",
+      "detail": "no questions with valid answer offsets"
+    },
+    {
+      "para_id": "squad_v2_5ad0d656645df0001a2d0658",
+      "reason": "no_valid_answers",
+      "detail": "no questions with valid answer offsets"
+    },
+    {
+      "para_id": "squad_v2_5ad21b77d7d075001a42843a",
+      "reason": "no_valid_answers",
+      "detail": "no questions with valid answer offsets"
+    },
+    {
+      "para_id": "squad_v2_5acfbd4c77cf76001a685ba3",
+      "reason": "no_valid_answers",
+      "detail": "no questions with valid answer offsets"
+    },
+    {
+      "para_id": "squad_v2_5ad13736645df0001a2d11c5",
+      "reason": "no_valid_answers",
+      "detail": "no questions with valid answer offsets"
+    },
+    {
+      "para_id": "squad_v2_5acf742d77cf76001a684e53",
+      "reason": "no_valid_answers",
+      "detail": "no questions with valid answer offsets"
+    },
+    {
+      "para_id": "squad_v2_5a70ba578abb0b001a6760d8",
+      "reason": "no_valid_answers",
+      "detail": "no questions with valid answer offsets"
+    }
+  ]
+}

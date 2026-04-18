@@ -1,0 +1,25 @@
+{
+  "input": "data\\processed\\feature_table.csv",
+  "output": "data\\processed\\salience_transformer_dataset.csv",
+  "seed": 42,
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "rows_by_split": {
+    "train": 114,
+    "val": 28,
+    "test": 17
+  },
+  "positive_labels_by_split": {
+    "train": 20,
+    "val": 4,
+    "test": 4
+  },
+  "paragraphs_by_split": {
+    "train": 20,
+    "val": 4,
+    "test": 4
+  }
+}

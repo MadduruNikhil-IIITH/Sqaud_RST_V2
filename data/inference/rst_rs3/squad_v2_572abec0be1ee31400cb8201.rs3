@@ -1,0 +1,52 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="adversative" type="multinuc" />
+			<rel name="antithesis" type="multinuc" />
+			<rel name="attribution" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="evaluation" type="rst" />
+			<rel name="explanation" type="rst" />
+			<rel name="joint" type="multinuc" />
+			<rel name="purpose" type="rst" />
+			<rel name="same-unit" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="35" relname="adversative">In Why F A Hayek is a Conservative,</segment>
+		<segment id="2" parent="3" relname="attribution">British policy analyst Madsen Pirie claims</segment>
+		<segment id="3" parent="20" relname="span">Hayek mistakes the nature of the conservative outlook.</segment>
+		<segment id="4" parent="21" relname="span">Conservatives,</segment>
+		<segment id="5" parent="4" relname="attribution">he says,</segment>
+		<segment id="6" parent="22" relname="same-unit">are not averse to change</segment>
+		<segment id="7" parent="26" relname="adversative">–</segment>
+		<segment id="8" parent="25" relname="span">but like Hayek, they are highly averse to change</segment>
+		<segment id="9" parent="24" relname="span">being imposed on the social order by people in authority</segment>
+		<segment id="10" parent="11" relname="attribution">who think</segment>
+		<segment id="11" parent="23" relname="span">they know how to run things better.</segment>
+		<segment id="12" parent="30" relname="joint">They wish to allow the market to function smoothly</segment>
+		<segment id="13" parent="29" relname="span">and give it the freedom</segment>
+		<segment id="14" parent="28" relname="joint">to change</segment>
+		<segment id="15" parent="28" relname="joint">and develop.</segment>
+		<segment id="16" parent="32" relname="span">It is an outlook,</segment>
+		<segment id="17" parent="16" relname="attribution">says Pirie,</segment>
+		<segment id="18" parent="32" relname="elaboration">that Hayek and conservatives both share.</segment>
+		<group id="35" type="span" parent="36" relname="span"/>
+		<group id="20" type="span" parent="34" relname="attribution"/>
+		<group id="34" type="span" parent="35" relname="span"/>
+		<group id="31" type="span" parent="34" relname="span"/>
+		<group id="27" type="span" parent="30" relname="explanation"/>
+		<group id="22" type="multinuc" parent="26" relname="adversative"/>
+		<group id="21" type="span" parent="22" relname="same-unit"/>
+		<group id="26" type="multinuc" parent="27" relname="span"/>
+		<group id="25" type="span" parent="26" relname="adversative"/>
+		<group id="24" type="span" parent="8" relname="elaboration"/>
+		<group id="23" type="span" parent="9" relname="elaboration"/>
+		<group id="30" type="multinuc" parent="31" relname="span"/>
+		<group id="29" type="span" parent="30" relname="joint"/>
+		<group id="28" type="multinuc" parent="13" relname="purpose"/>
+		<group id="33" type="span" parent="31" relname="evaluation"/>
+		<group id="32" type="span" parent="33" relname="span"/>
+		<group id="36" type="span"/>
+	</body>
+</rst>

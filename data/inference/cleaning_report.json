@@ -1,0 +1,15 @@
+{
+  "total_original": 5,
+  "total_retained": 4,
+  "total_removed": 1,
+  "removal_reasons": {
+    "no_valid_answers": 1
+  },
+  "removal_log": [
+    {
+      "para_id": "squad_v2_5a36f18395360f001af1b36c",
+      "reason": "no_valid_answers",
+      "detail": "no questions with valid answer offsets"
+    }
+  ]
+}

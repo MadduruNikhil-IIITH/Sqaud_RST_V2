@@ -1,0 +1,37 @@
+{
+  "python_version": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:36:12) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "imports": [
+    {
+      "module": "torch",
+      "status": "ok"
+    },
+    {
+      "module": "transformers",
+      "status": "ok"
+    },
+    {
+      "module": "pandas",
+      "status": "ok"
+    },
+    {
+      "module": "sklearn",
+      "status": "ok"
+    },
+    {
+      "module": "spacy",
+      "status": "ok"
+    },
+    {
+      "module": "stanza",
+      "status": "ok"
+    },
+    {
+      "module": "isanlp_rst",
+      "status": "ok"
+    }
+  ],
+  "cuda_available": true,
+  "cuda_device_count": 1,
+  "isanlp_rst_gate": true
+}

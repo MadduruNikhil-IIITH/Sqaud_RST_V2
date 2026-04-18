@@ -1,0 +1,18 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis" type="multinuc" />
+			<rel name="elaboration" type="rst" />
+			<rel name="joint" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="8" relname="joint">Major tourist destinations include Times Square; Broadway theater productions; the Empire State Building; the Statue of Liberty; Ellis Island; the United Nations Headquarters; museums such as the Metropolitan Museum of Art; greenspaces such as Central Park and Washington Square Park; Rockefeller Center; the Manhattan Chinatown; luxury shopping along Fifth and Madison Avenues; and events such as the Halloween Parade in Greenwich Village; the Macy's Thanksgiving Day Parade; the lighting of the Rockefeller Center Christmas Tree; the St. Patrick's Day parade; seasonal activities such as ice skating in Central Park in the wintertime; the Tribeca Film Festival; and free performances in Central Park at Summerstage.</segment>
+		<segment id="2" parent="7" relname="joint">Major attractions in the boroughs outside Manhattan include Flushing Meadows-Corona Park and the Unisphere in Queens; the Bronx Zoo; Coney Island, Brooklyn; and the New York Botanical Garden in the Bronx.</segment>
+		<segment id="3" parent="6" relname="span">The New York Wheel, a 630-foot ferris wheel, was under construction at the northern shore of Staten Island in 2015,</segment>
+		<segment id="4" parent="3" relname="elaboration">overlooking the Statue of Liberty, New York Harbor, and the Lower Manhattan skyline.</segment>
+		<group id="7" type="multinuc" parent="8" relname="joint"/>
+		<group id="6" type="span" parent="7" relname="joint"/>
+		<group id="8" type="multinuc"/>
+	</body>
+</rst>

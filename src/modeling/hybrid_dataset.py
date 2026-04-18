@@ -1,0 +1,32 @@
+import torch
+from torch.utils.data import Dataset
+
+class HybridDataset(Dataset):
+    """
+    Custom Dataset for hybrid RoBERTa + engineered features.
+    Returns tokenized text, engineered features, and label.
+    """
+    def __init__(self, texts, feats, labels, tokenizer, max_len=256):
+        self.texts = texts
+        self.feats = torch.tensor(feats, dtype=torch.float32)
+        self.labels = torch.tensor(labels, dtype=torch.long)
+        self.tokenizer = tokenizer
+        self.max_len = max_len
+
+    def __len__(self):
+        return len(self.texts)
+
+    def __getitem__(self, idx):
+        enc = self.tokenizer(
+            self.texts[idx],
+            padding='max_length',
+            truncation=True,
+            max_length=self.max_len,
+            return_tensors='pt'
+        )
+        return {
+            'input_ids': enc['input_ids'].squeeze(0),
+            'attention_mask': enc['attention_mask'].squeeze(0),
+            'engineered': self.feats[idx],
+            'labels': self.labels[idx]
+        }

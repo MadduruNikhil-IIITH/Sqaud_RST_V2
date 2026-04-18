@@ -1,0 +1,29 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="adversative" type="multinuc" />
+			<rel name="antithesis" type="multinuc" />
+			<rel name="causal" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="joint" type="multinuc" />
+			<rel name="purpose" type="rst" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="12" relname="joint">Nasser remains an iconic figure in the Arab world, particularly for his strides towards social justice and Arab unity, modernization policies, and anti-imperialist efforts.</segment>
+		<segment id="2" parent="11" relname="joint">His presidency also encouraged and coincided with an Egyptian cultural boom,</segment>
+		<segment id="3" parent="10" relname="span">and launched large industrial projects,</segment>
+		<segment id="4" parent="3" relname="elaboration">including the Aswan Dam and Helwan City.</segment>
+		<segment id="5" parent="13" relname="span">Nasser's detractors criticize his authoritarianism, his government's human rights violations, his populist relationship with the citizenry, and his failure</segment>
+		<segment id="6" parent="5" relname="purpose">to establish civil institutions,</segment>
+		<segment id="7" parent="13" relname="causal">blaming his legacy for future dictatorial governance in Egypt.</segment>
+		<segment id="8" parent="16" relname="joint">Historians describe Nasser as a towering political figure of the Middle East in the 20th century.</segment>
+		<group id="15" type="multinuc" parent="16" relname="joint"/>
+		<group id="12" type="multinuc" parent="15" relname="adversative"/>
+		<group id="11" type="multinuc" parent="12" relname="joint"/>
+		<group id="10" type="span" parent="11" relname="joint"/>
+		<group id="14" type="span" parent="15" relname="adversative"/>
+		<group id="13" type="span" parent="14" relname="span"/>
+		<group id="16" type="multinuc"/>
+	</body>
+</rst>

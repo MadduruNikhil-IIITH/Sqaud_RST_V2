@@ -1,0 +1,46 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="adversative" type="multinuc" />
+			<rel name="antithesis" type="multinuc" />
+			<rel name="attribution" type="rst" />
+			<rel name="context" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="joint" type="multinuc" />
+			<rel name="same-unit" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="18" relname="span">Also in 1931, Hayek critiqued Keynes's Treatise on Money</segment>
+		<segment id="2" parent="1" relname="context">(1930)</segment>
+		<segment id="3" parent="19" relname="same-unit">in his "Reflections on the pure theory of Mr. J. M. Keynes"</segment>
+		<segment id="4" parent="20" relname="joint">and published his lectures at the LSE in book form as Prices and Production.</segment>
+		<segment id="5" parent="21" relname="adversative">Unemployment and idle resources are, for Keynes, caused by a lack of effective demand;</segment>
+		<segment id="6" parent="21" relname="adversative">for Hayek, they stem from a previous, unsustainable episode of easy money and artificially low interest rates.</segment>
+		<segment id="7" parent="22" relname="span">Keynes asked his friend Piero Sraffa to respond.</segment>
+		<segment id="8" parent="7" relname="elaboration">Sraffa elaborated on the effect of inflation-induced "forced savings" on the capital sector and about the definition of a "natural" interest rate in a growing economy.</segment>
+		<segment id="9" parent="24" relname="span">Others</segment>
+		<segment id="10" parent="9" relname="elaboration">who responded negatively to Hayek's work on the business cycle</segment>
+		<segment id="11" parent="25" relname="same-unit">included John Hicks, Frank Knight, and Gunnar Myrdal.</segment>
+		<segment id="12" parent="28" relname="attribution">Kaldor later wrote</segment>
+		<segment id="13" parent="28" relname="joint">that Hayek's Prices and Production had produced "a remarkable crop of critics"</segment>
+		<segment id="14" parent="26" relname="span">and that the total number of pages in British and American journals</segment>
+		<segment id="15" parent="14" relname="elaboration">dedicated to the resulting debate</segment>
+		<segment id="16" parent="27" relname="same-unit">"could rarely have been equalled in the economic controversies of the past."</segment>
+		<group id="20" type="multinuc" parent="32" relname="joint"/>
+		<group id="19" type="multinuc" parent="20" relname="joint"/>
+		<group id="18" type="span" parent="19" relname="same-unit"/>
+		<group id="31" type="multinuc" parent="32" relname="joint"/>
+		<group id="23" type="span" parent="31" relname="joint"/>
+		<group id="21" type="multinuc" parent="22" relname="context"/>
+		<group id="22" type="span" parent="23" relname="span"/>
+		<group id="30" type="multinuc" parent="31" relname="joint"/>
+		<group id="25" type="multinuc" parent="30" relname="joint"/>
+		<group id="24" type="span" parent="25" relname="same-unit"/>
+		<group id="29" type="span" parent="30" relname="joint"/>
+		<group id="28" type="multinuc" parent="29" relname="span"/>
+		<group id="27" type="multinuc" parent="28" relname="joint"/>
+		<group id="26" type="span" parent="27" relname="same-unit"/>
+		<group id="32" type="multinuc"/>
+	</body>
+</rst>

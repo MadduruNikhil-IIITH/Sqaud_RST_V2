@@ -1,0 +1,4 @@
+ROUGE-1,ROUGE-2,ROUGE-L,BERTScore-F1,METEOR,QA_EM,QA_F1,LLM_answerability_mean,LLM_reasonableness_mean,LLM_clarity_mean,LLM_difficulty_mean,LLM_overall_quality_mean,LLM_answerability_std,LLM_reasonableness_std,LLM_clarity_std,LLM_difficulty_std,LLM_overall_quality_std,Num_Questions,Mode
+0.3469,0.0417,0.2791,0.9035,0.31,0.0,0.0,,,,,,,,,,,4,zero_shot
+0.1708,0.0172,0.1547,0.878,0.2537,0.0,0.1364,,,,,,,,,,,4,hybrid_salient
+0.3148,0.0417,0.2393,0.884,0.3196,0.25,0.3393,,,,,,,,,,,4,llm_salient

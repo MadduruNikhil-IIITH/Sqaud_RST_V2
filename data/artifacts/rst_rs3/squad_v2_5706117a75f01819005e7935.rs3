@@ -1,0 +1,34 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis" type="multinuc" />
+			<rel name="elaboration" type="rst" />
+			<rel name="joint" type="multinuc" />
+			<rel name="restatement" type="rst" />
+			<rel name="same-unit" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="13" relname="span">The Times Literary Supplement</segment>
+		<segment id="2" parent="1" relname="restatement">(TLS)</segment>
+		<segment id="3" parent="14" relname="same-unit">first appeared in 1902 as a supplement to The Times,</segment>
+		<segment id="4" parent="14" relname="elaboration">becoming a separately paid-for weekly literature and society magazine in 1914.</segment>
+		<segment id="5" parent="21" relname="span">The Times and the TLS have continued to be co-owned,</segment>
+		<segment id="6" parent="20" relname="joint">and as of 2012 the TLS is also published by News International</segment>
+		<segment id="7" parent="19" relname="span">and cooperates closely with The Times,</segment>
+		<segment id="8" parent="16" relname="span">with its online version</segment>
+		<segment id="9" parent="8" relname="elaboration">hosted on The Times website,</segment>
+		<segment id="10" parent="17" relname="span">and its editorial offices</segment>
+		<segment id="11" parent="10" relname="elaboration">based in Times House, Pennington Street, London.</segment>
+		<group id="15" type="span" parent="22" relname="joint"/>
+		<group id="14" type="multinuc" parent="15" relname="span"/>
+		<group id="13" type="span" parent="14" relname="same-unit"/>
+		<group id="21" type="span" parent="22" relname="joint"/>
+		<group id="20" type="multinuc" parent="5" relname="elaboration"/>
+		<group id="19" type="span" parent="20" relname="joint"/>
+		<group id="18" type="multinuc" parent="7" relname="elaboration"/>
+		<group id="16" type="span" parent="18" relname="same-unit"/>
+		<group id="17" type="span" parent="18" relname="same-unit"/>
+		<group id="22" type="multinuc"/>
+	</body>
+</rst>

@@ -1,0 +1,25 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis" type="multinuc" />
+			<rel name="elaboration" type="rst" />
+			<rel name="evaluation" type="rst" />
+			<rel name="joint" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="9" relname="span">Inner and outer vestibules lead to the octagonal chapter house,</segment>
+		<segment id="2" parent="1" relname="evaluation">which is of exceptional architectural purity.</segment>
+		<segment id="3" parent="13" relname="joint">It is built in a Geometrical Gothic style with an octagonal crypt below.</segment>
+		<segment id="4" parent="12" relname="joint">A pier of eight shafts carries the vaulted ceiling.</segment>
+		<segment id="5" parent="10" relname="span">To the sides are blind arcading, remains of 14th-century paintings and numerous stone benches</segment>
+		<segment id="6" parent="5" relname="elaboration">above which are innovatory large 4-light quatre-foiled windows.</segment>
+		<segment id="7" parent="10" relname="evaluation">These are virtually contemporary with the Sainte-Chapelle, Paris.</segment>
+		<group id="9" type="span" parent="14" relname="span"/>
+		<group id="13" type="multinuc" parent="9" relname="elaboration"/>
+		<group id="12" type="multinuc" parent="13" relname="joint"/>
+		<group id="11" type="span" parent="12" relname="joint"/>
+		<group id="10" type="span" parent="11" relname="span"/>
+		<group id="14" type="span"/>
+	</body>
+</rst>

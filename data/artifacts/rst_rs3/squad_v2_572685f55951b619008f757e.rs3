@@ -1,0 +1,27 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis" type="multinuc" />
+			<rel name="elaboration" type="rst" />
+			<rel name="joint" type="multinuc" />
+			<rel name="same-unit" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="10" relname="span">NASCAR</segment>
+		<segment id="2" parent="1" relname="elaboration">(headquartered in Daytona Beach)</segment>
+		<segment id="3" parent="11" relname="span">begins all three of its major auto racing series in Florida at Daytona International Speedway in February,</segment>
+		<segment id="4" parent="3" relname="elaboration">featuring the Daytona 500,</segment>
+		<segment id="5" parent="13" relname="joint">and ends all three Series in November at Homestead-Miami Speedway.</segment>
+		<segment id="6" parent="14" relname="joint">Daytona also has the Coke Zero 400 NASCAR race weekend around Independence Day in July.</segment>
+		<segment id="7" parent="15" relname="joint">The 24 Hours of Daytona is one of the world's most prestigious endurance auto races.</segment>
+		<segment id="8" parent="15" relname="joint">The Grand Prix of St. Petersburg and Grand Prix of Miami have held IndyCar races as well.</segment>
+		<group id="14" type="multinuc" parent="16" relname="joint"/>
+		<group id="13" type="multinuc" parent="14" relname="joint"/>
+		<group id="12" type="multinuc" parent="13" relname="joint"/>
+		<group id="10" type="span" parent="12" relname="same-unit"/>
+		<group id="11" type="span" parent="12" relname="same-unit"/>
+		<group id="15" type="multinuc" parent="16" relname="joint"/>
+		<group id="16" type="multinuc"/>
+	</body>
+</rst>

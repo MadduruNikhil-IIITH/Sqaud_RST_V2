@@ -1,0 +1,49 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="antithesis" type="multinuc" />
+			<rel name="context" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="joint" type="multinuc" />
+			<rel name="mode" type="rst" />
+			<rel name="purpose" type="rst" />
+			<rel name="restatement" type="rst" />
+			<rel name="same-unit" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="19" relname="span">During up-peak mode</segment>
+		<segment id="2" parent="1" relname="restatement">(also called moderate incoming traffic),</segment>
+		<segment id="3" parent="22" relname="span">elevator cars in a group are recalled to the lobby</segment>
+		<segment id="4" parent="20" relname="span">to provide expeditious service to passengers</segment>
+		<segment id="5" parent="4" relname="elaboration">arriving at the building, most typically in the morning</segment>
+		<segment id="6" parent="20" relname="context">as people arrive for work or at the conclusion of a lunch-time period.</segment>
+		<segment id="7" parent="25" relname="span">Elevators are dispatched one-by-one</segment>
+		<segment id="8" parent="24" relname="joint">when they reach a pre-determined passenger load,</segment>
+		<segment id="9" parent="24" relname="joint">or when they have had their doors opened for a certain period of time.</segment>
+		<segment id="10" parent="26" relname="span">The next elevator</segment>
+		<segment id="11" parent="10" relname="elaboration">to be dispatched</segment>
+		<segment id="12" parent="27" relname="same-unit">usually has its hall lantern or a "this car leaving next" sign illuminated</segment>
+		<segment id="13" parent="27" relname="purpose">to encourage passengers to make maximum use of the available elevator system capacity.</segment>
+		<segment id="14" parent="31" relname="span">Some elevator banks are programmed</segment>
+		<segment id="15" parent="29" relname="joint">so that at least one car will always return to the lobby floor</segment>
+		<segment id="16" parent="29" relname="joint">and park</segment>
+		<segment id="17" parent="29" relname="context">whenever it becomes free.</segment>
+		<group id="23" type="multinuc" parent="34" relname="span"/>
+		<group id="19" type="span" parent="23" relname="same-unit"/>
+		<group id="22" type="span" parent="23" relname="same-unit"/>
+		<group id="21" type="span" parent="3" relname="purpose"/>
+		<group id="20" type="span" parent="21" relname="span"/>
+		<group id="33" type="multinuc" parent="23" relname="elaboration"/>
+		<group id="25" type="span" parent="33" relname="joint"/>
+		<group id="24" type="multinuc" parent="7" relname="context"/>
+		<group id="32" type="multinuc" parent="33" relname="joint"/>
+		<group id="28" type="span" parent="32" relname="joint"/>
+		<group id="27" type="multinuc" parent="28" relname="span"/>
+		<group id="26" type="span" parent="27" relname="same-unit"/>
+		<group id="31" type="span" parent="32" relname="joint"/>
+		<group id="30" type="span" parent="14" relname="mode"/>
+		<group id="29" type="multinuc" parent="30" relname="span"/>
+		<group id="34" type="span"/>
+	</body>
+</rst>
