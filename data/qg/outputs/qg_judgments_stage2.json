@@ -1,67 +1,67 @@
 {
   "zero_shot": [
     {
-      "para_id": "squad_v2_56dff532231d4119001abf05",
-      "generated_question": "What is the Irish term for a pub?",
-      "gold_question": "What country outside Ireland is known for having Irish pubs?",
-      "scores": {
-        "answerability": 5,
-        "reasonableness": 5,
-        "clarity": 5,
-        "difficulty": 1
-      },
-      "overall_quality": 5,
-      "reasoning": "The question asks for the Irish term for a pub, which is directly mentioned in the paragraph. The paragraph provides a clear and complete answer to the question, making it fully answerable. The question is logical, valid, and natural, as it directly relates to the information given. The clarity of the question is high, as it is concise and directly asks for the specific information provided in the paragraph. The difficulty of the question is low, as it is a straightforward fact that can be easily found in the text. Overall, the question meets the criteria for a high-quality SQuAD-style question.",
-      "summary_comment": "The question is clear, directly answerable, and of high quality."
-    },
-    {
-      "para_id": "squad_v2_572abec0be1ee31400cb8201",
-      "generated_question": "What does Madsen Pirie claim Hayek mistakenly believes about the nature of the conservative outlook?",
-      "gold_question": "Pirie believes Hayek to be a conservative for what reason?",
-      "scores": {
-        "answerability": 5,
-        "reasonableness": 5,
-        "clarity": 5,
-        "difficulty": 3
-      },
-      "overall_quality": 5,
-      "reasoning": "The generated question asks for a specific claim made by Madsen Pirie about Hayek's understanding of the conservative outlook. The paragraph provides the necessary information, stating that Pirie claims Hayek mistakes the nature of the conservative outlook, which is that conservatives are not averse to change but are against change being imposed by authority. This question is directly answerable from the paragraph, as it clearly states Pirie's claim about Hayek's mistake regarding the conservative outlook.",
-      "summary_comment": "The question is clear, directly answerable, and of good quality."
-    },
-    {
-      "para_id": "squad_v2_5727ebe03acd2414000deff0",
-      "generated_question": "What were some of the criticisms leveled against Nasser's presidency?",
-      "gold_question": "What century did Nasser rule in?",
-      "scores": {
-        "answerability": 5,
-        "reasonableness": 5,
-        "clarity": 5,
-        "difficulty": 3
-      },
-      "overall_quality": 5,
-      "reasoning": "The generated question asks for specific criticisms of Nasser's presidency, which are directly mentioned in the paragraph. The paragraph lists several criticisms, including authoritarianism, human rights violations, populist relationship with citizens, and failure to establish civil institutions. This information is clearly provided, making the question fully answerable from the paragraph.",
-      "summary_comment": "The question is clear, fully answerable, and logically valid, making it an excellent SQuAD-style question."
-    },
-    {
       "para_id": "squad_v2_56d61c4e1c85041400946f1d",
-      "generated_question": "What online initiative did the official news agency Xinhua set up to aid disaster recovery efforts?",
+      "generated_question": "What innovative method did volunteers use during the post-earthquake period following the Sichuan quake to assist with locating suitable areas for rescuers?",
       "gold_question": "What kind of information were websites set up to store?",
       "scores": {
         "answerability": 5,
         "reasonableness": 5,
         "clarity": 5,
+        "difficulty": 4
+      },
+      "overall_quality": 5,
+      "reasoning": "The question is about the innovative method used by volunteers, which is mentioned in the paragraph. The paragraph provides a clear example of the method, making the question fully answerable. The question is logical, valid, and natural, and it is clear and concise. It is challenging but fair, as it requires the reader to understand the context and extract specific information. Overall, the question is of high quality for a SQuAD-style evaluation.",
+      "summary_comment": "The question is clear, concise, and fully answerable from the paragraph, making it an excellent SQuAD-style question."
+    },
+    {
+      "para_id": "squad_v2_56dff532231d4119001abf05",
+      "generated_question": "How does live music contribute to the unique atmosphere often associated with pubs in Ireland?",
+      "gold_question": "What country outside Ireland is known for having Irish pubs?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
         "difficulty": 3
       },
       "overall_quality": 5,
-      "reasoning": "The question asks for a specific online initiative set up by Xinhua, which is directly mentioned in the paragraph. The answerability is high as the paragraph provides the necessary information. The question is reasonable and valid as it pertains to the context of disaster recovery efforts. It is clear and natural, as it directly refers to the content of the paragraph. The difficulty is moderate, as it requires the reader to identify and understand the specific initiative mentioned. Overall, the quality of the question is excellent for a SQuAD-style question.",
-      "summary_comment": "The question is clear, directly answerable from the paragraph, and relevant to the context."
+      "reasoning": "The question asks about the role of live music in creating the unique atmosphere of Irish pubs, which is directly related to the information provided in the paragraph. The paragraph states that live music, both traditional and modern, is frequently featured in Irish pubs, which implies its contribution to the atmosphere.",
+      "summary_comment": "The question is clear, directly answerable from the paragraph, and logically valid."
+    },
+    {
+      "para_id": "squad_v2_5727ebe03acd2414000deff0",
+      "generated_question": "What were some key achievements during Gamal Abdel Nasser’s presidency that contributed significantly to modernizing Egypt?",
+      "gold_question": "What century did Nasser rule in?",
+      "scores": {
+        "answerability": 4,
+        "reasonableness": 5,
+        "clarity": 4,
+        "difficulty": 3
+      },
+      "overall_quality": 4,
+      "reasoning": "The question asks for specific achievements during Nasser's presidency that contributed to modernizing Egypt. The paragraph provides information about Nasser's presidency, including his efforts towards social justice, Arab unity, modernization policies, and anti-imperialist efforts, as well as mentioning large industrial projects like the Aswan Dam and Helwan City. However, the question is somewhat broad and could be more specific to fully answer from the paragraph.",
+      "summary_comment": "The question is mostly answerable and reasonable, but it could be more specific to fully utilize the information provided in the paragraph."
+    },
+    {
+      "para_id": "squad_v2_572abec0be1ee31400cb8201",
+      "generated_question": "What does British policy analyst Madsen Pirie argue about Friedrich Hayek's understanding of conservatism?",
+      "gold_question": "Pirie believes Hayek to be a conservative for what reason?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 4
+      },
+      "overall_quality": 5,
+      "reasoning": "The question is asking for a specific argument made by Madsen Pirie regarding Hayek's understanding of conservatism. The paragraph provides the necessary information, stating that Pirie claims Hayek mistakes the nature of the conservative outlook. The question is clear and directly related to the content of the paragraph, making it fully answerable. The question is also logical and valid, as it pertains to the comparison between Hayek's and conservatives' views on change and authority. It is clear and concise, and the difficulty is fair given the context of the paragraph.",
+      "summary_comment": "The question is clear, concise, and directly answerable from the paragraph, making it a high-quality SQuAD-style question."
     }
   ],
   "hybrid_salient": [
     {
-      "para_id": "squad_v2_56dff532231d4119001abf05",
-      "generated_question": "How did 'The Troubles' affect the survival of traditional Irish pub interiors compared to the 'English style' refitting in the 1950s and 1960s?",
-      "gold_question": "What country outside Ireland is known for having Irish pubs?",
+      "para_id": "squad_v2_56d61c4e1c85041400946f1d",
+      "generated_question": "How did volunteers utilize the internet during the post-disaster period following the earthquakes?",
+      "gold_question": "What kind of information were websites set up to store?",
       "scores": {
         "answerability": 5,
         "reasonableness": 5,
@@ -69,85 +69,57 @@
         "difficulty": 3
       },
       "overall_quality": 5,
-      "reasoning": "The question is about the impact of 'The Troubles' on the survival of traditional Irish pub interiors. The paragraph provides a direct answer, stating that 'The Troubles' led to a higher proportion of traditional bars surviving compared to the 'English style' refitting in the 1950s and 1960s.",
-      "summary_comment": "The question is clear, directly answerable, and logically valid."
+      "reasoning": "The generated question asks about the role of the internet in rescue and recovery efforts, which is directly related to the information provided in the paragraph. The paragraph mentions the use of the internet for passing information, setting up an online rescue request center, and storing contact information for victims and evacuees. However, the question is broad and could be interpreted in various ways, such as the specific actions taken or the overall impact of the internet on the efforts. The paragraph does not provide a detailed explanation of the role, but it does give enough context to answer the question partially.",
+      "summary_comment": "The question is clear, answerable, and relevant to the paragraph, but it could be more specific to improve the depth of the answer."
     },
     {
-      "para_id": "squad_v2_572abec0be1ee31400cb8201",
-      "generated_question": "What does Madsen Pirie claim about Hayek's understanding of the conservative outlook in 'Why F A Hayek is a Conservative'?",
-      "gold_question": "Pirie believes Hayek to be a conservative for what reason?",
+      "para_id": "squad_v2_56dff532231d4119001abf05",
+      "generated_question": "How does New Zealand reflect its cultural connection through establishments similar to those found in Ireland?",
+      "gold_question": "What country outside Ireland is known for having Irish pubs?",
       "scores": {
-        "answerability": 2,
-        "reasonableness": 3,
+        "answerability": 3,
+        "reasonableness": 5,
         "clarity": 2,
-        "difficulty": 4
+        "difficulty": 3
       },
-      "overall_quality": 2,
-      "reasoning": "The question is asking for an opinion on Hayek's understanding, which is not directly stated in the paragraph. The paragraph only mentions that Pirie claims Hayek has a mistaken view, without elaborating on what that view is.",
-      "summary_comment": "The question is unclear and does not directly answer the claim made by Madsen Pirie in the paragraph."
+      "overall_quality": 3,
+      "reasoning": "The generated question asks about the cultural connection reflected in New Zealand through establishments similar to those in Ireland. The paragraph mentions that New Zealand has a number of Irish pubs, which indicates a cultural connection. However, the question is not specific about what aspect of the cultural connection is being asked about, making it somewhat unclear and incomplete.",
+      "summary_comment": "The question is somewhat answerable and reasonable, but lacks clarity and specificity."
     },
     {
       "para_id": "squad_v2_5727ebe03acd2414000deff0",
-      "generated_question": "What are the reasons Nasser is considered an iconic figure in the Arab world?",
+      "generated_question": "What criticisms have been leveled against President Nasser regarding his leadership style and its impact on subsequent governments?",
       "gold_question": "What century did Nasser rule in?",
       "scores": {
         "answerability": 5,
         "reasonableness": 5,
         "clarity": 5,
+        "difficulty": 4
+      },
+      "overall_quality": 5,
+      "reasoning": "The generated question asks for specific criticisms of President Nasser's leadership style and its impact on subsequent governments. The paragraph provides information about the criticisms leveled against Nasser, including his authoritarianism, human rights violations, populist relationship with citizens, and failure to establish civil institutions. This information is directly answerable from the paragraph, making the question fully answerable. The question is reasonable and valid as it seeks to understand the negative aspects of Nasser's leadership. It is clear and natural in its phrasing, asking for specific criticisms without being confusing. The difficulty is moderate as it requires the reader to identify and understand the criticisms mentioned in the paragraph. Overall, the question is of high quality for a SQuAD-style evaluation.",
+      "summary_comment": "The question is clear, fully answerable, and of high quality for SQuAD-style evaluation."
+    },
+    {
+      "para_id": "squad_v2_572abec0be1ee31400cb8201",
+      "generated_question": "According to Madsen Pirie in 'Why F A Hayek is a Conservative', why does he believe Hayek has misunderstood conservatism?",
+      "gold_question": "Pirie believes Hayek to be a conservative for what reason?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
         "difficulty": 3
       },
       "overall_quality": 5,
-      "reasoning": "The question asks for reasons why Nasser is considered an iconic figure, which is directly answerable from the provided paragraph. The paragraph lists several reasons, including his strides towards social justice, Arab unity, modernization policies, anti-imperialist efforts, and the cultural boom during his presidency. The question is clear, concise, and natural, and it is not trivial or impossible to answer, making it a good SQuAD-style question.",
-      "summary_comment": "The question is clear, concise, and directly answerable from the paragraph, making it a high-quality SQuAD-style question."
-    },
-    {
-      "para_id": "squad_v2_56d61c4e1c85041400946f1d",
-      "generated_question": "Who proposed the landing spot for rescue helicopters in Wenchuan that was chosen as the first touchdown place?",
-      "gold_question": "What kind of information were websites set up to store?",
-      "scores": {
-        "answerability": 2,
-        "reasonableness": 4,
-        "clarity": 4,
-        "difficulty": 3
-      },
-      "overall_quality": 3,
-      "reasoning": "The question is clear but not fully answerable because it asks for a specific person's name, which is not provided in the paragraph. The paragraph only mentions a student in general, not by name.",
-      "summary_comment": "The question is somewhat reasonable but not fully answerable due to lack of specific information."
+      "reasoning": "The question asks for the reason Madsen Pirie believes Hayek has misunderstood conservatism. The paragraph provides the necessary information, stating that Pirie claims Hayek mistakes the nature of the conservative outlook, specifically that conservatives are not averse to change but are against it being imposed by authority. This directly answers the question, making it fully answerable from the paragraph.",
+      "summary_comment": "The question is clear, fully answerable, and logically valid, with a reasonable level of difficulty."
     }
   ],
   "llm_salient": [
     {
-      "para_id": "squad_v2_56dff532231d4119001abf05",
-      "generated_question": "What is the Irish term for the atmosphere or 'craic' that pubs are known for in Ireland?",
-      "gold_question": "What country outside Ireland is known for having Irish pubs?",
-      "scores": {
-        "answerability": 5,
-        "reasonableness": 5,
-        "clarity": 5,
-        "difficulty": 2
-      },
-      "overall_quality": 5,
-      "reasoning": "The question asks for the Irish term for the atmosphere or 'craic' that pubs are known for, which is directly mentioned in the paragraph as 'craic'.",
-      "summary_comment": "The question is clear, directly answerable, and fully relevant to the provided paragraph."
-    },
-    {
-      "para_id": "squad_v2_572abec0be1ee31400cb8201",
-      "generated_question": "What does Madsen Pirie claim Hayek does in 'Why F A Hayek is a Conservative'?",
-      "gold_question": "Pirie believes Hayek to be a conservative for what reason?",
-      "scores": {
-        "answerability": 5,
-        "reasonableness": 5,
-        "clarity": 5,
-        "difficulty": 3
-      },
-      "overall_quality": 5,
-      "reasoning": "The question asks for a specific claim made by Madsen Pirie about Hayek in the context of the book 'Why F A Hayek is a Conservative'. The paragraph provides the necessary information, stating that Pirie claims Hayek mistakes the nature of the conservative outlook, which is that conservatives are not averse to change but are against change being imposed by authority. The question is clear, directly answerable from the paragraph, and requires a specific piece of information that is present in the text.",
-      "summary_comment": "The question is clear, directly answerable, and of good quality."
-    },
-    {
-      "para_id": "squad_v2_5727ebe03acd2414000deff0",
-      "generated_question": "What are the reasons Nasser remains an iconic figure in the Arab world according to the paragraph?",
-      "gold_question": "What century did Nasser rule in?",
+      "para_id": "squad_v2_56d61c4e1c85041400946f1d",
+      "generated_question": "How did volunteers utilize the internet during the post-disaster period according to their actions described?",
+      "gold_question": "What kind of information were websites set up to store?",
       "scores": {
         "answerability": 3,
         "reasonableness": 5,
@@ -155,22 +127,50 @@
         "difficulty": 3
       },
       "overall_quality": 3,
-      "reasoning": "The question asks for reasons why Nasser is considered an iconic figure, which is directly mentioned in the paragraph. The paragraph lists his contributions to social justice, Arab unity, modernization, and anti-imperialist efforts, as well as his role in the cultural boom and industrial projects. However, the question is not fully answerable as it does not specify which aspect of his legacy the question is referring to, making it partially answerable but unclear or incomplete.",
-      "summary_comment": "The question is partially answerable and clear but lacks specificity, making it average in quality."
+      "reasoning": "The generated question asks about the specific ways volunteers used the internet during the post-disaster period. The paragraph mentions that volunteers set up websites to help store contact information for victims and evacuees, but it does not provide detailed actions or methods used by the volunteers. Therefore, the question is partially answerable, but the information is incomplete and unclear.",
+      "summary_comment": "The question is somewhat reasonable and clear, but it is not fully answerable from the paragraph due to missing or ambiguous information."
     },
     {
-      "para_id": "squad_v2_56d61c4e1c85041400946f1d",
-      "generated_question": "How was the Internet utilized to improve rescue and recovery efforts during the Wenchuan earthquake?",
-      "gold_question": "What kind of information were websites set up to store?",
+      "para_id": "squad_v2_56dff532231d4119001abf05",
+      "generated_question": "What term describes the unique social ambiance found typically inside Irish pubs?",
+      "gold_question": "What country outside Ireland is known for having Irish pubs?",
       "scores": {
         "answerability": 5,
         "reasonableness": 5,
-        "clarity": 4,
+        "clarity": 5,
+        "difficulty": 4
+      },
+      "overall_quality": 5,
+      "reasoning": "The question asks for a term that describes the social ambiance in Irish pubs, which is directly mentioned in the paragraph as 'craic'. The question is clear, concise, and directly answerable from the given text. It is not trivial, as it requires the reader to understand the cultural context of Irish pubs. The question is challenging but fair, as it tests the reader's comprehension and ability to recall specific information from the paragraph.",
+      "summary_comment": "The question is clear, concise, and directly answerable from the paragraph, making it an excellent SQuAD-style question."
+    },
+    {
+      "para_id": "squad_v2_5727ebe03acd2414000deff0",
+      "generated_question": "What were two key areas where Gamal Abdel Nasser made significant contributions during his leadership?",
+      "gold_question": "What century did Nasser rule in?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 4
+      },
+      "overall_quality": 5,
+      "reasoning": "The question asks for two key areas of Nasser's contributions, which can be inferred from the paragraph. The paragraph mentions social justice, Arab unity, modernization policies, and anti-imperialist efforts, as well as large industrial projects like the Aswan Dam and Helwan City. These are two distinct areas where Nasser made significant contributions.",
+      "summary_comment": "The question is clear, answerable, and of good quality, asking for two specific areas of Nasser's contributions."
+    },
+    {
+      "para_id": "squad_v2_572abec0be1ee31400cb8201",
+      "generated_question": "According to Madsen Pirie in 'Why F A Hayek is a Conservative', why does he believe Hayek has misunderstood conservatism?",
+      "gold_question": "Pirie believes Hayek to be a conservative for what reason?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
         "difficulty": 3
       },
-      "overall_quality": 4,
-      "reasoning": "The generated question asks about the general use of the Internet during the Wenchuan earthquake, which is directly supported by the paragraph. The paragraph mentions the Internet being used for passing information, setting up an online rescue request center, and volunteers creating websites to store contact information. However, the question is not specific about the type of information stored, which is addressed in the gold question. The question is clear and natural, but it could be more specific to match the gold question's focus on the type of information stored on websites.",
-      "summary_comment": "The question is clear and fully answerable, but it could be more specific to match the focus of the gold question."
+      "overall_quality": 5,
+      "reasoning": "The question asks for the reason Madsen Pirie believes Hayek has misunderstood conservatism. The paragraph provides the necessary information, stating that Pirie claims Hayek mistakes the nature of the conservative outlook, specifically that conservatives are not averse to change but are against it being imposed by authority. This directly answers the question, making it fully answerable from the paragraph.",
+      "summary_comment": "The question is clear, fully answerable, and logically valid, with a reasonable level of difficulty."
     }
   ]
 }

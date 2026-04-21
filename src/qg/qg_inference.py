@@ -57,41 +57,55 @@ def construct_inputs(mode: str, manifest_df: pd.DataFrame, hybrid_df: pd.DataFra
 
 
 def build_prompt(item: dict) -> str:
-    """Build optimized chat-format prompt for Phi-4-mini-instruct."""
+    """Build optimized chat-format prompt for Phi-4-mini-instruct with few-shot examples."""
     paragraph = item['paragraph']
     mode = item['mode']
     sentence = item.get('sentence')
 
-    system_msg = "You are an expert at generating high-quality, natural SQuAD-style questions."
+    system_msg = (
+        "You are an expert Question Generation system specializing in SQuAD-style datasets. "
+        "Your goal is to generate deep, natural, and answerable questions based on provided text."
+    )
 
     if mode == "zero_shot":
-        user_msg = f"""Generate **one** clear, concise, and answerable question based only on the following paragraph.
+        user_msg = f"""Task: Generate one high-quality, answerable question from the paragraph below.
 
 Paragraph:
 {paragraph}
 
-Return your response as a single JSON object:
-{{"question": "your generated question here"}}
-"""
+Output Format:
+{{"question": "your generated question here"}}"""
     else:
-        user_msg = f"""Generate **one** clear, concise, and answerable question using the salient sentence and the full paragraph.
+        # High-leverage prompt for salient modes
+        user_msg = f"""Task: Generate one high-quality, SQuAD-style question that is primarily based on the provided Salient Sentence, using the Full Paragraph for context.
 
-Salient sentence:
-{sentence}
+Requirements:
+1. The question must specifically target the core information within the Salient Sentence.
+2. The question must be naturally answerable by reading the Full Paragraph.
+3. Be clear, concise, and professional. Avoid overly simple 'what is' questions if the sentence allows for deeper inquiry.
 
-Full paragraph:
+###
+Example 1:
+Salient Sentence: "The Eiffel Tower was completed on March 31, 1889, as the entrance arch for the 1889 World's Fair."
+Full Paragraph: "Standing at 324 meters, the Eiffel Tower is the tallest structure in Paris. It was completed on March 31, 1889, as the entrance arch for the 1889 World's Fair. It was originally criticized by some of France's leading artists and intellectuals."
+Output: {{"question": "For what event was the Eiffel Tower constructed as an entrance arch?"}}
+
+Example 2:
+Salient Sentence: "Photosynthesis is the process by which green plants and some other organisms use sunlight to synthesize foods."
+Full Paragraph: "In plants, photosynthesis usually occurs in the leaves. Photosynthesis is the process by which green plants and some other organisms use sunlight to synthesize foods with the help of chlorophyll. This process is essential for life on Earth."
+Output: {{"question": "By what process do green plants create food from sunlight?"}}
+###
+
+Salient Sentence: "{sentence}"
+
+Full Paragraph:
 {paragraph}
 
-Return your response as a single JSON object:
-{{"question": "your generated question here", "sentence": "{sentence.replace('"', '\\"')}" }}
-"""
+Output Format:
+{{"question": "your generated question here", "sentence": "{sentence.replace('"', '\\"')}" }}"""
 
-    # Official Phi chat format
-    prompt = f"""<|system|>
-{system_msg}<|end|>
-<|user|>
-{user_msg}<|end|>
-<|assistant|>"""
+    # Official Phi-4 chat format
+    prompt = f"<|system|>\n{system_msg}<|end|>\n<|user|>\n{user_msg}<|end|>\n<|assistant|>"
 
     return prompt
 
@@ -136,10 +150,11 @@ def run_qg_inference(
                     # Optimized generation params for Phi-4 (factual, low creativity)
                     outputs = pipe(
                         prompt,
-                        max_new_tokens=120,
-                        temperature=0.3,      # Low for consistency
+                        max_new_tokens=100,
+                        temperature=0.2 if mode != "zero_shot" else 0.4, # Stricter for salient modes
                         do_sample=True,
                         top_p=0.9,
+                        repetition_penalty=1.1,
                         return_full_text=False
                     )
 
@@ -156,7 +171,7 @@ def run_qg_inference(
 
                 fout.write(json.dumps(item, ensure_ascii=False) + "\n")
 
-        print(f"[INFO] Finished mode '{mode}' → {output_path}")
+        print(f"[INFO] Finished mode '{mode}' -> {output_path}")
 
 
 def extract_question(text: str) -> str:

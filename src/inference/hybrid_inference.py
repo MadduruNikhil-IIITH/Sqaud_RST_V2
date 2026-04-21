@@ -25,24 +25,43 @@ def run_hybrid_inference(feature_table_csv: Path, output_csv: Path, model_path: 
     # --- Match training feature processing ---
     # Define feature columns (must match training)
     num_cols = [
-        'avg_word_length', 'sentence_length_words', 'type_token_ratio',
-        'causal_marker_ratio', 'contrast_marker_ratio', 'named_entity_density',
         'rst_tree_depth', 'span_importance_score', 'sentence_position_ratio',
-        'named_entity_count', 'prev_next_cohesion_score', 'paragraph_discourse_continuity_score',
-        'content_word_density', 'sentence_length_tokens', 'lexical_density',
-        'syntactic_complexity_score', 'readability_score',
+        'prev_next_cohesion_score', 'paragraph_discourse_continuity_score',
+        'sentence_length_tokens', 'syntactic_complexity_score', 'readability_score',
         'pos_ratio_NN', 'pos_ratio_NNP', 'pos_ratio_NNS', 'pos_ratio_VB',
-        'pos_ratio_VBD', 'pos_ratio_VBG', 'pos_ratio_VBN', 'pos_ratio_VBP',
-        'pos_ratio_VBZ', 'pos_ratio_JJ', 'pos_ratio_RB',
-        'punctuation_pattern_comma_count', 'punctuation_pattern_semicolon_count',
-        'concreteness_noun_count', 'concreteness_total', 'concreteness_ratio',
-        'surprisal_sentence_total', 'surprisal_sentence_per_token',
-        'surprisal_word_mean', 'surprisal_word_max', 'surprisal_word_std'
+        'pos_ratio_VBD', 'pos_ratio_VBG', 'pos_ratio_VBP', 'pos_ratio_VBZ', 'pos_ratio_JJ', 'pos_ratio_RB',
+        'surprisal_word_std', 'surprisal_word_max', 'contrast_marker_ratio', 'causal_marker_ratio',
+        'named_entity_count', 'concreteness_ratio'
     ]
+    
+    # 1.1 Apply Log-scaling (Must match training)
+    skewed_features = ['sentence_length_tokens', 'named_entity_count', 'surprisal_word_max']
+    for col in skewed_features:
+        if col in df.columns:
+            df[col] = np.log1p(df[col])
+            
     cat_cols = ['rst_relation', 'rst_nuclearity', 'cue_word_flags', 'prev_sent_label']
 
     # Fill missing values
     df[num_cols] = df[num_cols].fillna(0)
+    
+    # RST Grouping (Must match training exactly)
+    rst_mapping = {
+        'attribution': 'Attribution', 'background': 'Background',
+        'cause': 'Causal', 'result': 'Causal', 'consequence': 'Causal',
+        'comparison': 'Contrast', 'contrast': 'Contrast', 'concession': 'Contrast', 'adversative': 'Contrast',
+        'elaboration': 'Elaboration', 'explanation': 'Elaboration', 'evidence': 'Elaboration',
+        'temporal': 'Temporal', 'sequence': 'Temporal', 'circumstance': 'Temporal',
+        'joint': 'Joint', 'same-unit': 'Joint',
+        'restatement': 'Restatement', 'context': 'Context', 'purpose': 'Purpose'
+    }
+    def group_rst(rel):
+        rel = str(rel).lower()
+        for key, val in rst_mapping.items():
+            if key in rel: return val
+        return 'Other'
+
+    df['rst_relation'] = df['rst_relation'].apply(group_rst)
     df[cat_cols] = df[cat_cols].fillna('missing').astype(str)
 
     # Aggregate text context as in training
@@ -56,15 +75,17 @@ def run_hybrid_inference(feature_table_csv: Path, output_csv: Path, model_path: 
     )
 
     # Load scaler and encoder (must be saved during training)
-    scaler = joblib.load('models/hybrid_roberta/scaler.joblib')
-    ohe = joblib.load('models/hybrid_roberta/ohe.joblib')
+    model_dir = Path(model_path).parent
+    scaler = joblib.load(model_dir / 'scaler.joblib')
+    ohe = joblib.load(model_dir / 'ohe.joblib')
 
     # Sequential inference: update prev_sent_label for each sentence
     from copy import deepcopy
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"[Hybrid Inference] Using device: {device}")
     model = HybridRoBERTa(feature_dim=scaler.transform(df[num_cols]).shape[1] + ohe.transform(df[cat_cols]).shape[1])
-    model.load_state_dict(torch.load(model_path, map_location=device))
+    state_dict = torch.load(model_path, map_location=device, weights_only=True)
+    model.load_state_dict(state_dict, strict=False)
     model.to(device)
     model.eval()
     all_preds = []
@@ -106,7 +127,6 @@ def run_hybrid_inference(feature_table_csv: Path, output_csv: Path, model_path: 
             df = df.drop(columns=[col])
     df.to_csv(output_csv, index=False)
     print(f"Hybrid RoBERTa-based salience tagging complete. Output saved to {output_csv}")
-
 
 if __name__ == "__main__":
     import argparse

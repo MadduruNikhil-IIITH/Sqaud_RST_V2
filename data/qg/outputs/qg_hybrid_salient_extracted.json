@@ -2,41 +2,33 @@
   {
     "para_id": "squad_v2_5727ebe03acd2414000deff0",
     "mode": "hybrid_salient",
-    "sentence": "Nasser remains an iconic figure in the Arab world, particularly for his strides towards social justice and Arab unity, modernization policies, and anti-imperialist efforts.",
-    "paragraph": "Nasser remains an iconic figure in the Arab world, particularly for his strides towards social justice and Arab unity, modernization policies, and anti-imperialist efforts. His presidency also encouraged and coincided with an Egyptian cultural boom, and launched large industrial projects, including the Aswan Dam and Helwan City. Nasser's detractors criticize his authoritarianism, his government's human rights violations, his populist relationship with the citizenry, and his failure to establish civil institutions, blaming his legacy for future dictatorial governance in Egypt. Historians describe Nasser as a towering political figure of the Middle East in the 20th century.",
-    "generated_question": "What are the reasons Nasser is considered an iconic figure in the Arab world?",
-    "generated_text": "```json\n{\n  \"question\": \"What are the reasons Nasser is considered an iconic figure in the Arab world?\",\n  \"sentence\": \"Nasser remains an iconic figure in the Arab world, particularly for his strides towards social justice and Arab unity, modernization policies, and anti-imperialist efforts.\"\n}\n```"
-  },
-  {
-    "para_id": "squad_v2_5727ebe03acd2414000deff0",
-    "mode": "hybrid_salient",
     "sentence": "Nasser's detractors criticize his authoritarianism, his government's human rights violations, his populist relationship with the citizenry, and his failure to establish civil institutions, blaming his legacy for future dictatorial governance in Egypt.",
     "paragraph": "Nasser remains an iconic figure in the Arab world, particularly for his strides towards social justice and Arab unity, modernization policies, and anti-imperialist efforts. His presidency also encouraged and coincided with an Egyptian cultural boom, and launched large industrial projects, including the Aswan Dam and Helwan City. Nasser's detractors criticize his authoritarianism, his government's human rights violations, his populist relationship with the citizenry, and his failure to establish civil institutions, blaming his legacy for future dictatorial governance in Egypt. Historians describe Nasser as a towering political figure of the Middle East in the 20th century.",
-    "generated_question": "What are the criticisms leveled by Nasser's detractors against his legacy?",
-    "generated_text": "```json\n{\"question\": \"What are the criticisms leveled by Nasser's detractors against his legacy?\", \"sentence\": \"Nasser's detractors criticize his authoritarianism, his government's human rights violations, his populist relationship with the citizenry, and his failure to establish civil institutions, blaming his legacy for future dictatorial governance in Egypt.\"}\n```"
+    "generated_question": "What criticisms have been leveled against President Nasser regarding his leadership style and its impact on subsequent governments?",
+    "generated_text": "{\n\"question\": \"What criticisms have been leveled against President Nasser regarding his leadership style and its impact on subsequent governments?\",\n\"sentence\": \"Nasser's detractors criticize his authoritarianism, his government's human rights violations, his populist relationship with the citizenry, and his failure to establish civil institutions, blaming his legacy for future dictatorial governance in Egypt.\"\n}"
   },
   {
     "para_id": "squad_v2_56dff532231d4119001abf05",
     "mode": "hybrid_salient",
-    "sentence": "A side effect of \"The Troubles\" was that the lack of a tourist industry meant that a higher proportion of traditional bars have survived the wholesale refitting of Irish pub interiors in the 'English style' in the 1950s and 1960s.",
+    "sentence": "New Zealand sports a number of Irish pubs.",
     "paragraph": "In Ireland, pubs are known for their atmosphere or \"craic\". In Irish, a pub is referred to as teach tábhairne (\"tavernhouse\") or teach óil (\"drinkinghouse\"). Live music, either sessions of traditional Irish music or varieties of modern popular music, is frequently featured in the pubs of Ireland. Pubs in Northern Ireland are largely identical to their counterparts in the Republic of Ireland except for the lack of spirit grocers. A side effect of \"The Troubles\" was that the lack of a tourist industry meant that a higher proportion of traditional bars have survived the wholesale refitting of Irish pub interiors in the 'English style' in the 1950s and 1960s. New Zealand sports a number of Irish pubs.",
-    "generated_question": "How did 'The Troubles' affect the survival of traditional Irish pub interiors compared to the 'English style' refitting in the 1950s and 1960s?",
-    "generated_text": "```json\n{\n  \"question\": \"How did 'The Troubles' affect the survival of traditional Irish pub interiors compared to the 'English style' refitting in the 1950s and 1960s?\",\n  \"sentence\": \"A side effect of \\\"The Troubles\\\" was that the lack of a tourist industry meant that a higher proportion of traditional bars have survived the wholesale refitting of Irish pub interiors in the 'English style' in the 1950s and 1960s.\"\n}\n```"
+    "generated_question": "How does New Zealand reflect its cultural connection through establishments similar to those found in Ireland?",
+    "generated_text": "{\n\"question\": \"How does New Zealand reflect its cultural connection through establishments similar to those found in Ireland?\",\n\"sentence\": \"New Zealand sports a number of Irish pubs.\"\n}"
   },
   {
     "para_id": "squad_v2_56d61c4e1c85041400946f1d",
     "mode": "hybrid_salient",
-    "sentence": "After knowing that rescue helicopters had trouble landing into the epicenter area in Wenchuan, a student proposed a landing spot online and it was chosen as the first touchdown place for the helicopters[not in citation given].",
+    "sentence": "The Internet was extensively used for passing information to aid rescue and recovery efforts. For example, the official news agency Xinhua set up an online rescue request center in order to find the blind spots of disaster recovery. After knowing that rescue helicopters had trouble landing into the epicenter area in Wenchuan, a student proposed a landing spot online and it was chosen as the first touchdown place for the helicopters[not in citation given]. Volunteers also set up several websites ",
     "paragraph": "The Internet was extensively used for passing information to aid rescue and recovery efforts. For example, the official news agency Xinhua set up an online rescue request center in order to find the blind spots of disaster recovery. After knowing that rescue helicopters had trouble landing into the epicenter area in Wenchuan, a student proposed a landing spot online and it was chosen as the first touchdown place for the helicopters[not in citation given]. Volunteers also set up several websites to help store contact information for victims and evacuees. On May 31, a rescue helicopter carrying earthquake survivors and crew members crashed in fog and turbulence in Wenchuan county. No-one survived.",
-    "generated_question": "Who proposed the landing spot for rescue helicopters in Wenchuan that was chosen as the first touchdown place?",
-    "generated_text": "```json\n{\n  \"question\": \"Who proposed the landing spot for rescue helicopters in Wenchuan that was chosen as the first touchdown place?\",\n  \"sentence\": \"After knowing that rescue helicopters had trouble landing into the epicenter area in Wenchuan, a student proposed a landing spot online and it was chosen as the first touchdown place for the helicopters[not in citation given].\"\n}\n```"
+    "generated_question": "How did volunteers utilize the internet during the post-disaster period following the earthquakes?",
+    "generated_text": "{\n\"question\": \"How did volunteers utilize the internet during the post-disaster period following the earthquakes?\"\n}"
   },
   {
     "para_id": "squad_v2_572abec0be1ee31400cb8201",
     "mode": "hybrid_salient",
     "sentence": "In Why F A Hayek is a Conservative, British policy analyst Madsen Pirie claims Hayek mistakes the nature of the conservative outlook.",
     "paragraph": "In Why F A Hayek is a Conservative, British policy analyst Madsen Pirie claims Hayek mistakes the nature of the conservative outlook. Conservatives, he says, are not averse to change – but like Hayek, they are highly averse to change being imposed on the social order by people in authority who think they know how to run things better. They wish to allow the market to function smoothly and give it the freedom to change and develop. It is an outlook, says Pirie, that Hayek and conservatives both share.",
-    "generated_question": "What does Madsen Pirie claim about Hayek's understanding of the conservative outlook in 'Why F A Hayek is a Conservative'?",
-    "generated_text": "```json\n{\n  \"question\": \"What does Madsen Pirie claim about Hayek's understanding of the conservative outlook in 'Why F A Hayek is a Conservative'?\",\n  \"sentence\": \"In Why F A Hayek is a Conservative, British policy analyst Madsen Pirie claims Hayek mistakes the nature of the conservative outlook.\"\n}\n```"
+    "generated_question": "According to Madsen Pirie in 'Why F A Hayek is a Conservative', why does he believe Hayek has misunderstood conservatism?",
+    "generated_text": "{\n\"question\": \"According to Madsen Pirie in 'Why F A Hayek is a Conservative', why does he believe Hayek has misunderstood conservatism?\",\n\"sentence\": \"In Why F A Hayek is a Conservative, British policy analyst Madsen Pirie claims Hayek mistakes the nature of the conservative outlook.\"\n}"
   }
 ]
