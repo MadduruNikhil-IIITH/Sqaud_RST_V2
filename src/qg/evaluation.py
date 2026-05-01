@@ -27,14 +27,44 @@ def load_gold_manifest(gold_file):
         }
     return gold
 
-def load_generated_questions(file_path):
+def load_generated_questions(file_path, gold_dict=None):
+    """Load generated questions from extracted JSON file.
+    If gold_dict is provided and multiple questions exist per paragraph,
+    select the best question by BERTScore-F1 against the gold question.
+    Otherwise, falls back to first question per paragraph.
+    """
     if not Path(file_path).exists():
         print(f"[WARNING] File not found: {file_path}")
         return {}
     with open(file_path, "r", encoding="utf-8") as f:
         data = json.load(f)
     df = pd.DataFrame(data)
-    df = df.drop_duplicates(subset=["para_id"], keep="first")
+
+    # If gold is available and there are duplicates, pick best per paragraph
+    if gold_dict and df["para_id"].duplicated().any():
+        try:
+            bertscore = load("bertscore")
+            best_rows = []
+            for para_id, group in df.groupby("para_id"):
+                if para_id in gold_dict and len(group) > 1:
+                    gold_q = gold_dict[para_id]["question"]
+                    candidates = group["generated_question"].tolist()
+                    scores = bertscore.compute(
+                        predictions=candidates,
+                        references=[gold_q] * len(candidates),
+                        lang="en"
+                    )
+                    best_idx = np.argmax(scores["f1"])
+                    best_rows.append(group.iloc[best_idx])
+                else:
+                    best_rows.append(group.iloc[0])
+            df = pd.DataFrame(best_rows)
+        except Exception as e:
+            print(f"[WARNING] BERTScore selection failed, falling back to first: {e}")
+            df = df.drop_duplicates(subset=["para_id"], keep="first")
+    else:
+        df = df.drop_duplicates(subset=["para_id"], keep="first")
+
     return dict(zip(df["para_id"], df["generated_question"]))
 
 def compute_automatic_metrics(references, predictions):

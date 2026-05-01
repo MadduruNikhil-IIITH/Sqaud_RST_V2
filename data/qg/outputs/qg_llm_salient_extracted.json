@@ -10,137 +10,97 @@
   {
     "para_id": "squad_v2_5727ebe03acd2414000deff0",
     "mode": "llm_salient",
-    "sentence": "His presidency also encouraged and coincided with an Egyptian cultural boom, and launched large industrial projects, including the Aswan Dam and Helwan City.",
-    "paragraph": "Nasser remains an iconic figure in the Arab world, particularly for his strides towards social justice and Arab unity, modernization policies, and anti-imperialist efforts. His presidency also encouraged and coincided with an Egyptian cultural boom, and launched large industrial projects, including the Aswan Dam and Helwan City. Nasser's detractors criticize his authoritarianism, his government's human rights violations, his populist relationship with the citizenry, and his failure to establish civil institutions, blaming his legacy for future dictatorial governance in Egypt. Historians describe Nasser as a towering political figure of the Middle East in the 20th century.",
-    "generated_question": "What major infrastructure project did President Nasser initiate during his tenure?",
-    "generated_text": "{\n\"question\": \"What major infrastructure project did President Nasser initiate during his tenure?\", \n\"sentence\": \"His presidency also encouraged and coincided with an Egyptian cultural boom, and launched large industrial projects, including the Aswan Dam and Helwan City.\"\n}"
-  },
-  {
-    "para_id": "squad_v2_5727ebe03acd2414000deff0",
-    "mode": "llm_salient",
-    "sentence": "Nasser's detractors criticize his authoritarianism, his government's human rights violations, his populist relationship with the citizenry, and his failure to establish civil institutions, blaming his legacy for future dictatorial governance in Egypt.",
-    "paragraph": "Nasser remains an iconic figure in the Arab world, particularly for his strides towards social justice and Arab unity, modernization policies, and anti-imperialist efforts. His presidency also encouraged and coincided with an Egyptian cultural boom, and launched large industrial projects, including the Aswan Dam and Helwan City. Nasser's detractors criticize his authoritarianism, his government's human rights violations, his populist relationship with the citizenry, and his failure to establish civil institutions, blaming his legacy for future dictatorial governance in Egypt. Historians describe Nasser as a towering political figure of the Middle East in the 20th century.",
-    "generated_question": "What criticisms have been directed toward President Nasser regarding his leadership style and its impact on subsequent governments?",
-    "generated_text": "{\n\"question\": \"What criticisms have been directed toward President Nasser regarding his leadership style and its impact on subsequent governments?\",\n\"sentence\": \"Nasser's detractors criticize his authoritarianism, his government's human rights violations, his populist relationship with the citizenry, and his failure to establish civil institutions, blaming his legacy for future dictatorial governance in Egypt.\"\n}"
-  },
-  {
-    "para_id": "squad_v2_5727ebe03acd2414000deff0",
-    "mode": "llm_salient",
     "sentence": "Historians describe Nasser as a towering political figure of the Middle East in the 20th century.",
     "paragraph": "Nasser remains an iconic figure in the Arab world, particularly for his strides towards social justice and Arab unity, modernization policies, and anti-imperialist efforts. His presidency also encouraged and coincided with an Egyptian cultural boom, and launched large industrial projects, including the Aswan Dam and Helwan City. Nasser's detractors criticize his authoritarianism, his government's human rights violations, his populist relationship with the citizenry, and his failure to establish civil institutions, blaming his legacy for future dictatorial governance in Egypt. Historians describe Nasser as a towering political figure of the Middle East in the 20th century.",
-    "generated_question": "What aspect did historians highlight about Gamal Abdel Nasser during their description of him being a significant leader in the Middle Eastern politics of the twentieth century?",
-    "generated_text": "{\n\"question\": \"What aspect did historians highlight about Gamal Abdel Nasser during their description of him being a significant leader in the Middle Eastern politics of the twentieth century?\",\n\"sentence\": \"Historians describe Nasser as a towering political figure of the Middle East in the 20th century.\"\n}"
-  },
-  {
-    "para_id": "squad_v2_56dff532231d4119001abf05",
-    "mode": "llm_salient",
-    "sentence": "In Ireland, pubs are known for their atmosphere or \"craic\".",
-    "paragraph": "In Ireland, pubs are known for their atmosphere or \"craic\". In Irish, a pub is referred to as teach tábhairne (\"tavernhouse\") or teach óil (\"drinkinghouse\"). Live music, either sessions of traditional Irish music or varieties of modern popular music, is frequently featured in the pubs of Ireland. Pubs in Northern Ireland are largely identical to their counterparts in the Republic of Ireland except for the lack of spirit grocers. A side effect of \"The Troubles\" was that the lack of a tourist industry meant that a higher proportion of traditional bars have survived the wholesale refitting of Irish pub interiors in the 'English style' in the 1950s and 1960s. New Zealand sports a number of Irish pubs.",
-    "generated_question": "What term describes the unique social ambiance found typically inside Irish pubs?",
-    "generated_text": "{\n\"question\": \"What term describes the unique social ambiance found typically inside Irish pubs?\",\n\"sentence\": \"In Ireland, pubs are known for their atmosphere or \\\"craic\\\".\"\n}"
-  },
-  {
-    "para_id": "squad_v2_56dff532231d4119001abf05",
-    "mode": "llm_salient",
-    "sentence": "In Irish, a pub is referred to as teach tábhairne (\"tavernhouse\") or teach óil (\"drinkinghouse\").",
-    "paragraph": "In Ireland, pubs are known for their atmosphere or \"craic\". In Irish, a pub is referred to as teach tábhairne (\"tavernhouse\") or teach óil (\"drinkinghouse\"). Live music, either sessions of traditional Irish music or varieties of modern popular music, is frequently featured in the pubs of Ireland. Pubs in Northern Ireland are largely identical to their counterparts in the Republic of Ireland except for the lack of spirit grocers. A side effect of \"The Troubles\" was that the lack of a tourist industry meant that a higher proportion of traditional bars have survived the wholesale refitting of Irish pub interiors in the 'English style' in the 1950s and 1960s. New Zealand sports a number of Irish pubs.",
-    "generated_question": "How can you refer to a pub in the Irish language?",
-    "generated_text": "{\n\"question\": \"How can you refer to a pub in the Irish language?\",\n\"sentence\": \"In Irish, a pub is referred to as teach tábhairne ('tavernhouse') or teach óil ('drinkinghouse').\"\n}"
-  },
-  {
-    "para_id": "squad_v2_56dff532231d4119001abf05",
-    "mode": "llm_salient",
-    "sentence": "Live music, either sessions of traditional Irish music or varieties of modern popular music, is frequently featured in the pubs of Ireland.",
-    "paragraph": "In Ireland, pubs are known for their atmosphere or \"craic\". In Irish, a pub is referred to as teach tábhairne (\"tavernhouse\") or teach óil (\"drinkinghouse\"). Live music, either sessions of traditional Irish music or varieties of modern popular music, is frequently featured in the pubs of Ireland. Pubs in Northern Ireland are largely identical to their counterparts in the Republic of Ireland except for the lack of spirit grocers. A side effect of \"The Troubles\" was that the lack of a tourist industry meant that a higher proportion of traditional bars have survived the wholesale refitting of Irish pub interiors in the 'English style' in the 1950s and 1960s. New Zealand sports a number of Irish pubs.",
-    "generated_question": "What types of live entertainment can patrons typically expect to find playing regularly inside Irish pubs?",
-    "generated_text": "{\n\"question\": \"What types of live entertainment can patrons typically expect to find playing regularly inside Irish pubs?\",\n\"sentence\": \"Live music, either sessions of traditional Irish music or varieties of modern popular music, is frequently featured in the pubs of Ireland.\"\n}"
-  },
-  {
-    "para_id": "squad_v2_56dff532231d4119001abf05",
-    "mode": "llm_salient",
-    "sentence": "Pubs in Northern Ireland are largely identical to their counterparts in the Republic of Ireland except for the lack of spirit grocers.",
-    "paragraph": "In Ireland, pubs are known for their atmosphere or \"craic\". In Irish, a pub is referred to as teach tábhairne (\"tavernhouse\") or teach óil (\"drinkinghouse\"). Live music, either sessions of traditional Irish music or varieties of modern popular music, is frequently featured in the pubs of Ireland. Pubs in Northern Ireland are largely identical to their counterparts in the Republic of Ireland except for the lack of spirit grocers. A side effect of \"The Troubles\" was that the lack of a tourist industry meant that a higher proportion of traditional bars have survived the wholesale refitting of Irish pub interiors in the 'English style' in the 1950s and 1960s. New Zealand sports a number of Irish pubs.",
-    "generated_question": "What distinguishes pubs in Northern Ireland from those in the Republic of Ireland?",
-    "generated_text": "{\n\"question\": \"What distinguishes pubs in Northern Ireland from those in the Republic of Ireland?\", \n\"sentence\": \"Pubs in Northern Ireland are largely identical to their counterparts in the Republic of Ireland except for the lack of spirit grocers.\"\n}"
+    "generated_question": "What era did historians consider Nasser to dominate politically across the Middle East?",
+    "generated_text": "{\n\"question\": \"What era did historians consider Nasser to dominate politically across the Middle East?\",\n\"sentence\": \"Historians describe Nasser as a towering political figure of the Middle East in the 20th century.\"\n}"
   },
   {
     "para_id": "squad_v2_56dff532231d4119001abf05",
     "mode": "llm_salient",
     "sentence": "A side effect of \"The Troubles\" was that the lack of a tourist industry meant that a higher proportion of traditional bars have survived the wholesale refitting of Irish pub interiors in the 'English style' in the 1950s and 1960s.",
     "paragraph": "In Ireland, pubs are known for their atmosphere or \"craic\". In Irish, a pub is referred to as teach tábhairne (\"tavernhouse\") or teach óil (\"drinkinghouse\"). Live music, either sessions of traditional Irish music or varieties of modern popular music, is frequently featured in the pubs of Ireland. Pubs in Northern Ireland are largely identical to their counterparts in the Republic of Ireland except for the lack of spirit grocers. A side effect of \"The Troubles\" was that the lack of a tourist industry meant that a higher proportion of traditional bars have survived the wholesale refitting of Irish pub interiors in the 'English style' in the 1950s and 1960s. New Zealand sports a number of Irish pubs.",
-    "generated_question": "How did 'The Troubles' influence the preservation rate of traditionally styled Irish pubs compared to those updated during the mid-20th century?",
-    "generated_text": "{\n\"question\": \"How did 'The Troubles' influence the preservation rate of traditionally styled Irish pubs compared to those updated during the mid-20th century?\",\n\"sentence\": \"A side effect of \\\"The Troubles\\\" was that the lack of a tourist industry meant that a higher proportion of traditional bars have survived the wholesale refitting of Irish pub interiors in the 'English style' in the 1950s and 1960s.\"\n}"
-  },
-  {
-    "para_id": "squad_v2_56d61c4e1c85041400946f1d",
-    "mode": "llm_salient",
-    "sentence": "The Internet was extensively used for passing information to aid rescue and recovery efforts.",
-    "paragraph": "The Internet was extensively used for passing information to aid rescue and recovery efforts. For example, the official news agency Xinhua set up an online rescue request center in order to find the blind spots of disaster recovery. After knowing that rescue helicopters had trouble landing into the epicenter area in Wenchuan, a student proposed a landing spot online and it was chosen as the first touchdown place for the helicopters[not in citation given]. Volunteers also set up several websites to help store contact information for victims and evacuees. On May 31, a rescue helicopter carrying earthquake survivors and crew members crashed in fog and turbulence in Wenchuan county. No-one survived.",
-    "generated_question": "How did volunteers utilize the internet during the post-disaster period according to their actions described?",
-    "generated_text": "{\n\"question\": \"How did volunteers utilize the internet during the post-disaster period according to their actions described?\",\n\"sentence\": \"The Internet was extensively used for passing information to aid rescue and recovery efforts.\"\n}"
-  },
-  {
-    "para_id": "squad_v2_56d61c4e1c85041400946f1d",
-    "mode": "llm_salient",
-    "sentence": "For example, the official news agency Xinhua set up an online rescue request center in order to find the blind spots of disaster recovery.",
-    "paragraph": "The Internet was extensively used for passing information to aid rescue and recovery efforts. For example, the official news agency Xinhua set up an online rescue request center in order to find the blind spots of disaster recovery. After knowing that rescue helicopters had trouble landing into the epicenter area in Wenchuan, a student proposed a landing spot online and it was chosen as the first touchdown place for the helicopters[not in citation given]. Volunteers also set up several websites to help store contact information for victims and evacuees. On May 31, a rescue helicopter carrying earthquake survivors and crew members crashed in fog and turbulence in Wenchuan county. No-one survived.",
-    "generated_question": "What initiative did the official news agency Xinhua undertake during disasters to improve relief operations?",
-    "generated_text": "{\n\"question\": \"What initiative did the official news agency Xinhua undertake during disasters to improve relief operations?\",\n\"sentence\": \"For example, the official news agency Xinhua set up an online rescue request center in order to find the blind spots of disaster recovery.\"\n}"
-  },
-  {
-    "para_id": "squad_v2_56d61c4e1c85041400946f1d",
-    "mode": "llm_salient",
-    "sentence": "After knowing that rescue helicopters had trouble landing into the epicenter area in Wenchuan, a student proposed a landing spot online and it was chosen as the first touchdown place for the helicopters[not in citation given].",
-    "paragraph": "The Internet was extensively used for passing information to aid rescue and recovery efforts. For example, the official news agency Xinhua set up an online rescue request center in order to find the blind spots of disaster recovery. After knowing that rescue helicopters had trouble landing into the epicenter area in Wenchuan, a student proposed a landing spot online and it was chosen as the first touchdown place for the helicopters[not in citation given]. Volunteers also set up several websites to help store contact information for victims and evacuees. On May 31, a rescue helicopter carrying earthquake survivors and crew members crashed in fog and turbulence in Wenchuan county. No-one survived.",
-    "generated_question": "How did volunteers contribute to improving emergency response during the aftermath of the earthquake according to their actions described?",
-    "generated_text": "{\n\"question\": \"How did volunteers contribute to improving emergency response during the aftermath of the earthquake according to their actions described?\", \n\"sentence\": \"After knowing that rescue helicopters had trouble landing into the epicenter area in Wenchuan, a student proposed a landing spot online and it was chosen as the first touchdown place for the helicopters[not in citation given].\"\n}"
-  },
-  {
-    "para_id": "squad_v2_56d61c4e1c85041400946f1d",
-    "mode": "llm_salient",
-    "sentence": "Volunteers also set up several websites to help store contact information for victims and evacuees.",
-    "paragraph": "The Internet was extensively used for passing information to aid rescue and recovery efforts. For example, the official news agency Xinhua set up an online rescue request center in order to find the blind spots of disaster recovery. After knowing that rescue helicopters had trouble landing into the epicenter area in Wenchuan, a student proposed a landing spot online and it was chosen as the first touchdown place for the helicopters[not in citation given]. Volunteers also set up several websites to help store contact information for victims and evacuees. On May 31, a rescue helicopter carrying earthquake survivors and crew members crashed in fog and turbulence in Wenchuan county. No-one survived.",
-    "generated_question": "What initiative did volunteers undertake during the relief operations following the earthquakes?",
-    "generated_text": "{\n\"question\": \"What initiative did volunteers undertake during the relief operations following the earthquakes?\",\n\"sentence\": \"Volunteers also set up several websites to help store contact information for victims and evacuees.\"\n}"
+    "generated_question": "How did 'The Troubles' influence the preservation rate of traditionally styled Irish pubs compared to those refurbished in English styles during the mid-20th century?",
+    "generated_text": "{\n\"question\": \"How did 'The Troubles' influence the preservation rate of traditionally styled Irish pubs compared to those refurbished in English styles during the mid-20th century?\",\n\"sentence\": \"A side effect of \\\"The Troubles\\\" was that the lack of a tourist industry meant that a higher proportion of traditional bars have survived the wholesale refitting of Irish pub interiors in the 'English style' in the 1950s and 1960s.\"\n}"
   },
   {
     "para_id": "squad_v2_56d61c4e1c85041400946f1d",
     "mode": "llm_salient",
     "sentence": "On May 31, a rescue helicopter carrying earthquake survivors and crew members crashed in fog and turbulence in Wenchuan county.",
     "paragraph": "The Internet was extensively used for passing information to aid rescue and recovery efforts. For example, the official news agency Xinhua set up an online rescue request center in order to find the blind spots of disaster recovery. After knowing that rescue helicopters had trouble landing into the epicenter area in Wenchuan, a student proposed a landing spot online and it was chosen as the first touchdown place for the helicopters[not in citation given]. Volunteers also set up several websites to help store contact information for victims and evacuees. On May 31, a rescue helicopter carrying earthquake survivors and crew members crashed in fog and turbulence in Wenchuan county. No-one survived.",
-    "generated_question": "What unfortunate incident occurred involving a rescue helicopter during its mission after the earthquake in Wenchuan County?",
-    "generated_text": "{\n\"question\": \"What unfortunate incident occurred involving a rescue helicopter during its mission after the earthquake in Wenchuan County?\", \n\"sentence\": \"On May 31, a rescue helicopter carrying earthquake survivors and crew members crashed in fog and turbulence in Wenchuan county.\"\n}"
-  },
-  {
-    "para_id": "squad_v2_572abec0be1ee31400cb8201",
-    "mode": "llm_salient",
-    "sentence": "In Why F A Hayek is a Conservative, British policy analyst Madsen Pirie claims Hayek mistakes the nature of the conservative outlook.",
-    "paragraph": "In Why F A Hayek is a Conservative, British policy analyst Madsen Pirie claims Hayek mistakes the nature of the conservative outlook. Conservatives, he says, are not averse to change – but like Hayek, they are highly averse to change being imposed on the social order by people in authority who think they know how to run things better. They wish to allow the market to function smoothly and give it the freedom to change and develop. It is an outlook, says Pirie, that Hayek and conservatives both share.",
-    "generated_question": "According to Madsen Pirie in 'Why F A Hayek is a Conservative', why does he believe Hayek has misunderstood conservatism?",
-    "generated_text": "{\n\"question\": \"According to Madsen Pirie in 'Why F A Hayek is a Conservative', why does he believe Hayek has misunderstood conservatism?\",\n\"sentence\": \"In Why F A Hayek is a Conservative, British policy analyst Madsen Pirie claims Hayek mistakes the nature of the conservative outlook.\"\n}"
+    "generated_question": "What unfortunate incident occurred involving a rescue helicopter during its mission after the earthquake?",
+    "generated_text": "{\n\"question\": \"What unfortunate incident occurred involving a rescue helicopter during its mission after the earthquake?\", \n\"sentence\": \"On May 31, a rescue helicopter carrying earthquake survivors and crew members crashed in fog and turbulence in Wenchuan county.\"\n}"
   },
   {
     "para_id": "squad_v2_572abec0be1ee31400cb8201",
     "mode": "llm_salient",
     "sentence": "Conservatives, he says, are not averse to change – but like Hayek, they are highly averse to change being imposed on the social order by people in authority who think they know how to run things better.",
     "paragraph": "In Why F A Hayek is a Conservative, British policy analyst Madsen Pirie claims Hayek mistakes the nature of the conservative outlook. Conservatives, he says, are not averse to change – but like Hayek, they are highly averse to change being imposed on the social order by people in authority who think they know how to run things better. They wish to allow the market to function smoothly and give it the freedom to change and develop. It is an outlook, says Pirie, that Hayek and conservatives both share.",
-    "generated_question": "What distinguishes conservatism according to Madsen Pirie's interpretation when compared to Hayek's view?",
-    "generated_text": "{\n\"question\": \"What distinguishes conservatism according to Madsen Pirie's interpretation when compared to Hayek's view?\", \n\"sentence\": \"Conservatives, he says, are not averse to change – but like Hayek, they are highly averse to change being imposed on the social order by people in authority who think they know how to run things better.\"\n}"
+    "generated_question": "What distinguishes conservatism according to Madsen Pirie regarding their stance towards changes implemented without consensus?",
+    "generated_text": "{\n\"question\": \"What distinguishes conservatism according to Madsen Pirie regarding their stance towards changes implemented without consensus?\",\n\"sentence\": \"Conservatives, he says, are not averse to change – but like Hayek, they are highly averse to change being imposed on the social order by people in authority who think they know how to run things better.\"\n}"
   },
   {
-    "para_id": "squad_v2_572abec0be1ee31400cb8201",
+    "para_id": "squad_v2_570602f875f01819005e786f",
     "mode": "llm_salient",
-    "sentence": "They wish to allow the market to function smoothly and give it the freedom to change and develop.",
-    "paragraph": "In Why F A Hayek is a Conservative, British policy analyst Madsen Pirie claims Hayek mistakes the nature of the conservative outlook. Conservatives, he says, are not averse to change – but like Hayek, they are highly averse to change being imposed on the social order by people in authority who think they know how to run things better. They wish to allow the market to function smoothly and give it the freedom to change and develop. It is an outlook, says Pirie, that Hayek and conservatives both share.",
-    "generated_question": "What does their desired approach entail regarding economic systems?",
-    "generated_text": "{\n\"question\": \"What does their desired approach entail regarding economic systems?\",\n\"sentence\": \"They wish to allow the market to function smoothly and give it the freedom to change and develop.\"\n}"
+    "sentence": "For example, the pink-footed goose Anser brachyrhynchus migrates from Iceland to Britain and neighbouring countries, whilst the dark-eyed junco Junco hyemalis migrates from subarctic and arctic climates to the contiguous United States and the American goldfinch from taiga to wintering grounds extending from the American South northwestward to Western Oregon.",
+    "paragraph": "The typical image of migration is of northern landbirds, such as swallows (Hirundinidae) and birds of prey, making long flights to the tropics. However, many Holarctic wildfowl and finch (Fringillidae) species winter in the North Temperate Zone, in regions with milder winters than their summer breeding grounds. For example, the pink-footed goose Anser brachyrhynchus migrates from Iceland to Britain and neighbouring countries, whilst the dark-eyed junco Junco hyemalis migrates from subarctic and arctic climates to the contiguous United States and the American goldfinch from taiga to wintering grounds extending from the American South northwestward to Western Oregon. Migratory routes and wintering grounds are traditional and learned by young during their first migration with their parents. Some ducks, such as the garganey Anas querquedula, move completely or partially into the tropics. The European pied flycatcher Ficedula hypoleuca also follows this migratory trend, breeding in Asia and Europe and wintering in Africa.",
+    "generated_question": "Which bird species migrate annually between vastly different climatic zones, including a journey across continents?",
+    "generated_text": "{\n\"question\": \"Which bird species migrate annually between vastly different climatic zones, including a journey across continents?\", \n\"sentence\": \"For example, the pink-footed goose Anser brachyrhynchus migrates from Iceland to Britain and neighbouring countries, whilst the dark-eyed junco Junco hyemalis migrates from subarctic and arctic climates to the contiguous United States and the American goldfinch from taiga to wintering grounds extending from the American South northwestward to"
   },
   {
-    "para_id": "squad_v2_572abec0be1ee31400cb8201",
+    "para_id": "squad_v2_572a60d8d562191400bc86a5",
     "mode": "llm_salient",
-    "sentence": "It is an outlook, says Pirie, that Hayek and conservatives both share.",
-    "paragraph": "In Why F A Hayek is a Conservative, British policy analyst Madsen Pirie claims Hayek mistakes the nature of the conservative outlook. Conservatives, he says, are not averse to change – but like Hayek, they are highly averse to change being imposed on the social order by people in authority who think they know how to run things better. They wish to allow the market to function smoothly and give it the freedom to change and develop. It is an outlook, says Pirie, that Hayek and conservatives both share.",
-    "generated_question": "What common perspective does Madsen Pirie attribute to both Friedrich Hayek and traditional conservatism regarding societal changes?",
-    "generated_text": "{\n\"question\": \"What common perspective does Madsen Pirie attribute to both Friedrich Hayek and traditional conservatism regarding societal changes?\",\n\"sentence\": \"It is an outlook, says Pirie, that Hayek and conservatives both share.\"\n}"
+    "sentence": "The weaving of such carpets originated in the nomadic cultures of central Asia (carpets being an easily transportable form of furnishing), and was eventually spread to the settled societies of Anatolia.",
+    "paragraph": "The art of carpet weaving was particularly significant in the Ottoman Empire, carpets having an immense importance both as decorative furnishings, rich in religious and other symbolism, and as a practical consideration, as it was customary to remove one's shoes in living quarters. The weaving of such carpets originated in the nomadic cultures of central Asia (carpets being an easily transportable form of furnishing), and was eventually spread to the settled societies of Anatolia. Turks used carpets, rugs and kilims not just on the floors of a room, but also as a hanging on walls and doorways, where they provided additional insulation. They were also commonly donated to mosques, which often amassed large collections of them.",
+    "generated_question": "From which regions did the tradition of carpet weaving originate before spreading to Anatolian society?",
+    "generated_text": "{\n\"question\": \"From which regions did the tradition of carpet weaving originate before spreading to Anatolian society?\",\n\"sentence\": \"The weaving of such carpets originated in the nomadic cultures of central Asia (carpets being an easily transportable form of furnishing), and was eventually spread to the settled societies of Anatolia.\"\n}"
+  },
+  {
+    "para_id": "squad_v2_572a6ceb7a1753140016af36",
+    "mode": "llm_salient",
+    "sentence": "Unemployment and idle resources are, for Keynes, caused by a lack of effective demand; for Hayek, they stem from a previous, unsustainable episode of easy money and artificially low interest rates.",
+    "paragraph": "Also in 1931, Hayek critiqued Keynes's Treatise on Money (1930) in his \"Reflections on the pure theory of Mr. J. M. Keynes\" and published his lectures at the LSE in book form as Prices and Production. Unemployment and idle resources are, for Keynes, caused by a lack of effective demand; for Hayek, they stem from a previous, unsustainable episode of easy money and artificially low interest rates. Keynes asked his friend Piero Sraffa to respond. Sraffa elaborated on the effect of inflation-induced \"forced savings\" on the capital sector and about the definition of a \"natural\" interest rate in a growing economy. Others who responded negatively to Hayek's work on the business cycle included John Hicks, Frank Knight, and Gunnar Myrdal. Kaldor later wrote that Hayek's Prices and Production had produced \"a remarkable crop of critics\" and that the total number of pages in British and American journals dedicated to the resulting debate \"could rarely have been equalled in the economic controversies of the past.\"",
+    "generated_question": "How does Hayek attribute unemployment and resource idleness differently than Keynes?",
+    "generated_text": "{\n\"question\": \"How does Hayek attribute unemployment and resource idleness differently than Keynes?\",\n\"sentence\": \"Unemployment and idle resources are, for Keynes, caused by a lack of effective demand; for Hayek, they stem from a previous, unsustainable episode of easy money and artificially low interest rates.\"\n}"
+  },
+  {
+    "para_id": "squad_v2_5730a4e0069b5314008321f7",
+    "mode": "llm_salient",
+    "sentence": "According to Nintendo, the company had sold more than 20 million SNES units in the U.",
+    "paragraph": "The rivalry between Nintendo and Sega resulted in what has been described as one of the most notable console wars in video game history, in which Sega positioned the Genesis as the \"cool\" console, with more mature titles aimed at older gamers, and edgy advertisements that occasionally attacked the competition. Nintendo however, scored an early public relations advantage by securing the first console conversion of Capcom's arcade classic Street Fighter II for SNES, which took over a year to make the transition to Genesis. Despite the Genesis's head start, much larger library of games, and lower price point, the Genesis only represented an estimated 60% of the American 16-bit console market in June 1992, and neither console could maintain a definitive lead for several years. Donkey Kong Country is said to have helped establish the SNES's market prominence in the latter years of the 16-bit generation, and for a time, maintain against the PlayStation and Saturn. According to Nintendo, the company had sold more than 20 million SNES units in the U.S. According to a 2014 Wedbush Securities report based on NPD sales data, the SNES ultimately outsold the Genesis in the U.S. market.",
+    "generated_question": "How many Super Nintendo Entertainment System (SNES) consoles did Nintendo sell according to their own reports?",
+    "generated_text": "{\n\"question\": \"How many Super Nintendo Entertainment System (SNES) consoles did Nintendo sell according to their own reports?\",\n\"sentence\": \"According to Nintendo, the company had sold more than 20 million SNES units in the U.\"\n}"
+  },
+  {
+    "para_id": "squad_v2_57272081708984140094da2f",
+    "mode": "llm_salient",
+    "sentence": "In electric power distribution, capacitors are used for power factor correction.",
+    "paragraph": "In electric power distribution, capacitors are used for power factor correction. Such capacitors often come as three capacitors connected as a three phase load. Usually, the values of these capacitors are given not in farads but rather as a reactive power in volt-amperes reactive (var). The purpose is to counteract inductive loading from devices like electric motors and transmission lines to make the load appear to be mostly resistive. Individual motor or lamp loads may have capacitors for power factor correction, or larger sets of capacitors (usually with automatic switching devices) may be installed at a load center within a building or in a large utility substation.",
+    "generated_question": "What specific electrical issue does capacitor installation aim to correct in terms of apparent resistance?",
+    "generated_text": "{\n\"question\": \"What specific electrical issue does capacitor installation aim to correct in terms of apparent resistance?\", \n\"sentence\": \"In electric power distribution, capacitors are used for power factor correction.\"\n}"
+  },
+  {
+    "para_id": "squad_v2_57272081708984140094da2f",
+    "mode": "llm_salient",
+    "sentence": "The purpose is to counteract inductive loading from devices like electric motors and transmission lines to make the load appear to be mostly resistive.",
+    "paragraph": "In electric power distribution, capacitors are used for power factor correction. Such capacitors often come as three capacitors connected as a three phase load. Usually, the values of these capacitors are given not in farads but rather as a reactive power in volt-amperes reactive (var). The purpose is to counteract inductive loading from devices like electric motors and transmission lines to make the load appear to be mostly resistive. Individual motor or lamp loads may have capacitors for power factor correction, or larger sets of capacitors (usually with automatic switching devices) may be installed at a load center within a building or in a large utility substation.",
+    "generated_question": "What is the primary function of installing capacitors in electrical systems concerning device-induced effects?",
+    "generated_text": "{\n\"question\": \"What is the primary function of installing capacitors in electrical systems concerning device-induced effects?\",\n\"sentence\": \"The purpose is to counteract inductive loading from devices like electric motors and transmission lines to make the load appear to be mostly resistive.\"\n}"
+  },
+  {
+    "para_id": "squad_v2_56de98ddcffd8e1900b4ba1e",
+    "mode": "llm_salient",
+    "sentence": "Schwarzenegger announced his candidacy in the 2003 California recall election for Governor of California on the August 6, 2003 episode of The Tonight Show with Jay Leno.",
+    "paragraph": "Schwarzenegger announced his candidacy in the 2003 California recall election for Governor of California on the August 6, 2003 episode of The Tonight Show with Jay Leno. Schwarzenegger had the most name recognition in a crowded field of candidates, but he had never held public office and his political views were unknown to most Californians. His candidacy immediately became national and international news, with media outlets dubbing him the \"Governator\" (referring to The Terminator movies, see above) and \"The Running Man\" (the name of another one of his films), and calling the recall election \"Total Recall\" (yet another movie starring Schwarzenegger). Schwarzenegger declined to participate in several debates with other recall replacement candidates, and appeared in only one debate on September 24, 2003.",
+    "generated_question": "On which television show did Arnold Schwarzenegger announce his gubernatorial campaign during the 2003 California recall election?",
+    "generated_text": "{\n\"question\": \"On which television show did Arnold Schwarzenegger announce his gubernatorial campaign during the 2003 California recall election?\",\n\"sentence\": \"Schwarzenegger announced his candidacy in the 2003 California recall election for Governor of California on the August 6, 2003 episode of The Tonight Show with Jay Leno.\"\n}"
+  },
+  {
+    "para_id": "squad_v2_56de98ddcffd8e1900b4ba1e",
+    "mode": "llm_salient",
+    "sentence": "Schwarzenegger declined to participate in several debates with other recall replacement candidates, and appeared in only one debate on September 24, 2003.",
+    "paragraph": "Schwarzenegger announced his candidacy in the 2003 California recall election for Governor of California on the August 6, 2003 episode of The Tonight Show with Jay Leno. Schwarzenegger had the most name recognition in a crowded field of candidates, but he had never held public office and his political views were unknown to most Californians. His candidacy immediately became national and international news, with media outlets dubbing him the \"Governator\" (referring to The Terminator movies, see above) and \"The Running Man\" (the name of another one of his films), and calling the recall election \"Total Recall\" (yet another movie starring Schwarzenegger). Schwarzenegger declined to participate in several debates with other recall replacement candidates, and appeared in only one debate on September 24, 2003.",
+    "generated_question": "On what date did Arnold Schwarzenegger appear in just one debate during the 2003 California recall elections?",
+    "generated_text": "{\n\"question\": \"On what date did Arnold Schwarzenegger appear in just one debate during the 2003 California recall elections?\",\n\"sentence\": \"Schwarzenegger declined to participate in several debates with other recall replacement candidates, and appeared in only one debate on September 24, 2003.\"\n}"
   }
 ]

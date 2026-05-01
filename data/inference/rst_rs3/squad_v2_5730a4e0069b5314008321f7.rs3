@@ -1,0 +1,50 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="adversative" type="multinuc" />
+			<rel name="antithesis" type="multinuc" />
+			<rel name="attribution" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="joint" type="multinuc" />
+			<rel name="mode" type="rst" />
+			<rel name="same-unit" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="23" relname="span">The rivalry between Nintendo and Sega resulted in what has been described as one of the most notable console wars in video game history,</segment>
+		<segment id="2" parent="20" relname="span">in which Sega positioned the Genesis as the "cool" console, with more mature titles</segment>
+		<segment id="3" parent="2" relname="elaboration">aimed at older gamers,</segment>
+		<segment id="4" parent="21" relname="span">and edgy advertisements</segment>
+		<segment id="5" parent="4" relname="elaboration">that occasionally attacked the competition.</segment>
+		<segment id="6" parent="25" relname="span">Nintendo however, scored an early public relations advantage</segment>
+		<segment id="7" parent="24" relname="span">by securing the first console conversion of Capcom's arcade classic Street Fighter II for SNES,</segment>
+		<segment id="8" parent="7" relname="elaboration">which took over a year to make the transition to Genesis.</segment>
+		<segment id="9" parent="27" relname="adversative">Despite the Genesis's head start, much larger library of games, and lower price point,</segment>
+		<segment id="10" parent="27" relname="joint">the Genesis only represented an estimated 60% of the American 16-bit console market in June 1992,</segment>
+		<segment id="11" parent="27" relname="joint">and neither console could maintain a definitive lead for several years.</segment>
+		<segment id="12" parent="29" relname="joint">Donkey Kong Country is said to have helped establish the SNES's market prominence in the latter years of the 16-bit generation,</segment>
+		<segment id="13" parent="29" relname="joint">and for a time, maintain against the PlayStation and Saturn.</segment>
+		<segment id="14" parent="15" relname="attribution">According to Nintendo,</segment>
+		<segment id="15" parent="31" relname="span">the company had sold more than 20 million SNES units in the U.S.</segment>
+		<segment id="16" parent="32" relname="span">According to a 2014 Wedbush Securities report</segment>
+		<segment id="17" parent="16" relname="elaboration">based on NPD sales data,</segment>
+		<segment id="18" parent="33" relname="span">the SNES ultimately outsold the Genesis in the U.S. market.</segment>
+		<group id="26" type="multinuc" parent="36" relname="joint"/>
+		<group id="23" type="span" parent="26" relname="adversative"/>
+		<group id="22" type="multinuc" parent="1" relname="elaboration"/>
+		<group id="20" type="span" parent="22" relname="same-unit"/>
+		<group id="21" type="span" parent="22" relname="same-unit"/>
+		<group id="25" type="span" parent="26" relname="adversative"/>
+		<group id="24" type="span" parent="6" relname="mode"/>
+		<group id="35" type="multinuc" parent="36" relname="joint"/>
+		<group id="30" type="multinuc" parent="35" relname="joint"/>
+		<group id="28" type="span" parent="30" relname="joint"/>
+		<group id="27" type="multinuc" parent="28" relname="span"/>
+		<group id="29" type="multinuc" parent="30" relname="joint"/>
+		<group id="34" type="multinuc" parent="35" relname="joint"/>
+		<group id="31" type="span" parent="34" relname="joint"/>
+		<group id="33" type="span" parent="34" relname="joint"/>
+		<group id="32" type="span" parent="18" relname="attribution"/>
+		<group id="36" type="multinuc"/>
+	</body>
+</rst>

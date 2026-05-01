@@ -1,0 +1,44 @@
+<rst>
+	<header>
+		<relations>
+			<rel name="adversative" type="multinuc" />
+			<rel name="antithesis" type="multinuc" />
+			<rel name="context" type="rst" />
+			<rel name="elaboration" type="rst" />
+			<rel name="joint" type="multinuc" />
+			<rel name="restatement" type="rst" />
+			<rel name="same-unit" type="multinuc" />
+		</relations>
+	</header>
+	<body>
+		<segment id="1" parent="17" relname="span">The typical image of migration is of northern landbirds, such as swallows</segment>
+		<segment id="2" parent="1" relname="restatement">(Hirundinidae)</segment>
+		<segment id="3" parent="18" relname="same-unit">and birds of prey, making long flights to the tropics.</segment>
+		<segment id="4" parent="19" relname="span">However, many Holarctic wildfowl and finch</segment>
+		<segment id="5" parent="4" relname="restatement">(Fringillidae)</segment>
+		<segment id="6" parent="20" relname="same-unit">species winter in the North Temperate Zone, in regions with milder winters than their summer breeding grounds.</segment>
+		<segment id="7" parent="22" relname="joint">For example, the pink-footed goose Anser brachyrhynchus migrates from Iceland to Britain and neighbouring countries,</segment>
+		<segment id="8" parent="21" relname="span">whilst the dark-eyed junco Junco hyemalis migrates from subarctic and arctic climates to the contiguous United States and the American goldfinch from taiga to wintering grounds</segment>
+		<segment id="9" parent="8" relname="elaboration">extending from the American South northwestward to Western Oregon.</segment>
+		<segment id="10" parent="25" relname="joint">Migratory routes and wintering grounds are traditional</segment>
+		<segment id="11" parent="25" relname="joint">and learned by young during their first migration with their parents.</segment>
+		<segment id="12" parent="29" relname="joint">Some ducks, such as the garganey Anas querquedula, move completely or partially into the tropics.</segment>
+		<segment id="13" parent="28" relname="span">The European pied flycatcher Ficedula hypoleuca also follows this migratory trend,</segment>
+		<segment id="14" parent="27" relname="joint">breeding in Asia and Europe</segment>
+		<segment id="15" parent="27" relname="joint">and wintering in Africa.</segment>
+		<group id="26" type="span" parent="30" relname="span"/>
+		<group id="24" type="multinuc" parent="26" relname="span"/>
+		<group id="18" type="multinuc" parent="24" relname="adversative"/>
+		<group id="17" type="span" parent="18" relname="same-unit"/>
+		<group id="23" type="span" parent="24" relname="adversative"/>
+		<group id="20" type="multinuc" parent="23" relname="span"/>
+		<group id="19" type="span" parent="20" relname="same-unit"/>
+		<group id="22" type="multinuc" parent="20" relname="elaboration"/>
+		<group id="21" type="span" parent="22" relname="joint"/>
+		<group id="25" type="multinuc" parent="24" relname="context"/>
+		<group id="29" type="multinuc" parent="26" relname="elaboration"/>
+		<group id="28" type="span" parent="29" relname="joint"/>
+		<group id="27" type="multinuc" parent="13" relname="elaboration"/>
+		<group id="30" type="span"/>
+	</body>
+</rst>

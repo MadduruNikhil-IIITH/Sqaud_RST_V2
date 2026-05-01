@@ -76,50 +76,62 @@ def analyze_importance():
     scaler = joblib.load(os.path.join(MODEL_DIR, 'scaler.joblib'))
     ohe = joblib.load(os.path.join(MODEL_DIR, 'ohe.joblib'))
     
-    num_feats = scaler.transform(val_df[num_cols])
-    cat_feats = ohe.transform(val_df[cat_cols])
-    engineered_base = np.hstack([num_feats, cat_feats]).astype('float32')
-    labels = val_df['label'].values
+    # RST Indices
+    rst_num_cols = ['rst_tree_depth', 'span_importance_score']
+    rst_cat_cols = ['rst_relation', 'rst_nuclearity']
     
-    feature_dim = engineered_base.shape[1]
+    def split_features(subset_df, sc, oh):
+        num_all = sc.transform(subset_df[num_cols])
+        cat_all = oh.transform(subset_df[cat_cols])
+        
+        rst_num = num_all[:, :2]
+        other_num = num_all[:, 2:]
+        
+        feature_names = oh.get_feature_names_out(cat_cols)
+        rst_ohe_mask = [any(name.startswith(c) for c in rst_cat_cols) for name in feature_names]
+        rst_cat = cat_all[:, rst_ohe_mask]
+        other_cat = cat_all[:, [not m for m in rst_ohe_mask]]
+        
+        return np.hstack([rst_num, rst_cat]), np.hstack([other_num, other_cat])
+
+    X_rst_base, X_other_base = split_features(val_df, scaler, ohe)
+    
+    rst_dim = X_rst_base.shape[1]
+    other_dim = X_other_base.shape[1]
+    
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-    
-    model = HybridRoBERTa(feature_dim, model_name=MODEL_NAME)
+    model = HybridRoBERTa(rst_dim=rst_dim, other_dim=other_dim, model_name=MODEL_NAME)
     model.load_state_dict(torch.load(os.path.join(MODEL_DIR, "best_model.pt"), map_location=DEVICE), strict=False)
     model.to(DEVICE)
     model.eval()
 
-    def get_f1(engineered_data):
-        ds = HybridDataset(texts, engineered_data, labels, tokenizer)
+    def get_f1(r_feats, o_feats):
+        ds = HybridDataset(texts, r_feats, o_feats, labels, tokenizer)
         loader = DataLoader(ds, batch_size=16, shuffle=False)
         preds = []
         with torch.no_grad():
             for batch in loader:
                 input_ids = batch['input_ids'].to(DEVICE)
                 attention_mask = batch['attention_mask'].to(DEVICE)
-                eng = batch['engineered'].to(DEVICE)
-                logits = model(input_ids, attention_mask, eng)
+                r_batch = batch['rst_feats'].to(DEVICE)
+                o_batch = batch['other_feats'].to(DEVICE)
+                logits = model(input_ids, attention_mask, r_batch, o_batch)
                 preds.extend(torch.argmax(logits, dim=1).cpu().numpy())
         return f1_score(labels, preds, average='macro')
 
     print("Calculating baseline Macro F1...")
-    baseline_f1 = get_f1(engineered_base)
+    baseline_f1 = get_f1(X_rst_base, X_other_base)
     print(f"Baseline Macro F1: {baseline_f1:.4f}")
 
     importance_results = []
 
     # Analyze Numerical Features
-    for i, col in enumerate(tqdm(num_cols, desc="Analyzing Numerical Features")):
+    for col in tqdm(num_cols, desc="Analyzing Numerical Features"):
         temp_df = val_df.copy()
-        # Permute only this column
         temp_df[col] = np.random.permutation(temp_df[col].values)
+        r_p, o_p = split_features(temp_df, scaler, ohe)
         
-        # Re-scale and re-stack
-        n_feats = scaler.transform(temp_df[num_cols])
-        c_feats = ohe.transform(temp_df[cat_cols])
-        engineered_permuted = np.hstack([n_feats, c_feats]).astype('float32')
-        
-        perm_f1 = get_f1(engineered_permuted)
+        perm_f1 = get_f1(r_p, o_p)
         importance = baseline_f1 - perm_f1
         importance_results.append({'feature': col, 'importance': importance})
 
@@ -127,12 +139,9 @@ def analyze_importance():
     for col in tqdm(cat_cols, desc="Analyzing Categorical Features"):
         temp_df = val_df.copy()
         temp_df[col] = np.random.permutation(temp_df[col].values)
+        r_p, o_p = split_features(temp_df, scaler, ohe)
         
-        n_feats = scaler.transform(temp_df[num_cols])
-        c_feats = ohe.transform(temp_df[cat_cols])
-        engineered_permuted = np.hstack([n_feats, c_feats]).astype('float32')
-        
-        perm_f1 = get_f1(engineered_permuted)
+        perm_f1 = get_f1(r_p, o_p)
         importance = baseline_f1 - perm_f1
         importance_results.append({'feature': col, 'importance': importance})
 

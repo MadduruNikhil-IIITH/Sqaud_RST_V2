@@ -1,0 +1,260 @@
+{
+  "zero_shot": [
+    {
+      "para_id": "squad_v2_572abec0be1ee31400cb8201",
+      "generated_question": "What does British policy analyst Madsen Pirie claim about Friedrich Hayek's understanding of conservatism?",
+      "gold_question": "Pirie believes Hayek to be a conservative for what reason?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The question asks for a specific claim made by Madsen Pirie about Friedrich Hayek's understanding of conservatism. The paragraph provides the necessary information, stating that Pirie claims Hayek mistakes the nature of the conservative outlook, but they both share an aversion to imposed change and a desire for market freedom.",
+      "summary_comment": "The question is clear, fully answerable, and logically valid, making it a high-quality SQuAD-style question."
+    },
+    {
+      "para_id": "squad_v2_56dff532231d4119001abf05",
+      "generated_question": "What cultural phenomenon contributes to more traditional Irish bar establishments surviving compared to those with English-styled refurbishments?",
+      "gold_question": "What country outside Ireland is known for having Irish pubs?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 4
+      },
+      "overall_quality": 5,
+      "reasoning": "The question asks about a cultural phenomenon that has led to the survival of traditional Irish bar establishments. The paragraph mentions 'The Troubles' as a side effect that resulted in a higher proportion of traditional bars surviving due to the lack of a tourist industry, which implies that the cultural phenomenon in question is related to the historical conflict known as 'The Troubles'.",
+      "summary_comment": "The question is clear, fully answerable, and logically valid, with a slight increase in difficulty due to the specific historical reference required."
+    },
+    {
+      "para_id": "squad_v2_5727ebe03acd2414000deff0",
+      "generated_question": "What were some criticisms leveled against Gamal Abdel Nasser by historians regarding his leadership style?",
+      "gold_question": "What century did Nasser rule in?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The generated question asks for specific criticisms of Gamal Abdel Nasser's leadership style. The paragraph provides a list of criticisms, such as authoritarianism, human rights violations, populist relationship with citizens, and failure to establish civil institutions. This information is directly answerable from the paragraph, making the question fully answerable. The question is reasonable and valid as it seeks specific information provided in the text. It is clear and natural, as it directly references the content of the paragraph. The difficulty is moderate, as it requires the reader to identify and understand the criticisms mentioned. Overall, the question is of high quality for a SQuAD-style evaluation.",
+      "summary_comment": "The question is clear, fully answerable, and of high quality."
+    },
+    {
+      "para_id": "squad_v2_572a60d8d562191400bc86a5",
+      "generated_question": "How did Turkish people incorporate their use of carpets beyond floor coverings?",
+      "gold_question": "Kilims were used by Turks to provide insulation where?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The paragraph provides information on the use of carpets in Turkish culture, mentioning that they were used not just on the floors but also as wall hangings and door hangings, and as insulation. The question asks about the incorporation of carpets beyond floor coverings, which is directly answerable from the paragraph.",
+      "summary_comment": "The question is clear, directly answerable, and of reasonable difficulty."
+    },
+    {
+      "para_id": "squad_v2_56d61c4e1c85041400946f1d",
+      "generated_question": "What innovative method did volunteers use during the post-disaster period following the Sichuan earthquake?",
+      "gold_question": "What kind of information were websites set up to store?",
+      "scores": {
+        "answerability": 3,
+        "reasonableness": 3,
+        "clarity": 2,
+        "difficulty": 3
+      },
+      "overall_quality": 3,
+      "reasoning": "The question asks for an innovative method used by volunteers, which is not directly stated in the paragraph. The paragraph does mention that volunteers set up websites to store contact information, but it does not specify what other methods were used, if any. Therefore, the question is partially answerable, but the information provided in the paragraph is not sufficient to fully answer the question. The question is somewhat reasonable, as it relates to the context of the paragraph, but it is unclear and incomplete because it does not specify what is meant by 'innovative method' and the paragraph does not provide enough details to answer it fully. The question is not trivial, but it is also not too hard, as it requires some inference from the given information. The overall quality of the question is mixed/average, as it is related to the context but lacks clarity and completeness.",
+      "summary_comment": "The question is related to the context but lacks clarity and completeness."
+    },
+    {
+      "para_id": "squad_v2_570602f875f01819005e786f",
+      "generated_question": "Which bird mentioned has a complete tropical movement for part of its life cycle?",
+      "gold_question": "Where do the dark-eyed junco migrate?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The paragraph discusses the migratory patterns of various bird species, including the European pied flycatcher, which is mentioned to have a complete tropical movement for part of its life cycle. The question asks specifically about this bird, which is directly mentioned in the text, making the question fully answerable. The question is clear, concise, and natural, as it directly refers to the information provided in the paragraph. It is not trivial, as it requires the reader to recall specific details from the text, but it is not too difficult, as the answer is explicitly stated. Overall, the question is of high quality for a SQuAD-style evaluation.",
+      "summary_comment": "The question is clear, concise, and directly answerable from the provided paragraph, making it a high-quality SQuAD-style question."
+    }
+  ],
+  "hybrid_salient": [
+    {
+      "para_id": "squad_v2_572abec0be1ee31400cb8201",
+      "generated_question": "What does Madsen Pirie claim about Friedrich von Hayek’s understanding of conservatism?",
+      "gold_question": "Pirie believes Hayek to be a conservative for what reason?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The generated question asks for Madsen Pirie's claim about Hayek's understanding of conservatism. The paragraph provides the necessary information, stating that Pirie claims Hayek mistakes the nature of the conservative outlook, which is that conservatives are not averse to change but are against imposed change by authority. The question is clear, directly related to the content of the paragraph, and fully answerable from the given text.",
+      "summary_comment": "The question is clear, directly answerable, and of high quality."
+    },
+    {
+      "para_id": "squad_v2_56dff532231d4119001abf05",
+      "generated_question": "What types of live entertainment can patrons typically enjoy while visiting pubs in Ireland?",
+      "gold_question": "What country outside Ireland is known for having Irish pubs?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The question asks for the types of live entertainment available in Irish pubs, which is directly mentioned in the paragraph. The paragraph states that live music, including traditional Irish music and modern popular music, is frequently featured in Irish pubs. This information is clear and directly answerable from the text provided.",
+      "summary_comment": "The question is clear, directly answerable, and of good quality."
+    },
+    {
+      "para_id": "squad_v2_5727ebe03acd2414000deff0",
+      "generated_question": "What were two key areas where Gamal Abdel Nasser made significant contributions during his leadership?",
+      "gold_question": "What century did Nasser rule in?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 4
+      },
+      "overall_quality": 5,
+      "reasoning": "The question asks for two key areas of Nasser's contributions, which can be inferred from the paragraph. The paragraph mentions social justice, Arab unity, modernization policies, and anti-imperialist efforts, as well as large industrial projects like the Aswan Dam and Helwan City. These are two distinct areas where Nasser made significant contributions.",
+      "summary_comment": "The question is clear, answerable, and of good quality, asking for two specific areas of Nasser's contributions."
+    },
+    {
+      "para_id": "squad_v2_572a60d8d562191400bc86a5",
+      "generated_question": "What cultural practices contributed to the significance of carpet weaving in daily life during the time of the Ottoman Empire?",
+      "gold_question": "Kilims were used by Turks to provide insulation where?",
+      "scores": {
+        "answerability": 3,
+        "reasonableness": 5,
+        "clarity": 3,
+        "difficulty": 3
+      },
+      "overall_quality": 3,
+      "reasoning": "The paragraph mentions that carpet weaving originated in the nomadic cultures of central Asia and was eventually spread to the settled societies of Anatolia. However, it does not provide specific details on how the nomadic cultures influenced the spread, making the question partially answerable but unclear or incomplete.",
+      "summary_comment": "The question is somewhat reasonable and clear but lacks specific details in the paragraph, making it partially answerable."
+    },
+    {
+      "para_id": "squad_v2_56d61c4e1c85041400946f1d",
+      "generated_question": "What initiative did the official news agency Xinhua undertake during disasters to improve search efficiency?",
+      "gold_question": "What kind of information were websites set up to store?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The question is asking for a specific initiative taken by Xinhua, which is mentioned in the paragraph. The paragraph provides the necessary information to answer the question directly.",
+      "summary_comment": "The question is clear, directly answerable, and of good quality."
+    },
+    {
+      "para_id": "squad_v2_570602f875f01819005e786f",
+      "generated_question": "Where do many Holarctic wildfowl and finch species typically spend the winter season?",
+      "gold_question": "Where do the dark-eyed junco migrate?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The paragraph provides information about the migration patterns of Holarctic wildfowl and finch species, specifically mentioning that they winter in the North Temperate Zone. The question asks for the typical wintering location of these species, which is directly mentioned in the paragraph, making it fully answerable. The question is clear, concise, and natural, and it is not trivial as it requires the reader to understand the context of migration patterns. The overall quality of the question is high as it is well-constructed and relevant to the provided text.",
+      "summary_comment": "The question is clear, directly answerable from the text, and of high quality."
+    }
+  ],
+  "llm_salient": [
+    {
+      "para_id": "squad_v2_572abec0be1ee31400cb8201",
+      "generated_question": "What distinguishes conservatism according to Madsen Pirie regarding their stance towards changes implemented by authorities?",
+      "gold_question": "Pirie believes Hayek to be a conservative for what reason?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The question asks for a specific aspect of conservatism as described by Madsen Pirie, which is clearly mentioned in the paragraph. The paragraph states that conservatives are not against change but are against imposed changes by authorities, which directly answers the question. The question is clear, concise, and directly related to the content of the paragraph, making it fully answerable and logically valid. It is not trivial, as it requires understanding the nuanced difference between conservative and Hayek's views on change, and it is not too hard, as the answer is directly available in the text. Overall, the question is of high quality for a SQuAD-style evaluation.",
+      "summary_comment": "The question is clear, concise, and directly answerable from the provided paragraph, making it a high-quality SQuAD-style question."
+    },
+    {
+      "para_id": "squad_v2_56dff532231d4119001abf05",
+      "generated_question": "What term describes the unique social ambiance found typically inside Irish pubs?",
+      "gold_question": "What country outside Ireland is known for having Irish pubs?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 4
+      },
+      "overall_quality": 5,
+      "reasoning": "The question asks for a term that describes the social ambiance in Irish pubs, which is directly mentioned in the paragraph as 'craic'. The question is clear, concise, and directly answerable from the given text. It is not trivial, as it requires the reader to understand the cultural context of Irish pubs. The question is challenging but fair, as it tests the reader's comprehension and ability to recall specific information from the paragraph.",
+      "summary_comment": "The question is clear, concise, and directly answerable from the paragraph, making it an excellent SQuAD-style question."
+    },
+    {
+      "para_id": "squad_v2_5727ebe03acd2414000deff0",
+      "generated_question": "What major infrastructure project did President Nasser initiate during his tenure?",
+      "gold_question": "What century did Nasser rule in?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The generated question asks for a specific major infrastructure project initiated by President Nasser. The paragraph provides the information needed to answer this question, mentioning the Aswan Dam and Helwan City as examples of large industrial projects launched during his presidency. Therefore, the question is fully answerable from the given paragraph.",
+      "summary_comment": "The question is clear, directly answerable, and relevant to the provided paragraph."
+    },
+    {
+      "para_id": "squad_v2_572a60d8d562191400bc86a5",
+      "generated_question": "What dual purposes did carpets serve during their time in the Ottoman Empire?",
+      "gold_question": "Kilims were used by Turks to provide insulation where?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The paragraph clearly states that carpets in the Ottoman Empire served two main purposes: as decorative furnishings rich in religious and other symbolism, and as a practical consideration for removing shoes in living quarters. This information directly answers the question about the dual purposes of carpets during their time in the Ottoman Empire.",
+      "summary_comment": "The question is clear, directly answerable from the paragraph, and of moderate difficulty."
+    },
+    {
+      "para_id": "squad_v2_56d61c4e1c85041400946f1d",
+      "generated_question": "How did volunteers contribute to improving the efficiency of emergency response after learning about difficulties faced by rescuers entering the epicenter?",
+      "gold_question": "What kind of information were websites set up to store?",
+      "scores": {
+        "answerability": 3,
+        "reasonableness": 5,
+        "clarity": 4,
+        "difficulty": 3
+      },
+      "overall_quality": 3,
+      "reasoning": "The paragraph mentions that the official news agency Xinhua set up an online rescue request center to find the blind spots of disaster recovery, which implies that it contributed to the rescue efforts. However, the paragraph does not provide specific details on how the center contributed, so the question is partially answerable but lacks detail.",
+      "summary_comment": "The question is clear but lacks detail, making it only partially answerable."
+    },
+    {
+      "para_id": "squad_v2_570602f875f01819005e786f",
+      "generated_question": "Where do many Holarctic wildfowl and finch species typically spend the winter season?",
+      "gold_question": "Where do the dark-eyed junco migrate?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The paragraph provides information about the migration patterns of Holarctic wildfowl and finch species, specifically mentioning that they winter in the North Temperate Zone. The question asks for the typical wintering location of these species, which is directly mentioned in the paragraph, making it fully answerable. The question is clear, concise, and natural, and it is not trivial as it requires the reader to understand the context of migration patterns. The overall quality of the question is high as it is well-constructed and relevant to the provided text.",
+      "summary_comment": "The question is clear, directly answerable from the text, and of high quality."
+    }
+  ]
+}

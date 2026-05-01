@@ -2,7 +2,8 @@
 hybrid_inference.py
 
 Module for running Hybrid RoBERTa-based salience inference on a feature table CSV.
-Loads pre-trained model weights from the models directory.
+V2: Uses Top-K probability ranking instead of binary argmax classification.
+Guarantees K sentences selected per paragraph (no more "total miss" failures).
 """
 import torch
 import pandas as pd
@@ -14,6 +15,10 @@ from torch.utils.data import DataLoader
 import joblib
 from tqdm import tqdm
 import numpy as np
+
+# Number of sentences to select per paragraph
+TOP_K = 2
+
 
 def run_hybrid_inference(feature_table_csv: Path, output_csv: Path, model_path: str = "models/hybrid_roberta/best_model.pt"):
     df = pd.read_csv(feature_table_csv)
@@ -80,53 +85,107 @@ def run_hybrid_inference(feature_table_csv: Path, output_csv: Path, model_path: 
     ohe = joblib.load(model_dir / 'ohe.joblib')
 
     # Sequential inference: update prev_sent_label for each sentence
+    # RST Indices (Must match training splitting exactly)
+    rst_num_cols = ['rst_tree_depth', 'span_importance_score']
+    rst_cat_cols = ['rst_relation', 'rst_nuclearity']
+
+    # Sequential inference: update prev_sent_label for each sentence
     from copy import deepcopy
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"[Hybrid Inference] Using device: {device}")
-    model = HybridRoBERTa(feature_dim=scaler.transform(df[num_cols]).shape[1] + ohe.transform(df[cat_cols]).shape[1])
+    
+    # Calculate dimensions
+    dummy_num = scaler.transform(df.head(1)[num_cols])
+    dummy_cat = ohe.transform(df.head(1)[cat_cols])
+    
+    # RST dimensions
+    rst_num_dim = 2 # rst_tree_depth, span_importance_score
+    feature_names = ohe.get_feature_names_out(cat_cols)
+    rst_ohe_mask = [any(name.startswith(c) for c in rst_cat_cols) for name in feature_names]
+    rst_cat_dim = sum(rst_ohe_mask)
+    
+    rst_dim = rst_num_dim + rst_cat_dim
+    other_dim = (dummy_num.shape[1] - rst_num_dim) + (dummy_cat.shape[1] - rst_cat_dim)
+    
+    model = HybridRoBERTa(rst_dim=rst_dim, other_dim=other_dim)
     state_dict = torch.load(model_path, map_location=device, weights_only=True)
     model.load_state_dict(state_dict, strict=False)
     model.to(device)
     model.eval()
-    all_preds = []
+
+    # Store probabilities instead of hard predictions
+    all_probs = []
     df = df.sort_values(["para_id", "sent_idx"]).reset_index(drop=True)
     prev_label_map = {}  # para_id -> prev_sent_label
     tokenizer = AutoTokenizer.from_pretrained("roberta-base")
+
     for idx, row in tqdm(df.iterrows(), total=len(df), desc="Hybrid Sequential Inference"):
         para_id = row["para_id"] if "para_id" in row else 0
-        # Set prev_sent_label for this row
         if para_id not in prev_label_map:
             prev_sent_label = 'missing'
         else:
             prev_sent_label = str(prev_label_map[para_id])
+        
         row_cpy = deepcopy(row)
         row_cpy["prev_sent_label"] = prev_sent_label
-        # Prepare features for this row using DataFrame to preserve column names
+        
+        # Prepare features
         num_df = pd.DataFrame([row_cpy[num_cols].values], columns=num_cols)
         cat_df = pd.DataFrame([[row_cpy[c] for c in cat_cols]], columns=cat_cols)
-        num = scaler.transform(num_df)
-        cat = ohe.transform(cat_df)
-        feats = np.hstack([num, cat]).astype('float32')
+        num_all = scaler.transform(num_df)
+        cat_all = ohe.transform(cat_df)
+        
+        # Split features
+        rst_feats = np.hstack([num_all[:, :2], cat_all[:, rst_ohe_mask]]).astype('float32')
+        other_feats = np.hstack([num_all[:, 2:], cat_all[:, [not m for m in rst_ohe_mask]]]).astype('float32')
+        
         text = row_cpy['full_text']
         labels = [0]  # Dummy label
-        dataset = HybridDataset([text], feats, labels, tokenizer)
+        dataset = HybridDataset([text], rst_feats, other_feats, labels, tokenizer)
         loader = DataLoader(dataset, batch_size=1, shuffle=False)
         with torch.no_grad():
             for batch in loader:
-                input_ids = batch["input_ids"].to(device, non_blocking=True)
-                attention_mask = batch["attention_mask"].to(device, non_blocking=True)
-                engineered = batch["engineered"].to(device, non_blocking=True)
-                logits = model(input_ids, attention_mask, engineered)
+                input_ids = batch["input_ids"].to(device)
+                attention_mask = batch["attention_mask"].to(device)
+                rst_batch = batch["rst_feats"].to(device)
+                other_batch = batch["other_feats"].to(device)
+                logits = model(input_ids, attention_mask, rst_batch, other_batch)
+                
+                probs = torch.softmax(logits, dim=1)
+                salient_prob = probs[0, 1].detach().cpu().item()
+                all_probs.append(salient_prob)
+                
                 pred = torch.argmax(logits, dim=1).detach().cpu().item()
-                all_preds.append(pred)
                 prev_label_map[para_id] = pred
-    df["hybrid_salient"] = all_preds
+
+    df["hybrid_prob"] = all_probs
+
+    # V2: Top-K selection per paragraph (guarantees K sentences per paragraph)
+    df["hybrid_salient"] = 0
+    for para_id in df["para_id"].unique():
+        mask = df["para_id"] == para_id
+        para_probs = df.loc[mask, "hybrid_prob"]
+        n_sentences = len(para_probs)
+        # Select top-K, but don't exceed the number of sentences
+        k = min(TOP_K, n_sentences)
+        top_k_idx = para_probs.nlargest(k).index
+        df.loc[top_k_idx, "hybrid_salient"] = 1
+
+    # Report selection stats
+    pos_rate = df["hybrid_salient"].mean()
+    per_para = df.groupby("para_id")["hybrid_salient"].sum()
+    print(f"\n[Hybrid Inference V2] Top-K={TOP_K} selection results:")
+    print(f"  Positive rate: {pos_rate:.1%} ({df['hybrid_salient'].sum()}/{len(df)} sentences)")
+    print(f"  Per-paragraph selections: {dict(per_para)}")
+    print(f"  Probability range: [{df['hybrid_prob'].min():.4f}, {df['hybrid_prob'].max():.4f}]")
+
     # Remove 'split' and 'gold_salient' columns if present before saving
     for col in ["split", "gold_salient"]:
         if col in df.columns:
             df = df.drop(columns=[col])
     df.to_csv(output_csv, index=False)
-    print(f"Hybrid RoBERTa-based salience tagging complete. Output saved to {output_csv}")
+    print(f"Hybrid RoBERTa Top-K salience tagging complete. Output saved to {output_csv}")
+
 
 if __name__ == "__main__":
     import argparse

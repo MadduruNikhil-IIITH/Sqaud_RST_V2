@@ -53,8 +53,9 @@ def run_inference_pipeline(sample_size=10, output_base_dir="data/inference"):
     eval_hybrid_output = output_dir / "hybrid_eval_report.json"
     eval_llm_output = output_dir / "llm_eval_report.json"
 
-    # # 1. Sampling
-    # run_stage("sample_dataset", {``
+    # --- PRE-PROCESSED STAGES (Commented out to resume salience stages) ---
+    # 1. Sampling
+    # run_stage("sample_dataset", {
     #     "sample-manifest": sample_manifest_path,
     #     "sample-size": sample_size
     # })
@@ -90,7 +91,7 @@ def run_inference_pipeline(sample_size=10, output_base_dir="data/inference"):
     #     "rst-rs3-root": str(rst_rs3_root)
     # })
 
-    # # 6. Feature Extraction (with hardcoded PsychFormers args)
+    # # 6. Feature Extraction
     # run_stage("feature_extraction", {
     #     "sentence-table": sentence_table_path,
     #     "gold-table": gold_output_csv,
@@ -112,7 +113,7 @@ def run_inference_pipeline(sample_size=10, output_base_dir="data/inference"):
     #     "split-val": 0.15,
     #     "split-test": 0.15
     # })
-
+# 
     print("[Pipeline] Core pipeline stages complete. Running Hybrid and LLM inference...")
 
     # 8. Hybrid Inference
@@ -150,6 +151,6 @@ def run_inference_pipeline(sample_size=10, output_base_dir="data/inference"):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="Run the inference pipeline end-to-end.")
-    parser.add_argument("--sample-size", type=int, default=2, help="Number of paragraphs to sample (default: 2 for smoke test)")
+    parser.add_argument("--sample-size", type=int, default=15, help="Number of paragraphs to sample")
     args = parser.parse_args()
     run_inference_pipeline(sample_size=args.sample_size)

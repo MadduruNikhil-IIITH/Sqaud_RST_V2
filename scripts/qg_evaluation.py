@@ -35,13 +35,13 @@ def main():
 
     for mode, file_path in MODES.items():
         print(f"\n[Stage 1] Evaluating {mode} (automatic metrics)...")
-        gen_dict = load_generated_questions(file_path)
+        gen_dict = load_generated_questions(file_path, gold_dict=gold_dict)
         auto_metrics, n = evaluate_stage1(gold_dict, gen_dict)
         results_stage1.append({"Mode": mode, **auto_metrics, "Num_Questions": n})
 
     for mode, file_path in MODES.items():
         print(f"\n[Stage 2] Evaluating {mode} (QA + LLM-as-a-Judge)...")
-        gen_dict = load_generated_questions(file_path)
+        gen_dict = load_generated_questions(file_path, gold_dict=gold_dict)
         summary, per_question = evaluate_stage2(
             gold_dict, gen_dict, qa_pipe, llm_judge, JUDGE_MODEL
         )

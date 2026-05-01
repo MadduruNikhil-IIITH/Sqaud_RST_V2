@@ -1,8 +1,8 @@
 {
   "dataset_version": "squad_v2",
   "seed": 42,
-  "sample_size_original": 5,
-  "sample_size_cleaned": 4,
+  "sample_size_original": 15,
+  "sample_size_cleaned": 10,
   "source": "huggingface_datasets_squad_v2",
   "cleaning_applied": true,
   "paragraphs": [
@@ -80,6 +80,126 @@
             ],
             "answer_start": [
               85
+            ]
+          },
+          "is_impossible": false
+        }
+      ]
+    },
+    {
+      "para_id": "squad_v2_570602f875f01819005e786f",
+      "title": "Bird_migration",
+      "context": "The typical image of migration is of northern landbirds, such as swallows (Hirundinidae) and birds of prey, making long flights to the tropics. However, many Holarctic wildfowl and finch (Fringillidae) species winter in the North Temperate Zone, in regions with milder winters than their summer breeding grounds. For example, the pink-footed goose Anser brachyrhynchus migrates from Iceland to Britain and neighbouring countries, whilst the dark-eyed junco Junco hyemalis migrates from subarctic and arctic climates to the contiguous United States and the American goldfinch from taiga to wintering grounds extending from the American South northwestward to Western Oregon. Migratory routes and wintering grounds are traditional and learned by young during their first migration with their parents. Some ducks, such as the garganey Anas querquedula, move completely or partially into the tropics. The European pied flycatcher Ficedula hypoleuca also follows this migratory trend, breeding in Asia and Europe and wintering in Africa.",
+      "qas": [
+        {
+          "id": "570602f875f01819005e786f",
+          "question": "Where do the dark-eyed junco migrate?",
+          "answers": {
+            "text": [
+              "arctic climates to the contiguous United States"
+            ],
+            "answer_start": [
+              500
+            ]
+          },
+          "is_impossible": false
+        }
+      ]
+    },
+    {
+      "para_id": "squad_v2_572a60d8d562191400bc86a5",
+      "title": "Ottoman_Empire",
+      "context": "The art of carpet weaving was particularly significant in the Ottoman Empire, carpets having an immense importance both as decorative furnishings, rich in religious and other symbolism, and as a practical consideration, as it was customary to remove one's shoes in living quarters. The weaving of such carpets originated in the nomadic cultures of central Asia (carpets being an easily transportable form of furnishing), and was eventually spread to the settled societies of Anatolia. Turks used carpets, rugs and kilims not just on the floors of a room, but also as a hanging on walls and doorways, where they provided additional insulation. They were also commonly donated to mosques, which often amassed large collections of them.",
+      "qas": [
+        {
+          "id": "572a60d8d562191400bc86a5",
+          "question": "Kilims were used by Turks to provide insulation where?",
+          "answers": {
+            "text": [
+              "walls and doorways"
+            ],
+            "answer_start": [
+              580
+            ]
+          },
+          "is_impossible": false
+        }
+      ]
+    },
+    {
+      "para_id": "squad_v2_572a6ceb7a1753140016af36",
+      "title": "Friedrich_Hayek",
+      "context": "Also in 1931, Hayek critiqued Keynes's Treatise on Money (1930) in his \"Reflections on the pure theory of Mr. J. M. Keynes\" and published his lectures at the LSE in book form as Prices and Production. Unemployment and idle resources are, for Keynes, caused by a lack of effective demand; for Hayek, they stem from a previous, unsustainable episode of easy money and artificially low interest rates. Keynes asked his friend Piero Sraffa to respond. Sraffa elaborated on the effect of inflation-induced \"forced savings\" on the capital sector and about the definition of a \"natural\" interest rate in a growing economy. Others who responded negatively to Hayek's work on the business cycle included John Hicks, Frank Knight, and Gunnar Myrdal. Kaldor later wrote that Hayek's Prices and Production had produced \"a remarkable crop of critics\" and that the total number of pages in British and American journals dedicated to the resulting debate \"could rarely have been equalled in the economic controversies of the past.\"",
+      "qas": [
+        {
+          "id": "572a6ceb7a1753140016af36",
+          "question": "Who did Keynes turn to for assistance in arguing his point to Hayek?",
+          "answers": {
+            "text": [
+              "Piero Sraffa"
+            ],
+            "answer_start": [
+              423
+            ]
+          },
+          "is_impossible": false
+        }
+      ]
+    },
+    {
+      "para_id": "squad_v2_5730a4e0069b5314008321f7",
+      "title": "Super_Nintendo_Entertainment_System",
+      "context": "The rivalry between Nintendo and Sega resulted in what has been described as one of the most notable console wars in video game history, in which Sega positioned the Genesis as the \"cool\" console, with more mature titles aimed at older gamers, and edgy advertisements that occasionally attacked the competition. Nintendo however, scored an early public relations advantage by securing the first console conversion of Capcom's arcade classic Street Fighter II for SNES, which took over a year to make the transition to Genesis. Despite the Genesis's head start, much larger library of games, and lower price point, the Genesis only represented an estimated 60% of the American 16-bit console market in June 1992, and neither console could maintain a definitive lead for several years. Donkey Kong Country is said to have helped establish the SNES's market prominence in the latter years of the 16-bit generation, and for a time, maintain against the PlayStation and Saturn. According to Nintendo, the company had sold more than 20 million SNES units in the U.S. According to a 2014 Wedbush Securities report based on NPD sales data, the SNES ultimately outsold the Genesis in the U.S. market.",
+      "qas": [
+        {
+          "id": "5730a4e0069b5314008321f7",
+          "question": "How much of the US 16-bit console market did the Genesis have in summer 1992?",
+          "answers": {
+            "text": [
+              "60%"
+            ],
+            "answer_start": [
+              656
+            ]
+          },
+          "is_impossible": false
+        }
+      ]
+    },
+    {
+      "para_id": "squad_v2_57272081708984140094da2f",
+      "title": "Capacitor",
+      "context": "In electric power distribution, capacitors are used for power factor correction. Such capacitors often come as three capacitors connected as a three phase load. Usually, the values of these capacitors are given not in farads but rather as a reactive power in volt-amperes reactive (var). The purpose is to counteract inductive loading from devices like electric motors and transmission lines to make the load appear to be mostly resistive. Individual motor or lamp loads may have capacitors for power factor correction, or larger sets of capacitors (usually with automatic switching devices) may be installed at a load center within a building or in a large utility substation.",
+      "qas": [
+        {
+          "id": "57272081708984140094da2f",
+          "question": "How are power factor correction capacitors sometimes installed?",
+          "answers": {
+            "text": [
+              "at a load center within a building"
+            ],
+            "answer_start": [
+              609
+            ]
+          },
+          "is_impossible": false
+        }
+      ]
+    },
+    {
+      "para_id": "squad_v2_56de98ddcffd8e1900b4ba1e",
+      "title": "Arnold_Schwarzenegger",
+      "context": "Schwarzenegger announced his candidacy in the 2003 California recall election for Governor of California on the August 6, 2003 episode of The Tonight Show with Jay Leno. Schwarzenegger had the most name recognition in a crowded field of candidates, but he had never held public office and his political views were unknown to most Californians. His candidacy immediately became national and international news, with media outlets dubbing him the \"Governator\" (referring to The Terminator movies, see above) and \"The Running Man\" (the name of another one of his films), and calling the recall election \"Total Recall\" (yet another movie starring Schwarzenegger). Schwarzenegger declined to participate in several debates with other recall replacement candidates, and appeared in only one debate on September 24, 2003.",
+      "qas": [
+        {
+          "id": "56de98ddcffd8e1900b4ba1e",
+          "question": "How many debates did Schwarzenegger participate in before the 2003 California recall election?",
+          "answers": {
+            "text": [
+              "one"
+            ],
+            "answer_start": [
+              549
             ]
           },
           "is_impossible": false

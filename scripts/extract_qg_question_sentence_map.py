@@ -105,7 +105,7 @@ def main():
         with open(output_path, 'w', encoding='utf-8') as fout:
             json.dump(extracted_results, fout, ensure_ascii=False, indent=2)
 
-        print(f"[INFO] Extracted {len(extracted_results)} questions for mode '{mode}' → {output_path}")
+        print(f"[INFO] Extracted {len(extracted_results)} questions for mode '{mode}' -> {output_path}")
 
 
 if __name__ == "__main__":

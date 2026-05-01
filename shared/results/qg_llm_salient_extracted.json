@@ -1,0 +1,74 @@
+[
+  {
+    "para_id": "squad_v2_5727ebe03acd2414000deff0",
+    "mode": "llm_salient",
+    "sentence": "Nasser remains an iconic figure in the Arab world, particularly for his strides towards social justice and Arab unity, modernization policies, and anti-imperialist efforts.",
+    "paragraph": "Nasser remains an iconic figure in the Arab world, particularly for his strides towards social justice and Arab unity, modernization policies, and anti-imperialist efforts. His presidency also encouraged and coincided with an Egyptian cultural boom, and launched large industrial projects, including the Aswan Dam and Helwan City. Nasser's detractors criticize his authoritarianism, his government's human rights violations, his populist relationship with the citizenry, and his failure to establish civil institutions, blaming his legacy for future dictatorial governance in Egypt. Historians describe Nasser as a towering political figure of the Middle East in the 20th century.",
+    "generated_question": "What were two key areas where Gamal Abdel Nasser made significant contributions during his leadership?",
+    "generated_text": "{\n\"question\": \"What were two key areas where Gamal Abdel Nasser made significant contributions during his leadership?\", \n\"sentence\": \"Nasser remains an iconic figure in the Arab world, particularly for his strides towards social justice and Arab unity, modernization policies, and anti-imperialist efforts.\"\n}"
+  },
+  {
+    "para_id": "squad_v2_5727ebe03acd2414000deff0",
+    "mode": "llm_salient",
+    "sentence": "His presidency also encouraged and coincided with an Egyptian cultural boom, and launched large industrial projects, including the Aswan Dam and Helwan City.",
+    "paragraph": "Nasser remains an iconic figure in the Arab world, particularly for his strides towards social justice and Arab unity, modernization policies, and anti-imperialist efforts. His presidency also encouraged and coincided with an Egyptian cultural boom, and launched large industrial projects, including the Aswan Dam and Helwan City. Nasser's detractors criticize his authoritarianism, his government's human rights violations, his populist relationship with the citizenry, and his failure to establish civil institutions, blaming his legacy for future dictatorial governance in Egypt. Historians describe Nasser as a towering political figure of the Middle East in the 20th century.",
+    "generated_question": "What major infrastructure project did President Nasser initiate during his tenure?",
+    "generated_text": "{\n\"question\": \"What major infrastructure project did President Nasser initiate during his tenure?\", \n\"sentence\": \"His presidency also encouraged and coincided with an Egyptian cultural boom, and launched large industrial projects, including the Aswan Dam and Helwan City.\"\n}"
+  },
+  {
+    "para_id": "squad_v2_56dff532231d4119001abf05",
+    "mode": "llm_salient",
+    "sentence": "In Ireland, pubs are known for their atmosphere or \"craic\".",
+    "paragraph": "In Ireland, pubs are known for their atmosphere or \"craic\". In Irish, a pub is referred to as teach tábhairne (\"tavernhouse\") or teach óil (\"drinkinghouse\"). Live music, either sessions of traditional Irish music or varieties of modern popular music, is frequently featured in the pubs of Ireland. Pubs in Northern Ireland are largely identical to their counterparts in the Republic of Ireland except for the lack of spirit grocers. A side effect of \"The Troubles\" was that the lack of a tourist industry meant that a higher proportion of traditional bars have survived the wholesale refitting of Irish pub interiors in the 'English style' in the 1950s and 1960s. New Zealand sports a number of Irish pubs.",
+    "generated_question": "What term describes the unique social ambiance found typically inside Irish pubs?",
+    "generated_text": "{\n\"question\": \"What term describes the unique social ambiance found typically inside Irish pubs?\",\n\"sentence\": \"In Ireland, pubs are known for their atmosphere or \\\"craic\\\".\"\n}"
+  },
+  {
+    "para_id": "squad_v2_56dff532231d4119001abf05",
+    "mode": "llm_salient",
+    "sentence": "A side effect of \"The Troubles\" was that the lack of a tourist industry meant that a higher proportion of traditional bars have survived the wholesale refitting of Irish pub interiors in the 'English style' in the 1950s and 1960s.",
+    "paragraph": "In Ireland, pubs are known for their atmosphere or \"craic\". In Irish, a pub is referred to as teach tábhairne (\"tavernhouse\") or teach óil (\"drinkinghouse\"). Live music, either sessions of traditional Irish music or varieties of modern popular music, is frequently featured in the pubs of Ireland. Pubs in Northern Ireland are largely identical to their counterparts in the Republic of Ireland except for the lack of spirit grocers. A side effect of \"The Troubles\" was that the lack of a tourist industry meant that a higher proportion of traditional bars have survived the wholesale refitting of Irish pub interiors in the 'English style' in the 1950s and 1960s. New Zealand sports a number of Irish pubs.",
+    "generated_question": "How did 'The Troubles' influence the preservation of original interior designs compared to those adopted during England's mid-20th-century refurbishment trend?",
+    "generated_text": "{\n\"question\": \"How did 'The Troubles' influence the preservation of original interior designs compared to those adopted during England's mid-20th-century refurbishment trend?\",\n\"sentence\": \"A side effect of \\\"The Troubles\\\" was that the lack of a tourist industry meant that a higher proportion of traditional bars have survived the wholesale refitting of Irish pub interiors in the 'English style' in the 1950s and 1960s.\"\n}"
+  },
+  {
+    "para_id": "squad_v2_56d61c4e1c85041400946f1d",
+    "mode": "llm_salient",
+    "sentence": "After knowing that rescue helicopters had trouble landing into the epicenter area in Wenchuan, a student proposed a landing spot online and it was chosen as the first touchdown place for the helicopters[not in citation given].",
+    "paragraph": "The Internet was extensively used for passing information to aid rescue and recovery efforts. For example, the official news agency Xinhua set up an online rescue request center in order to find the blind spots of disaster recovery. After knowing that rescue helicopters had trouble landing into the epicenter area in Wenchuan, a student proposed a landing spot online and it was chosen as the first touchdown place for the helicopters[not in citation given]. Volunteers also set up several websites to help store contact information for victims and evacuees. On May 31, a rescue helicopter carrying earthquake survivors and crew members crashed in fog and turbulence in Wenchuan county. No-one survived.",
+    "generated_question": "How did volunteers contribute to improving the efficiency of emergency response after learning about difficulties faced by rescuers entering the epicenter?",
+    "generated_text": "{\n\"question\": \"How did volunteers contribute to improving the efficiency of emergency response after learning about difficulties faced by rescuers entering the epicenter?\", \n\"sentence\": \"After knowing that rescue helicopters had trouble landing into the epicenter area in Wenchuan, a student proposed a landing spot online and it was chosen as the first touchdown place for the helicopters[not in citation given].\"\n}"
+  },
+  {
+    "para_id": "squad_v2_572abec0be1ee31400cb8201",
+    "mode": "llm_salient",
+    "sentence": "Conservatives, he says, are not averse to change – but like Hayek, they are highly averse to change being imposed on the social order by people in authority who think they know how to run things better.",
+    "paragraph": "In Why F A Hayek is a Conservative, British policy analyst Madsen Pirie claims Hayek mistakes the nature of the conservative outlook. Conservatives, he says, are not averse to change – but like Hayek, they are highly averse to change being imposed on the social order by people in authority who think they know how to run things better. They wish to allow the market to function smoothly and give it the freedom to change and develop. It is an outlook, says Pirie, that Hayek and conservatives both share.",
+    "generated_question": "What distinguishes conservatism according to Madsen Pirie regarding their stance towards changes implemented by authorities?",
+    "generated_text": "{\n\"question\": \"What distinguishes conservatism according to Madsen Pirie regarding their stance towards changes implemented by authorities?\",\n\"sentence\": \"Conservatives, he says, are not averse to change – but like Hayek, they are highly averse to change being imposed on the social order by people in authority who think they know how to run things better.\"\n}"
+  },
+  {
+    "para_id": "squad_v2_570602f875f01819005e786f",
+    "mode": "llm_salient",
+    "sentence": "However, many Holarctic wildfowl and finch (Fringillidae) species winter in the North Temperate Zone, in regions with milder winters than their summer breeding grounds.",
+    "paragraph": "The typical image of migration is of northern landbirds, such as swallows (Hirundinidae) and birds of prey, making long flights to the tropics. However, many Holarctic wildfowl and finch (Fringillidae) species winter in the North Temperate Zone, in regions with milder winters than their summer breeding grounds. For example, the pink-footed goose Anser brachyrhynchus migrates from Iceland to Britain and neighbouring countries, whilst the dark-eyed junco Junco hyemalis migrates from subarctic and arctic climates to the contiguous United States and the American goldfinch from taiga to wintering grounds extending from the American South northwestward to Western Oregon. Migratory routes and wintering grounds are traditional and learned by young during their first migration with their parents. Some ducks, such as the garganey Anas querquedula, move completely or partially into the tropics. The European pied flycatcher Ficedula hypoleuca also follows this migratory trend, breeding in Asia and Europe and wintering in Africa.",
+    "generated_question": "Where do many Holarctic wildfowl and finch species typically spend the winter season?",
+    "generated_text": "{\n\"question\": \"Where do many Holarctic wildfowl and finch species typically spend the winter season?\", \n\"sentence\": \"However, many Holarctic wildfowl and finch (Fringillidae) species winter in the North Temperate Zone, in regions with milder winters than their summer breeding grounds.\"\n}"
+  },
+  {
+    "para_id": "squad_v2_572a60d8d562191400bc86a5",
+    "mode": "llm_salient",
+    "sentence": "The art of carpet weaving was particularly significant in the Ottoman Empire, carpets having an immense importance both as decorative furnishings, rich in religious and other symbolism, and as a practical consideration, as it was customary to remove one's shoes in living quarters.",
+    "paragraph": "The art of carpet weaving was particularly significant in the Ottoman Empire, carpets having an immense importance both as decorative furnishings, rich in religious and other symbolism, and as a practical consideration, as it was customary to remove one's shoes in living quarters. The weaving of such carpets originated in the nomadic cultures of central Asia (carpets being an easily transportable form of furnishing), and was eventually spread to the settled societies of Anatolia. Turks used carpets, rugs and kilims not just on the floors of a room, but also as a hanging on walls and doorways, where they provided additional insulation. They were also commonly donated to mosques, which often amassed large collections of them.",
+    "generated_question": "What dual purposes did carpets serve during their time in the Ottoman Empire?",
+    "generated_text": "{\n\"question\": \"What dual purposes did carpets serve during their time in the Ottoman Empire?\", \n\"sentence\": \"The art of carpet weaving was particularly significant in the Ottoman Empire, carpets having an immense importance both as decorative furnishings, rich in religious and other symbolism, and as a practical consideration, as it was customary to remove one's shoes in living quarters.\"\n}"
+  },
+  {
+    "para_id": "squad_v2_572a60d8d562191400bc86a5",
+    "mode": "llm_salient",
+    "sentence": "They were also commonly donated to mosques, which often amassed large collections of them.",
+    "paragraph": "The art of carpet weaving was particularly significant in the Ottoman Empire, carpets having an immense importance both as decorative furnishings, rich in religious and other symbolism, and as a practical consideration, as it was customary to remove one's shoes in living quarters. The weaving of such carpets originated in the nomadic cultures of central Asia (carpets being an easily transportable form of furnishing), and was eventually spread to the settled societies of Anatolia. Turks used carpets, rugs and kilims not just on the floors of a room, but also as a hanging on walls and doorways, where they provided additional insulation. They were also commonly donated to mosques, which often amassed large collections of them.",
+    "generated_question": "Where did people frequently donate their woven textiles due to its significance?",
+    "generated_text": "{\n\"question\": \"Where did people frequently donate their woven textiles due to its significance?\", \n\"sentence\": \"They were also commonly donated to mosques, which often amassed large collections of them.\"\n}"
+  }
+]

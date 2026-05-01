@@ -1,9 +1,51 @@
 {
   "zero_shot": [
     {
+      "para_id": "squad_v2_56de98ddcffd8e1900b4ba1e",
+      "generated_question": "What nickname was given to Arnold Schwarzenegger during the 2003 California recall election due to its association with both 'Terminator' film series?",
+      "gold_question": "How many debates did Schwarzenegger participate in before the 2003 California recall election?",
+      "scores": {
+        "answerability": 4,
+        "reasonableness": 4,
+        "clarity": 3,
+        "difficulty": 3
+      },
+      "overall_quality": 4,
+      "reasoning": "The question is asking for a nickname associated with Schwarzenegger, which is mentioned in the paragraph. However, the question is phrased in a way that might be slightly confusing, as it could be interpreted as asking for a nickname from a specific film rather than the general association with the 'Terminator' series.",
+      "summary_comment": "The question is mostly clear but could be slightly confusing."
+    },
+    {
       "para_id": "squad_v2_56d61c4e1c85041400946f1d",
-      "generated_question": "What innovative method did volunteers use during the post-earthquake period following the Sichuan quake to assist with locating suitable areas for rescuers?",
+      "generated_question": "What initiative did China's official news agency take following the Sichuan earthquakes regarding search-and-rescue operations?",
       "gold_question": "What kind of information were websites set up to store?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The question asks for a specific initiative taken by China's official news agency, which is clearly mentioned in the paragraph. The answerability is high as the paragraph provides the necessary information. The question is reasonable and valid as it directly relates to the content of the paragraph. It is clear and natural, as it is phrased in a straightforward manner. The difficulty is moderate, as it requires the reader to identify and understand the specific initiative mentioned. Overall, the question is of high quality for a SQuAD-style evaluation.",
+      "summary_comment": "The question is clear, directly answerable, and of high quality."
+    },
+    {
+      "para_id": "squad_v2_572a6ceb7a1753140016af36",
+      "generated_question": "What were some key criticisms made against Friedrich Hayek’s 'Prices and Production' regarding its analysis of unemployment?",
+      "gold_question": "Who did Keynes turn to for assistance in arguing his point to Hayek?",
+      "scores": {
+        "answerability": 2,
+        "reasonableness": 5,
+        "clarity": 4,
+        "difficulty": 3
+      },
+      "overall_quality": 3,
+      "reasoning": "The generated question asks for specific criticisms of Hayek's 'Prices and Production' regarding unemployment, which is not directly answered in the paragraph. The paragraph does mention that Hayek's work was critiqued by others, but it does not provide details on the nature of these criticisms. Therefore, the question is not fully answerable from the given paragraph. However, the paragraph does provide some context about the debate and mentions that Hayek's work was critiqued by Keynes, Sraffa, Hicks, Knight, and Myrdal, which partially answers the question but lacks detail on the criticisms themselves.",
+      "summary_comment": "The question is partially answerable but lacks detail on the specific criticisms of Hayek's work."
+    },
+    {
+      "para_id": "squad_v2_572abec0be1ee31400cb8201",
+      "generated_question": "What does British policy analyst Madsen Pirie argue about Friedrich Hayek's understanding of conservatism?",
+      "gold_question": "Pirie believes Hayek to be a conservative for what reason?",
       "scores": {
         "answerability": 5,
         "reasonableness": 5,
@@ -11,12 +53,12 @@
         "difficulty": 4
       },
       "overall_quality": 5,
-      "reasoning": "The question is about the innovative method used by volunteers, which is mentioned in the paragraph. The paragraph provides a clear example of the method, making the question fully answerable. The question is logical, valid, and natural, and it is clear and concise. It is challenging but fair, as it requires the reader to understand the context and extract specific information. Overall, the question is of high quality for a SQuAD-style evaluation.",
-      "summary_comment": "The question is clear, concise, and fully answerable from the paragraph, making it an excellent SQuAD-style question."
+      "reasoning": "The question is asking for a specific argument made by Madsen Pirie regarding Hayek's understanding of conservatism. The paragraph provides the necessary information, stating that Pirie claims Hayek mistakes the nature of the conservative outlook. The question is clear and directly related to the content of the paragraph, making it fully answerable. The question is also logical and valid, as it pertains to the comparison between Hayek's and conservatives' views on change and authority. It is clear and concise, and the difficulty is fair given the context of the paragraph.",
+      "summary_comment": "The question is clear, concise, and directly answerable from the paragraph, making it a high-quality SQuAD-style question."
     },
     {
       "para_id": "squad_v2_56dff532231d4119001abf05",
-      "generated_question": "How does live music contribute to the unique atmosphere often associated with pubs in Ireland?",
+      "generated_question": "What cultural influence led to many traditional Irish bars surviving changes during The Troubles?",
       "gold_question": "What country outside Ireland is known for having Irish pubs?",
       "scores": {
         "answerability": 5,
@@ -25,8 +67,50 @@
         "difficulty": 3
       },
       "overall_quality": 5,
-      "reasoning": "The question asks about the role of live music in creating the unique atmosphere of Irish pubs, which is directly related to the information provided in the paragraph. The paragraph states that live music, both traditional and modern, is frequently featured in Irish pubs, which implies its contribution to the atmosphere.",
-      "summary_comment": "The question is clear, directly answerable from the paragraph, and logically valid."
+      "reasoning": "The question asks about the cultural influence that led to the survival of traditional Irish bars during The Troubles. The paragraph provides the necessary information, stating that the lack of a tourist industry during The Troubles meant that a higher proportion of traditional bars survived. This directly answers the question, making it fully answerable from the paragraph.",
+      "summary_comment": "The question is clear, fully answerable, and logically valid, with a reasonable level of difficulty."
+    },
+    {
+      "para_id": "squad_v2_572a60d8d562191400bc86a5",
+      "generated_question": "How did Turkish society utilize carpets beyond floor coverings for decoration or utility?",
+      "gold_question": "Kilims were used by Turks to provide insulation where?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The paragraph provides information on the use of carpets in Turkish society beyond floor coverings, mentioning their use as wall hangings and door hangings, as well as their role in providing insulation. The question directly asks about these uses, which are clearly stated in the paragraph, making it fully answerable. The answer is logical and valid, as it is based on the given information. The question is clear and concise, directly reflecting the content of the paragraph. It is not trivial, as it requires the reader to understand the specific uses of carpets mentioned. Overall, the question is of high quality for a SQuAD-style evaluation.",
+      "summary_comment": "The question is clear, directly answerable, and of high quality for SQuAD-style evaluation."
+    },
+    {
+      "para_id": "squad_v2_57272081708984140094da2f",
+      "generated_question": "What unit do engineers typically use instead of farads when specifying the value of capacitors designed for power factor correction?",
+      "gold_question": "How are power factor correction capacitors sometimes installed?",
+      "scores": {
+        "answerability": 3,
+        "reasonableness": 3,
+        "clarity": 2,
+        "difficulty": 3
+      },
+      "overall_quality": 3,
+      "reasoning": "The question is asking for a unit of measurement, which is mentioned in the paragraph. However, the question is phrased in a way that might confuse the reader, as it could be interpreted as asking for a unit of capacitance rather than the unit used for specifying capacitors in power factor correction. The paragraph does provide the answer, but the phrasing of the question could lead to ambiguity.",
+      "summary_comment": "The question is somewhat answerable but could be clearer and more concise."
+    },
+    {
+      "para_id": "squad_v2_570602f875f01819005e786f",
+      "generated_question": "Which bird species mentioned migrate between vastly different climatic zones for seasonal habitation?",
+      "gold_question": "Where do the dark-eyed junco migrate?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The question asks for a specific bird species that migrates between vastly different climatic zones. The paragraph provides information about various bird species and their migratory patterns, including the dark-eyed junco, which migrates from subarctic and arctic climates to the contiguous United States, indicating a migration between vastly different climatic zones. Therefore, the question is fully answerable from the given paragraph.",
+      "summary_comment": "The question is clear, fully answerable, and logically valid, making it an excellent SQuAD-style question."
     },
     {
       "para_id": "squad_v2_5727ebe03acd2414000deff0",
@@ -43,24 +127,38 @@
       "summary_comment": "The question is mostly answerable and reasonable, but it could be more specific to fully utilize the information provided in the paragraph."
     },
     {
-      "para_id": "squad_v2_572abec0be1ee31400cb8201",
-      "generated_question": "What does British policy analyst Madsen Pirie argue about Friedrich Hayek's understanding of conservatism?",
-      "gold_question": "Pirie believes Hayek to be a conservative for what reason?",
+      "para_id": "squad_v2_5730a4e0069b5314008321f7",
+      "generated_question": "What factors contributed to the Super Nintendo Entertainment System (SNES) maintaining its dominance despite having fewer copies available compared to the Sega Genesis?",
+      "gold_question": "How much of the US 16-bit console market did the Genesis have in summer 1992?",
       "scores": {
-        "answerability": 5,
-        "reasonableness": 5,
-        "clarity": 5,
-        "difficulty": 4
+        "answerability": 2,
+        "reasonableness": 3,
+        "clarity": 2,
+        "difficulty": 3
       },
-      "overall_quality": 5,
-      "reasoning": "The question is asking for a specific argument made by Madsen Pirie regarding Hayek's understanding of conservatism. The paragraph provides the necessary information, stating that Pirie claims Hayek mistakes the nature of the conservative outlook. The question is clear and directly related to the content of the paragraph, making it fully answerable. The question is also logical and valid, as it pertains to the comparison between Hayek's and conservatives' views on change and authority. It is clear and concise, and the difficulty is fair given the context of the paragraph.",
-      "summary_comment": "The question is clear, concise, and directly answerable from the paragraph, making it a high-quality SQuAD-style question."
+      "overall_quality": 2,
+      "reasoning": "The question asks about factors contributing to the SNES's dominance, which is not directly answered in the paragraph. The paragraph does mention the SNES outselling the Genesis and having a larger library of games, but it does not provide a detailed analysis of the factors that led to its dominance. Therefore, the question is partially answerable, but the information provided is incomplete and unclear.",
+      "summary_comment": "The question is partially answerable but lacks clarity and completeness."
     }
   ],
   "hybrid_salient": [
     {
+      "para_id": "squad_v2_56de98ddcffd8e1900b4ba1e",
+      "generated_question": "On which television show did Arnold Schwarzenegger announce his gubernatorial campaign during the 2003 California recall election?",
+      "gold_question": "How many debates did Schwarzenegger participate in before the 2003 California recall election?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The question asks for the specific television show where Arnold Schwarzenegger announced his candidacy. The paragraph provides the name of the show, 'The Tonight Show with Jay Leno,' which directly answers the question. The question is clear, concise, and directly answerable from the given paragraph. It is not trivial, as it requires the reader to locate a specific piece of information within the text. The overall quality of the question is high as it meets the criteria for a good SQuAD-style question.",
+      "summary_comment": "The question is clear, concise, and directly answerable from the paragraph, making it a high-quality SQuAD-style question."
+    },
+    {
       "para_id": "squad_v2_56d61c4e1c85041400946f1d",
-      "generated_question": "How did volunteers utilize the internet during the post-disaster period following the earthquakes?",
+      "generated_question": "What initiative did the official news agency Xinhua undertake during disasters to enhance relief operations?",
       "gold_question": "What kind of information were websites set up to store?",
       "scores": {
         "answerability": 5,
@@ -69,22 +167,92 @@
         "difficulty": 3
       },
       "overall_quality": 5,
-      "reasoning": "The generated question asks about the role of the internet in rescue and recovery efforts, which is directly related to the information provided in the paragraph. The paragraph mentions the use of the internet for passing information, setting up an online rescue request center, and storing contact information for victims and evacuees. However, the question is broad and could be interpreted in various ways, such as the specific actions taken or the overall impact of the internet on the efforts. The paragraph does not provide a detailed explanation of the role, but it does give enough context to answer the question partially.",
-      "summary_comment": "The question is clear, answerable, and relevant to the paragraph, but it could be more specific to improve the depth of the answer."
+      "reasoning": "The question asks for a specific initiative taken by the news agency Xinhua, which is clearly mentioned in the paragraph. The answerability is high as the paragraph provides the necessary information. The question is reasonable and valid as it directly relates to the content of the paragraph. It is clear and natural, as it is phrased in a straightforward manner. The difficulty is moderate, as it requires the reader to identify and understand the specific initiative mentioned. Overall, the quality of the question is excellent for a SQuAD-style question.",
+      "summary_comment": "The question is clear, directly answerable from the paragraph, and of high quality."
     },
     {
-      "para_id": "squad_v2_56dff532231d4119001abf05",
-      "generated_question": "How does New Zealand reflect its cultural connection through establishments similar to those found in Ireland?",
-      "gold_question": "What country outside Ireland is known for having Irish pubs?",
+      "para_id": "squad_v2_572a6ceb7a1753140016af36",
+      "generated_question": "How did economists like Kaldor view the impact of Hayek's 'Prices and Production', particularly regarding its influence compared to historical debates?",
+      "gold_question": "Who did Keynes turn to for assistance in arguing his point to Hayek?",
       "scores": {
-        "answerability": 3,
+        "answerability": 2,
         "reasonableness": 5,
-        "clarity": 2,
+        "clarity": 4,
         "difficulty": 3
       },
       "overall_quality": 3,
-      "reasoning": "The generated question asks about the cultural connection reflected in New Zealand through establishments similar to those in Ireland. The paragraph mentions that New Zealand has a number of Irish pubs, which indicates a cultural connection. However, the question is not specific about what aspect of the cultural connection is being asked about, making it somewhat unclear and incomplete.",
-      "summary_comment": "The question is somewhat answerable and reasonable, but lacks clarity and specificity."
+      "reasoning": "The generated question asks about the impact of Hayek's 'Prices and Production' and its influence compared to historical debates, which is a topic mentioned in the paragraph. However, the paragraph does not provide a direct comparison of the impact of Hayek's work to historical debates, making the question only partially answerable. The paragraph does mention that Kaldor wrote about the debate, but it does not detail Kaldor's view on the impact. Therefore, the question is not fully answerable from the given paragraph.",
+      "summary_comment": "The question is clear and reasonable but is only partially answerable as the paragraph does not provide a direct comparison of the impact of Hayek's work to historical debates."
+    },
+    {
+      "para_id": "squad_v2_572abec0be1ee31400cb8201",
+      "generated_question": "According to Madsen Pirie in 'Why F A Hayek is a Conservative', why does he believe Friedrich Hayek misinterprets conservatism?",
+      "gold_question": "Pirie believes Hayek to be a conservative for what reason?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The question asks for the reason Madsen Pirie believes Hayek misinterprets conservatism. The paragraph provides the answer by stating that Pirie claims Hayek mistakes the nature of the conservative outlook, specifically that conservatives are not averse to change but are against imposed change by authority, which aligns with Hayek's views on market freedom.",
+      "summary_comment": "The question is clear, fully answerable, and logically valid, with a reasonable level of difficulty."
+    },
+    {
+      "para_id": "squad_v2_56dff532231d4119001abf05",
+      "generated_question": "How does New Zealand reflect its cultural connection through hospitality establishments?",
+      "gold_question": "What country outside Ireland is known for having Irish pubs?",
+      "scores": {
+        "answerability": 2,
+        "reasonableness": 4,
+        "clarity": 3,
+        "difficulty": 3
+      },
+      "overall_quality": 3,
+      "reasoning": "The question asks about the cultural connection reflected through hospitality establishments in New Zealand, specifically Irish pubs. The paragraph mentions that New Zealand has a number of Irish pubs, which indicates a cultural connection to Ireland. However, the question is not directly answerable from the paragraph as it does not provide specific details about the cultural connection or how it is reflected through hospitality establishments.",
+      "summary_comment": "The question is somewhat reasonable and clear, but it is not fully answerable from the paragraph and is of average difficulty."
+    },
+    {
+      "para_id": "squad_v2_572a60d8d562191400bc86a5",
+      "generated_question": "How did Turkish people utilize their textiles beyond floor coverings according to traditional practices?",
+      "gold_question": "Kilims were used by Turks to provide insulation where?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The paragraph discusses the various uses of textiles in Turkish culture, specifically mentioning that carpets, rugs, and kilims were used not only as floor coverings but also as wall hangings and door hangings, providing additional insulation. This information directly answers the question about how Turkish people utilized their textiles beyond floor coverings according to traditional practices.",
+      "summary_comment": "The question is clear, directly answerable from the paragraph, and provides a good challenge without being too difficult."
+    },
+    {
+      "para_id": "squad_v2_57272081708984140094da2f",
+      "generated_question": "What is the primary reason behind installing capacitors in electrical systems?",
+      "gold_question": "How are power factor correction capacitors sometimes installed?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 4
+      },
+      "overall_quality": 5,
+      "reasoning": "The question is asking for the primary reason for installing capacitors, which is directly mentioned in the paragraph. The question is clear, concise, and natural, and it is challenging but fair for the context.",
+      "summary_comment": "The question is clear, concise, and directly answerable from the paragraph."
+    },
+    {
+      "para_id": "squad_v2_570602f875f01819005e786f",
+      "generated_question": "Where do many Holarctic wildfowl and finch species typically spend the winter season?",
+      "gold_question": "Where do the dark-eyed junco migrate?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The paragraph provides information about the migration patterns of Holarctic wildfowl and finch species, specifically mentioning that they winter in the North Temperate Zone. The question asks for the typical wintering location of these species, which is directly mentioned in the paragraph, making it fully answerable. The question is clear, concise, and natural, and it is not trivial as it requires the reader to understand the context of migration patterns. The overall quality of the question is high as it is well-constructed and relevant to the provided text.",
+      "summary_comment": "The question is clear, directly answerable from the text, and of high quality."
     },
     {
       "para_id": "squad_v2_5727ebe03acd2414000deff0",
@@ -101,39 +269,53 @@
       "summary_comment": "The question is clear, fully answerable, and of high quality for SQuAD-style evaluation."
     },
     {
-      "para_id": "squad_v2_572abec0be1ee31400cb8201",
-      "generated_question": "According to Madsen Pirie in 'Why F A Hayek is a Conservative', why does he believe Hayek has misunderstood conservatism?",
-      "gold_question": "Pirie believes Hayek to be a conservative for what reason?",
+      "para_id": "squad_v2_5730a4e0069b5314008321f7",
+      "generated_question": "What percentage did the Genesis represent of the American 16-bit console market share according to estimates made around its release date?",
+      "gold_question": "How much of the US 16-bit console market did the Genesis have in summer 1992?",
       "scores": {
-        "answerability": 5,
-        "reasonableness": 5,
-        "clarity": 5,
-        "difficulty": 3
-      },
-      "overall_quality": 5,
-      "reasoning": "The question asks for the reason Madsen Pirie believes Hayek has misunderstood conservatism. The paragraph provides the necessary information, stating that Pirie claims Hayek mistakes the nature of the conservative outlook, specifically that conservatives are not averse to change but are against it being imposed by authority. This directly answers the question, making it fully answerable from the paragraph.",
-      "summary_comment": "The question is clear, fully answerable, and logically valid, with a reasonable level of difficulty."
-    }
-  ],
-  "llm_salient": [
-    {
-      "para_id": "squad_v2_56d61c4e1c85041400946f1d",
-      "generated_question": "How did volunteers utilize the internet during the post-disaster period according to their actions described?",
-      "gold_question": "What kind of information were websites set up to store?",
-      "scores": {
-        "answerability": 3,
-        "reasonableness": 5,
+        "answerability": 2,
+        "reasonableness": 3,
         "clarity": 3,
         "difficulty": 3
       },
       "overall_quality": 3,
-      "reasoning": "The generated question asks about the specific ways volunteers used the internet during the post-disaster period. The paragraph mentions that volunteers set up websites to help store contact information for victims and evacuees, but it does not provide detailed actions or methods used by the volunteers. Therefore, the question is partially answerable, but the information is incomplete and unclear.",
-      "summary_comment": "The question is somewhat reasonable and clear, but it is not fully answerable from the paragraph due to missing or ambiguous information."
+      "reasoning": "The question is asking for a percentage, but the paragraph only provides a relative comparison (60% of the market). The answerability is low because the exact percentage is not given. The question is somewhat reasonable but requires an assumption. It is clear but not concise, as it could be phrased more directly. The difficulty is moderate, as it requires the reader to infer the answer. Overall, the question is of average quality but could be improved.",
+      "summary_comment": "The question is somewhat clear but requires an assumption, making it less than ideal for SQuAD-style evaluation."
+    }
+  ],
+  "llm_salient": [
+    {
+      "para_id": "squad_v2_56de98ddcffd8e1900b4ba1e",
+      "generated_question": "On what date did Arnold Schwarzenegger appear in just one debate during the 2003 California recall elections?",
+      "gold_question": "How many debates did Schwarzenegger participate in before the 2003 California recall election?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 2
+      },
+      "overall_quality": 5,
+      "reasoning": "The question is asking for a specific date mentioned in the paragraph. The question is clear, concise, and natural, and it is not trivial because it requires the reader to locate a specific piece of information in the text.",
+      "summary_comment": "The question is clear, concise, and directly answerable from the paragraph."
     },
     {
-      "para_id": "squad_v2_56dff532231d4119001abf05",
-      "generated_question": "What term describes the unique social ambiance found typically inside Irish pubs?",
-      "gold_question": "What country outside Ireland is known for having Irish pubs?",
+      "para_id": "squad_v2_56d61c4e1c85041400946f1d",
+      "generated_question": "What unfortunate incident occurred involving a rescue helicopter during its mission after the earthquake?",
+      "gold_question": "What kind of information were websites set up to store?",
+      "scores": {
+        "answerability": 3.5,
+        "reasonableness": 4,
+        "clarity": 3,
+        "difficulty": 4
+      },
+      "overall_quality": 3.5,
+      "reasoning": "step-by-step reasoning",
+      "summary_comment": "The question is somewhat answerable but lacks clarity and is somewhat difficult."
+    },
+    {
+      "para_id": "squad_v2_572a6ceb7a1753140016af36",
+      "generated_question": "How does Hayek attribute unemployment and resource idleness differently than Keynes?",
+      "gold_question": "Who did Keynes turn to for assistance in arguing his point to Hayek?",
       "scores": {
         "answerability": 5,
         "reasonableness": 5,
@@ -141,27 +323,41 @@
         "difficulty": 4
       },
       "overall_quality": 5,
-      "reasoning": "The question asks for a term that describes the social ambiance in Irish pubs, which is directly mentioned in the paragraph as 'craic'. The question is clear, concise, and directly answerable from the given text. It is not trivial, as it requires the reader to understand the cultural context of Irish pubs. The question is challenging but fair, as it tests the reader's comprehension and ability to recall specific information from the paragraph.",
-      "summary_comment": "The question is clear, concise, and directly answerable from the paragraph, making it an excellent SQuAD-style question."
-    },
-    {
-      "para_id": "squad_v2_5727ebe03acd2414000deff0",
-      "generated_question": "What were two key areas where Gamal Abdel Nasser made significant contributions during his leadership?",
-      "gold_question": "What century did Nasser rule in?",
-      "scores": {
-        "answerability": 5,
-        "reasonableness": 5,
-        "clarity": 5,
-        "difficulty": 4
-      },
-      "overall_quality": 5,
-      "reasoning": "The question asks for two key areas of Nasser's contributions, which can be inferred from the paragraph. The paragraph mentions social justice, Arab unity, modernization policies, and anti-imperialist efforts, as well as large industrial projects like the Aswan Dam and Helwan City. These are two distinct areas where Nasser made significant contributions.",
-      "summary_comment": "The question is clear, answerable, and of good quality, asking for two specific areas of Nasser's contributions."
+      "reasoning": "The question asks for a comparison of how Hayek and Keynes attribute unemployment and resource idleness, which is directly mentioned in the paragraph. The paragraph provides enough information to answer the question, but it does not directly compare the two views in a single sentence, so the answer requires some interpretation. The question is clear and natural, but it may be slightly challenging for readers to extract the specific comparison without reading the entire paragraph.",
+      "summary_comment": "The question is clear, well-formed, and directly answerable from the paragraph, making it a high-quality SQuAD-style question."
     },
     {
       "para_id": "squad_v2_572abec0be1ee31400cb8201",
-      "generated_question": "According to Madsen Pirie in 'Why F A Hayek is a Conservative', why does he believe Hayek has misunderstood conservatism?",
+      "generated_question": "What distinguishes conservatism according to Madsen Pirie regarding their stance towards changes implemented without consensus?",
       "gold_question": "Pirie believes Hayek to be a conservative for what reason?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 4,
+        "difficulty": 3
+      },
+      "overall_quality": 4,
+      "reasoning": "The question asks for a specific aspect of conservatism as described by Madsen Pirie, which is the aversion to imposed changes by authority. The paragraph provides a clear statement of this view, making the question answerable. However, the question is somewhat broad and could be more specific to fully capture the essence of Pirie's argument. The difficulty is moderate as it requires understanding the nuanced difference between general conservatism and the conservative view on imposed changes.",
+      "summary_comment": "The question is clear and fully answerable, but could be more specific to better reflect the nuances in Pirie's argument."
+    },
+    {
+      "para_id": "squad_v2_56dff532231d4119001abf05",
+      "generated_question": "How did 'The Troubles' influence the preservation rate of traditionally styled Irish pubs compared to those refurbished in English styles during the mid-20th century?",
+      "gold_question": "What country outside Ireland is known for having Irish pubs?",
+      "scores": {
+        "answerability": 3,
+        "reasonableness": 5,
+        "clarity": 4,
+        "difficulty": 3
+      },
+      "overall_quality": 3,
+      "reasoning": "The question asks for a comparison of the preservation rate of traditionally styled Irish pubs to those refurbished in English styles during the mid-20th century, specifically in the context of 'The Troubles'. The paragraph provides information that 'The Troubles' led to a higher proportion of traditional bars surviving, implying that the preservation rate of traditional pubs was higher than that of those refurbished in English styles. However, the paragraph does not provide specific data or figures to quantify this difference, making the question partially answerable but unclear or incomplete regarding the exact influence or rate of preservation.",
+      "summary_comment": "The question is partially answerable and reasonable, but lacks clarity and specific data, making it of mixed quality."
+    },
+    {
+      "para_id": "squad_v2_572a60d8d562191400bc86a5",
+      "generated_question": "From which regions did the tradition of carpet weaving originate before spreading to Anatolian society?",
+      "gold_question": "Kilims were used by Turks to provide insulation where?",
       "scores": {
         "answerability": 5,
         "reasonableness": 5,
@@ -169,8 +365,64 @@
         "difficulty": 3
       },
       "overall_quality": 5,
-      "reasoning": "The question asks for the reason Madsen Pirie believes Hayek has misunderstood conservatism. The paragraph provides the necessary information, stating that Pirie claims Hayek mistakes the nature of the conservative outlook, specifically that conservatives are not averse to change but are against it being imposed by authority. This directly answers the question, making it fully answerable from the paragraph.",
-      "summary_comment": "The question is clear, fully answerable, and logically valid, with a reasonable level of difficulty."
+      "reasoning": "The generated question asks for the origin of carpet weaving, which is directly mentioned in the paragraph. The paragraph states that the tradition originated in the nomadic cultures of central Asia and was spread to Anatolia. Therefore, the answer is fully contained within the text, making the question fully answerable. The question is clear, concise, and directly related to the information provided in the paragraph. It is not trivial, as it requires the reader to identify the specific regions mentioned, but it is not overly difficult. The overall quality of the question is high as it meets the criteria for a good SQuAD-style question.",
+      "summary_comment": "The question is clear, directly answerable, and of high quality."
+    },
+    {
+      "para_id": "squad_v2_57272081708984140094da2f",
+      "generated_question": "What is the primary function of installing capacitors in electrical systems concerning device-induced effects?",
+      "gold_question": "How are power factor correction capacitors sometimes installed?",
+      "scores": {
+        "answerability": 2,
+        "reasonableness": 3,
+        "clarity": 2,
+        "difficulty": 2
+      },
+      "overall_quality": 2,
+      "reasoning": "The question is asking for a specific detail that is not directly mentioned in the paragraph, such as the installation method of capacitors. While the paragraph does mention that capacitors are used for power factor correction, it does not provide information on how they are installed. Therefore, the question is not fully answerable from the paragraph, as it requires additional information that is not provided. The question is somewhat reasonable, as it is related to the topic, but it is unclear and awkward because it does not directly address the content of the paragraph. The difficulty is low because the question is not challenging; it is more about finding a missing piece of information. Overall, the question is of mixed quality because it is related to the paragraph but does not fully utilize the information provided.",
+      "summary_comment": "The question is related to the paragraph but is not fully answerable and lacks clarity."
+    },
+    {
+      "para_id": "squad_v2_570602f875f01819005e786f",
+      "generated_question": "Which bird species migrate annually between vastly different climatic zones, including a journey across continents?",
+      "gold_question": "Where do the dark-eyed junco migrate?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 3
+      },
+      "overall_quality": 5,
+      "reasoning": "The generated question asks for a specific example of a bird species that migrates between vastly different climatic zones, including a journey across continents. The paragraph provides this information by mentioning the dark-eyed junco, which migrates from subarctic and arctic climates to the contiguous United States, a journey that spans across continents. Therefore, the question is fully answerable from the given paragraph.",
+      "summary_comment": "The question is clear, fully answerable, and logically valid, making it an excellent SQuAD-style question."
+    },
+    {
+      "para_id": "squad_v2_5727ebe03acd2414000deff0",
+      "generated_question": "What era did historians consider Nasser to dominate politically across the Middle East?",
+      "gold_question": "What century did Nasser rule in?",
+      "scores": {
+        "answerability": 3,
+        "reasonableness": 5,
+        "clarity": 4,
+        "difficulty": 3
+      },
+      "overall_quality": 4,
+      "reasoning": "The paragraph provides a general historical context of Nasser's influence but does not specify the exact century he ruled. The question asks for a specific era, which is not directly stated in the paragraph. However, the paragraph does mention that Nasser was a political figure of the 20th century, which can be inferred as the answer to the question.",
+      "summary_comment": "The question is somewhat answerable with a bit of inference, but it requires the reader to make a connection that is not explicitly stated."
+    },
+    {
+      "para_id": "squad_v2_5730a4e0069b5314008321f7",
+      "generated_question": "How many Super Nintendo Entertainment System (SNES) consoles did Nintendo sell according to their own reports?",
+      "gold_question": "How much of the US 16-bit console market did the Genesis have in summer 1992?",
+      "scores": {
+        "answerability": 5,
+        "reasonableness": 5,
+        "clarity": 5,
+        "difficulty": 2
+      },
+      "overall_quality": 5,
+      "reasoning": "The question asks for a specific number of SNES units sold by Nintendo, which is directly mentioned in the paragraph. The paragraph provides a clear and complete answer to the question, making it fully answerable and valid.",
+      "summary_comment": "The question is clear, directly answerable, and of high quality."
     }
   ]
 }

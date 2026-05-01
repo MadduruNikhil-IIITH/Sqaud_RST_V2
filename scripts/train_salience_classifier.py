@@ -4,6 +4,7 @@
 # Hugging Face Trainer integration with proper metrics and early stopping
 
 import os
+import json
 import numpy as np
 import pandas as pd
 import torch
@@ -15,6 +16,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, f1_score, accuracy_score, precision_recall_fscore_support
 from sklearn.utils.class_weight import compute_class_weight
 import joblib
+from torch.utils.data import DataLoader
 
 # =====================
 # CONFIGURATION
@@ -85,6 +87,25 @@ def compute_metrics(eval_pred):
         'salient_recall': r_salient,
         'salient_f1': f1_salient
     }
+
+def compute_top_k_recall(df, probs, k=2):
+    """
+    Calculates recall@k: for each paragraph, is the gold salient sentence 
+    in the top k predicted sentences by probability?
+    """
+    temp_df = df.copy()
+    temp_df['prob'] = probs
+    hits = 0
+    total_paras = 0
+    
+    for para_id, group in temp_df.groupby('para_id'):
+        if group['label'].sum() == 0: continue # Skip paras with no gold labels
+        total_paras += 1
+        top_k_idx = group['prob'].nlargest(k).index
+        if group.loc[top_k_idx, 'label'].any():
+            hits += 1
+            
+    return hits / total_paras if total_paras > 0 else 0
 
 # =====================
 # MAIN FUNCTION
@@ -194,43 +215,61 @@ def main():
     texts_test = df.loc[splits['test'], 'full_text'].tolist()
     y_train = train_df_balanced['label'].values
     
-    # Re-transform oversampled features
-    num_feats_train = scaler.transform(train_df_balanced[num_cols])
-    cat_feats_train = ohe.transform(train_df_balanced[cat_cols])
-    X_train_final = np.hstack([num_feats_train, cat_feats_train]).astype('float32')
+    # 2. Feature Splitting (RST vs Other)
+    rst_num_cols = ['rst_tree_depth', 'span_importance_score']
+    other_num_cols = [c for c in num_cols if c not in rst_num_cols]
+    rst_cat_cols = ['rst_relation', 'rst_nuclearity']
+    other_cat_cols = [c for c in cat_cols if c not in rst_cat_cols]
+
+    def split_features(subset_df, sc, oh):
+        # 1. Transform all
+        num_all = sc.transform(subset_df[num_cols])
+        cat_all = oh.transform(subset_df[cat_cols])
+        
+        # 2. Extract RST parts
+        # num_cols order is fixed: rst_tree_depth, span_importance_score are indices 0, 1
+        rst_num = num_all[:, :2]
+        other_num = num_all[:, 2:]
+        
+        # cat_cols order is fixed: rst_relation, rst_nuclearity are first
+        # We need to find where the OHE for the first two categories ends
+        feature_names = oh.get_feature_names_out(cat_cols)
+        rst_ohe_mask = [any(name.startswith(c) for c in rst_cat_cols) for name in feature_names]
+        rst_cat = cat_all[:, rst_ohe_mask]
+        other_cat = cat_all[:, [not m for m in rst_ohe_mask]]
+        
+        return np.hstack([rst_num, rst_cat]), np.hstack([other_num, other_cat])
+
+    X_train_rst, X_train_other = split_features(train_df_balanced, scaler, ohe)
+    X_val_rst, X_val_other = split_features(df.loc[splits['val']], scaler, ohe)
+    X_test_rst, X_test_other = split_features(df.loc[splits['test']], scaler, ohe)
+
+    print(f"Feature split: RST dim = {X_train_rst.shape[1]}, Other dim = {X_train_other.shape[1]}")
     
-    print(f"Oversampling complete. Original salient count: {len(salient_df)}, New: {len(oversampled_salient)}")
-    print(f"Training on {len(train_df_balanced)} balanced samples.")
-    feature_dim = X_train_final.shape[1]
-
-    # Compute lighter class weights just for safety
-    class_weights = compute_class_weight(class_weight='balanced', classes=np.unique(y_train), y=y_train)
-    class_weights_tensor = torch.tensor(class_weights, dtype=torch.float32)
-
     # 3. Setup Dataset
     from src.modeling.hybrid_dataset import HybridDataset
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     
-    # Prep validation/test features correctly
-    num_feats_val = scaler.transform(df.loc[splits['val'], num_cols])
-    cat_feats_val = ohe.transform(df.loc[splits['val'], cat_cols])
-    X_val_final = np.hstack([num_feats_val, cat_feats_val]).astype('float32')
-    
-    num_feats_test = scaler.transform(df.loc[splits['test'], num_cols])
-    cat_feats_test = ohe.transform(df.loc[splits['test'], cat_cols])
-    X_test_final = np.hstack([num_feats_test, cat_feats_test]).astype('float32')
-
-    train_ds = HybridDataset(texts_train, X_train_final, y_train, tokenizer, MAX_LEN)
-    val_ds = HybridDataset(texts_val, X_val_final, y_val, tokenizer, MAX_LEN)
-    test_ds = HybridDataset(texts_test, X_test_final, y_test, tokenizer, MAX_LEN)
+    train_ds = HybridDataset(texts_train, X_train_rst, X_train_other, y_train, tokenizer, MAX_LEN)
+    val_ds = HybridDataset(texts_val, X_val_rst, X_val_other, y_val, tokenizer, MAX_LEN)
+    test_ds = HybridDataset(texts_test, X_test_rst, X_test_other, y_test, tokenizer, MAX_LEN)
 
     # 4. Setup Model
     from src.models.hybrid_roberta import HybridRoBERTa
     
+    # Compute lighter class weights just for safety
+    class_weights = compute_class_weight(class_weight='balanced', classes=np.unique(y_train), y=y_train)
+    class_weights_tensor = torch.tensor(class_weights, dtype=torch.float32)
+    
     # Use standard CrossEntropy since we oversampled, but keep Focal with low gamma for refinement
     loss_fn = FocalLoss(alpha=class_weights_tensor, gamma=1.0)
     
-    model = HybridRoBERTa(feature_dim, model_name=MODEL_NAME, loss_fn=loss_fn)
+    model = HybridRoBERTa(
+        rst_dim=X_train_rst.shape[1], 
+        other_dim=X_train_other.shape[1], 
+        model_name=MODEL_NAME, 
+        loss_fn=loss_fn
+    )
 
     # 4. Define Training Arguments
     training_args = TrainingArguments(
@@ -285,19 +324,54 @@ def main():
     report = classification_report(y_test, test_preds, digits=4, output_dict=True)
     print(classification_report(y_test, test_preds, digits=4))
 
+    # --- Top-K Evaluation ---
+    print("\n--- TOP-K EVALUATION (Best Model) ---")
+    model.eval()
+    
+    def get_probs(dataset, indices):
+        loader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=False)
+        all_probs = []
+        with torch.no_grad():
+            for batch in loader:
+                input_ids = batch['input_ids'].to(DEVICE)
+                attention_mask = batch['attention_mask'].to(DEVICE)
+                r_batch = batch['rst_feats'].to(DEVICE)
+                o_batch = batch['other_feats'].to(DEVICE)
+                logits = model(input_ids, attention_mask, r_batch, o_batch)
+                probs = torch.softmax(logits, dim=1)[:, 1]
+                all_probs.extend(probs.cpu().numpy())
+        return np.array(all_probs)
+
+    val_probs = get_probs(val_ds, splits['val'])
+    test_probs = get_probs(test_ds, splits['test'])
+    
+    top_2_val = compute_top_k_recall(df.loc[splits['val']], val_probs, k=2)
+    top_2_test = compute_top_k_recall(df.loc[splits['test']], test_probs, k=2)
+    
+    print(f"Top-2 Recall (Val):  {top_2_val:.4f}")
+    print(f"Top-2 Recall (Test): {top_2_test:.4f}")
+
     # Save best model and tokenizer manually
     torch.save(model.state_dict(), os.path.join(model_dir, "best_model.pt"))
     trainer.save_model(os.path.join(model_dir, "best_model"))
     tokenizer.save_pretrained(os.path.join(model_dir, "best_model"))
 
     # Save report and metrics to interim folder
-    import json
     interim_dir = os.path.join('data', 'interim')
     os.makedirs(interim_dir, exist_ok=True)
     report_path = os.path.join(interim_dir, 'salience_classifier_report.json')
     
+    final_report = {
+        'classification_report': report,
+        'metrics': test_metrics,
+        'top_k_metrics': {
+            'top_2_recall_val': top_2_val,
+            'top_2_recall_test': top_2_test
+        }
+    }
+    
     with open(report_path, 'w', encoding='utf-8') as f:
-        json.dump({'classification_report': report, 'metrics': test_metrics}, f, indent=2, ensure_ascii=False)
+        json.dump(final_report, f, indent=2, ensure_ascii=False)
 
 if __name__ == '__main__':
     main()

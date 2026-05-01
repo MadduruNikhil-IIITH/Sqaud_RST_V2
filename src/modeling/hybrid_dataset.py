@@ -4,11 +4,12 @@ from torch.utils.data import Dataset
 class HybridDataset(Dataset):
     """
     Custom Dataset for hybrid RoBERTa + engineered features.
-    Returns tokenized text, engineered features, and label.
+    Separates RST features from other linguistic features for gated fusion.
     """
-    def __init__(self, texts, feats, labels, tokenizer, max_len=256):
+    def __init__(self, texts, rst_feats, other_feats, labels, tokenizer, max_len=256):
         self.texts = texts
-        self.feats = torch.tensor(feats, dtype=torch.float32)
+        self.rst_feats = torch.tensor(rst_feats, dtype=torch.float32)
+        self.other_feats = torch.tensor(other_feats, dtype=torch.float32)
         self.labels = torch.tensor(labels, dtype=torch.long)
         self.tokenizer = tokenizer
         self.max_len = max_len
@@ -27,6 +28,7 @@ class HybridDataset(Dataset):
         return {
             'input_ids': enc['input_ids'].squeeze(0),
             'attention_mask': enc['attention_mask'].squeeze(0),
-            'engineered': self.feats[idx],
+            'rst_feats': self.rst_feats[idx],
+            'other_feats': self.other_feats[idx],
             'labels': self.labels[idx]
         }

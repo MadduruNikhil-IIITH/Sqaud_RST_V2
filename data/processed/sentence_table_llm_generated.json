@@ -1,1 +1,234 @@
-[]
+[
+  {
+    "para_id": "squad_v2_5727ebe03acd2414000deff0",
+    "num_sentences": 4,
+    "selected_indices": [
+      0,
+      3
+    ],
+    "generated": "[0, 3]"
+  },
+  {
+    "para_id": "squad_v2_56dff532231d4119001abf05",
+    "num_sentences": 6,
+    "selected_indices": [
+      4
+    ],
+    "generated": "[4] A side effect of \"The Troubles\" was that the lack of a tourist industry meant that a higher proportion of traditional bars have survived the"
+  },
+  {
+    "para_id": "squad_v2_56d61c4e1c85041400946f1d",
+    "num_sentences": 6,
+    "selected_indices": [
+      4
+    ],
+    "generated": "[4] On May 31, a rescue helicopter carrying earthquake survivors and crew members crashed in fog and turbulence in Wenchuan county."
+  },
+  {
+    "para_id": "squad_v2_572abec0be1ee31400cb8201",
+    "num_sentences": 4,
+    "selected_indices": [
+      1
+    ],
+    "generated": "[1] Conservatives, he says, are not averse to change – but like Hayek, they are highly averse to change being imposed on"
+  },
+  {
+    "para_id": "squad_v2_570602f875f01819005e786f",
+    "num_sentences": 6,
+    "selected_indices": [
+      2
+    ],
+    "generated": "[2] For example, the pink-footed goose Anser brachyrhynchus migrates from Iceland to Britain and neighbouring countries, whilst"
+  },
+  {
+    "para_id": "squad_v2_572a60d8d562191400bc86a5",
+    "num_sentences": 4,
+    "selected_indices": [
+      1
+    ],
+    "generated": "[1] The weaving of such carpets originated in the nomadic cultures of central Asia (carpets being an easily transportable form of furnishing), and"
+  },
+  {
+    "para_id": "squad_v2_572a6ceb7a1753140016af36",
+    "num_sentences": 10,
+    "selected_indices": [
+      4
+    ],
+    "generated": "[4] Unemployment and idle resources are, for Keynes, caused by a lack of effective demand; for Hayek, they stem from a previous"
+  },
+  {
+    "para_id": "squad_v2_5730a4e0069b5314008321f7",
+    "num_sentences": 9,
+    "selected_indices": [
+      4
+    ],
+    "generated": "[4] According to Nintendo, the company had sold more than 20 million SNES units in the U.S.\n[6] According to a"
+  },
+  {
+    "para_id": "squad_v2_57272081708984140094da2f",
+    "num_sentences": 5,
+    "selected_indices": [
+      0,
+      3
+    ],
+    "generated": "[0, 3]"
+  },
+  {
+    "para_id": "squad_v2_56de98ddcffd8e1900b4ba1e",
+    "num_sentences": 4,
+    "selected_indices": [
+      0,
+      3
+    ],
+    "generated": "[0, 3]"
+  },
+  {
+    "para_id": "squad_v2_57265d15dd62a815002e82bf",
+    "num_sentences": 5,
+    "selected_indices": [
+      1
+    ],
+    "generated": "[1] In response, a combined bounty of £1,000 was offered for Every's capture by the Privy Council and East India Company,"
+  },
+  {
+    "para_id": "squad_v2_56d104d117492d1400aab741",
+    "num_sentences": 2,
+    "selected_indices": [
+      0
+    ],
+    "generated": "[0] Each year HHC's facilities provide about 225,000 admissions, one million emergency room visits and five million clinic visits to New Yorkers"
+  },
+  {
+    "para_id": "squad_v2_56cf578daab44d1400b8908b",
+    "num_sentences": 4,
+    "selected_indices": [
+      0
+    ],
+    "generated": "[0] Major tourist destinations include Times Square; Broadway theater productions; the Empire State Building; the Statue of Liberty; Ellis Island; the United Nations"
+  },
+  {
+    "para_id": "squad_v2_56dede143277331400b4d77c",
+    "num_sentences": 11,
+    "selected_indices": [
+      5
+    ],
+    "generated": "[5] According to this view, all that exists is matter and void, and all phenomena result from different motions and conglomerations of base material particles"
+  },
+  {
+    "para_id": "squad_v2_57070e0c9e06ca38007e9342",
+    "num_sentences": 6,
+    "selected_indices": [
+      1
+    ],
+    "generated": "[1] com reported on historic and DNA research by its staff that discovered that Obama is likely a descendant through his mother of John Punch, considered by"
+  },
+  {
+    "para_id": "squad_v2_5707070890286e26004fc807",
+    "num_sentences": 4,
+    "selected_indices": [
+      0,
+      3
+    ],
+    "generated": "[0, 3]"
+  },
+  {
+    "para_id": "squad_v2_56ce3569aab44d1400b885ae",
+    "num_sentences": 5,
+    "selected_indices": [
+      0,
+      3
+    ],
+    "generated": "[0, 3]"
+  },
+  {
+    "para_id": "squad_v2_57293d9e1d046914007791ce",
+    "num_sentences": 6,
+    "selected_indices": [
+      4
+    ],
+    "generated": "[4] It is the second-largest city in Connecticut (after Bridgeport), with a population of 129,779 people as of the 201"
+  },
+  {
+    "para_id": "squad_v2_572812962ca10214002d9d40",
+    "num_sentences": 5,
+    "selected_indices": [
+      1
+    ],
+    "generated": "[1] John's was the starting point for the first non-stop transatlantic aircraft flight, by Alcock and Brown in a modified Vickers V"
+  },
+  {
+    "para_id": "squad_v2_5728d6633acd2414000dffe2",
+    "num_sentences": 20,
+    "selected_indices": [
+      1
+    ],
+    "generated": "[1] Among the stated reasons were that Saddam's regime had tried to acquire nuclear material and had not properly accounted for biological and chemical material it was"
+  },
+  {
+    "para_id": "squad_v2_57263dd1ec44d21400f3dc99",
+    "num_sentences": 2,
+    "selected_indices": [
+      0
+    ],
+    "generated": "[0] On 16 March 2012, 52 Greenpeace activists from five different countries boarded Fennica and Nordica, multipurpose ice"
+  },
+  {
+    "para_id": "squad_v2_5706117a75f01819005e7935",
+    "num_sentences": 2,
+    "selected_indices": [
+      0
+    ],
+    "generated": "[0] The Times Literary Supplement (TLS) first appeared in 1902 as a supplement to The Times, becoming a separately paid-for weekly literature"
+  },
+  {
+    "para_id": "squad_v2_572685f55951b619008f757e",
+    "num_sentences": 5,
+    "selected_indices": [
+      0
+    ],
+    "generated": "[0] NASCAR (headquartered in Daytona Beach) begins all three of its major auto racing series in Florida at Daytona International Speedway in February, featuring"
+  },
+  {
+    "para_id": "squad_v2_5727ee154b864d1900164040",
+    "num_sentences": 3,
+    "selected_indices": [
+      0
+    ],
+    "generated": "[0] Evidence from the early technical literature concerning electrical recording suggests that it wasn't until the 1942–1949 period that there were serious efforts"
+  },
+  {
+    "para_id": "squad_v2_572ebc97dfa6aa1500f8d333",
+    "num_sentences": 5,
+    "selected_indices": [
+      0,
+      3
+    ],
+    "generated": "[0, 3]"
+  },
+  {
+    "para_id": "squad_v2_57300a6a04bcaa1900d7705d",
+    "num_sentences": 7,
+    "selected_indices": [
+      0,
+      3
+    ],
+    "generated": "[0, 3]"
+  },
+  {
+    "para_id": "squad_v2_56cf5e35aab44d1400b89149",
+    "num_sentences": 4,
+    "selected_indices": [
+      0
+    ],
+    "generated": "[0] In October 1810, six months after Fryderyk's birth, the family moved to Warsaw, where his father acquired a post"
+  },
+  {
+    "para_id": "squad_v2_572b6c9cf75d5e190021fdce",
+    "num_sentences": 5,
+    "selected_indices": [
+      0,
+      2
+    ],
+    "generated": "[0, 2]"
+  }
+]
