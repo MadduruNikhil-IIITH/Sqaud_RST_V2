@@ -10,11 +10,12 @@ from src.models.hybrid_roberta import HybridRoBERTa
 from src.modeling.hybrid_dataset import HybridDataset
 from torch.utils.data import DataLoader
 
-def analyze_importance():
-    MODEL_DIR = "models/hybrid_roberta"
+def analyze_importance(args):
+    MODEL_DIR = args.model_path if args.model_path else "models/hybrid_roberta"
     MODEL_NAME = "roberta-base"
-    DATA_PATH = "data/processed/salience_transformer_dataset.csv"
+    DATA_PATH = args.data_path if args.data_path else "data/processed/salience_transformer_dataset.csv"
     DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    output_dir = args.output_dir if args.output_dir else "data/interim"
 
     print(f"Loading data from {DATA_PATH}...")
     df = pd.read_csv(DATA_PATH)
@@ -99,6 +100,7 @@ def analyze_importance():
     rst_dim = X_rst_base.shape[1]
     other_dim = X_other_base.shape[1]
     
+    gold_labels = val_df['gold_salient'].tolist()
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     model = HybridRoBERTa(rst_dim=rst_dim, other_dim=other_dim, model_name=MODEL_NAME)
     model.load_state_dict(torch.load(os.path.join(MODEL_DIR, "best_model.pt"), map_location=DEVICE), strict=False)
@@ -106,7 +108,7 @@ def analyze_importance():
     model.eval()
 
     def get_f1(r_feats, o_feats):
-        ds = HybridDataset(texts, r_feats, o_feats, labels, tokenizer)
+        ds = HybridDataset(texts, r_feats, o_feats, gold_labels, tokenizer)
         loader = DataLoader(ds, batch_size=16, shuffle=False)
         preds = []
         with torch.no_grad():
@@ -117,7 +119,7 @@ def analyze_importance():
                 o_batch = batch['other_feats'].to(DEVICE)
                 logits = model(input_ids, attention_mask, r_batch, o_batch)
                 preds.extend(torch.argmax(logits, dim=1).cpu().numpy())
-        return f1_score(labels, preds, average='macro')
+        return f1_score(gold_labels, preds, average='macro')
 
     print("Calculating baseline Macro F1...")
     baseline_f1 = get_f1(X_rst_base, X_other_base)
@@ -145,12 +147,32 @@ def analyze_importance():
         importance = baseline_f1 - perm_f1
         importance_results.append({'feature': col, 'importance': importance})
 
+    # 3. Analyze Entire RST Gate (all RST features at once)
+    print("\nAnalyzing Global RST Gate branch...")
+    X_rst_shuffled = X_rst_base.copy()
+    np.random.shuffle(X_rst_shuffled)
+    rst_branch_f1 = get_f1(X_rst_shuffled, X_other_base)
+    print(f"Baseline F1: {baseline_f1:.4f}, RST-Permuted F1: {rst_branch_f1:.4f}")
+    importance_results.append({
+        'feature': 'GLOBAL_RST_GATE',
+        'importance': baseline_f1 - rst_branch_f1
+    })
+
     importance_df = pd.DataFrame(importance_results).sort_values(by='importance', ascending=False)
     print("\n--- FEATURE IMPORTANCE (Impact on Macro F1) ---")
-    print(importance_df.head(20))
+    print(importance_df.to_string(index=False))
     
-    importance_df.to_csv("data/interim/feature_importance.csv", index=False)
-    print("\nResults saved to data/interim/feature_importance.csv")
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, "feature_importance_v3.csv")
+    importance_df.to_csv(output_path, index=False)
+    print(f"\nResults saved to {output_path}")
 
 if __name__ == "__main__":
-    analyze_importance()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model-path", type=str)
+    parser.add_argument("--data-path", type=str)
+    parser.add_argument("--output-dir", type=str)
+    args = parser.parse_args()
+    
+    analyze_importance(args)

@@ -13,27 +13,33 @@ This document outlines the specific prompts and instructions used for the LLM-as
 You are an expert at identifying the single most important sentence in a paragraph for SQuAD-style question answering. A salient sentence contains the specific factual detail that would most likely be the answer to a reading comprehension question.
 ```
 
-### User Prompt Template:
+### User Prompt Template (Improved with Factual Few-Shots):
 ```text
 Given the paragraph below, select the 1 or 2 MOST salient sentences.
-Most paragraphs have only 1 truly salient sentence.
+A salient sentence contains the specific factual detail (names, dates, quantities, specific events) that is the primary "answer" in a reading comprehension task.
+
+###
+Example 1:
+Paragraph: "The Great Wall of China is a series of fortifications. It was built across the historical northern borders of ancient Chinese states. The total length of the wall is 21,196 km."
+Indices: [0] General, [1] Context, [2] Factual Detail
+Most salient sentence(s): [2]
+
+Example 2:
+Paragraph: "Shakespeare was an English playwright. He was born in Stratford-upon-Avon. He wrote 39 plays, including Hamlet and Othello. His works are translated into every major language."
+Indices: [0] Intro, [1] Biography, [2] Specific Works, [3] Impact
+Most salient sentence(s): [2]
+###
 
 Paragraph:
 {passage_text}
 
 Sentences:
-[0] Sentence 1 text...
-[1] Sentence 2 text...
-...
+{indexed_sentences}
 
 Rules:
-- Select ONLY 1 or 2 sentences that contain the most specific, answerable factual information.
-- Do NOT select general/introductory sentences.
-- Do NOT select more than 2 sentences.
-- Return ONLY the sentence indices in square brackets.
-
-Example output: [2]
-Example output for two: [0, 3]
+- Select ONLY 1 or 2 indices.
+- Prioritize specific facts over general descriptions.
+- Return ONLY the indices in square brackets.
 
 Most salient sentence(s):
 ```
