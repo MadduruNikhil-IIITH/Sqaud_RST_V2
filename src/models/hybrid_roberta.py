@@ -4,7 +4,7 @@ from transformers import AutoModel
 
 class HybridRoBERTa(nn.Module):
     """
-    Hybrid RoBERTa model V3: RST-Driven Gated Attention.
+    Hybrid RoBERTa model: RST-Driven Gated Attention.
     Uses the RST features (discourse structure) as a master gate to modulate
     how much the model trusts the semantic text vs. other linguistic signals.
     """

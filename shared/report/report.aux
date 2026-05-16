@@ -1,24 +1,47 @@
 \relax 
+\bibstyle{acl_natbib}
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2}Methodology}{1}{section.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Feature Engineering}{1}{subsection.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Architecture: The Discourse-Gated Fusion}{1}{subsection.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}Experimental Setup}{2}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Experimental Results}{2}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Training and Validation Performance}{2}{subsection.4.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Classification performance on the training validation split.}}{2}{table.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Inference-Stage Classification (15 Paragraphs)}{2}{subsection.4.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Impact of Gating on salient sentence identification.}}{2}{table.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Detailed Classification Report for Hybrid Gated V3 model.}}{3}{table.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Downstream QG Quality}{3}{subsection.4.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Quantitative comparison of QG quality.}}{3}{table.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Qualitative Analysis: Examples of Generated Questions}{3}{subsection.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Analysis of the Discourse Gate}{3}{subsection.4.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Extension to Reasoning-Based QG}{4}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Generalization to Reasoning Datasets}{4}{subsection.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}A Path to Deep Reasoning}{4}{subsection.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{4}{section.6}\protected@file@percent }
-\gdef \@abspage@last{4}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{1}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methodology}{2}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Overall Pipeline Workflow}{2}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Feature Engineering}{2}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Architecture: The Discourse-Gated Fusion}{2}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experimental Setup}{2}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Dataset and Sampling Details}{2}{subsection.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Dataset statistics detailing the curated SQuAD corpus. \textit  {\relax \fontsize  {7}{8pt}\selectfont  (Source: \texttt  {shared/results/transformer\_split\_report.json} \& \texttt  {shared/data/cleaned\_sample\_manifest.json})}}}{2}{table.caption.4}\protected@file@percent }
+\newlabel{tab:dataset_stats}{{1}{2}{Dataset statistics detailing the curated SQuAD corpus. \textit {\scriptsize (Source: \texttt {shared/results/transformer\_split\_report.json} \& \texttt {shared/data/cleaned\_sample\_manifest.json})}}{table.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Models, Training, and Inference Configuration}{2}{subsection.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces End-to-End Pipeline Workflow: From raw paragraph ingestion to automated evaluation of the generated questions.}}{3}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:workflow}{{1}{3}{End-to-End Pipeline Workflow: From raw paragraph ingestion to automated evaluation of the generated questions}{figure.caption.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Example of a Rhetorical Structure Theory (RST) tree generated for a SQuAD paragraph. Nucleus nodes are critical for information retention, while Satellite nodes often provide supplementary context. These structures directly inform our 28-dimensional feature vector.}}{3}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:rst_tree}{{2}{3}{Example of a Rhetorical Structure Theory (RST) tree generated for a SQuAD paragraph. Nucleus nodes are critical for information retention, while Satellite nodes often provide supplementary context. These structures directly inform our 28-dimensional feature vector}{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Evaluation Metrics Configuration}{3}{subsection.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The HybridRoBERTa Architecture. The Discourse Gate $G$ acts as a structural filter, modulating the semantic representations $H$ prior to the final classification layer.}}{4}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:architecture}{{3}{4}{The HybridRoBERTa Architecture. The Discourse Gate $G$ acts as a structural filter, modulating the semantic representations $H$ prior to the final classification layer}{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experimental Results}{4}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Training and Validation Performance}{4}{subsection.5.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Classification performance on the training validation split. \textit  {\relax \fontsize  {7}{8pt}\selectfont  (Source: \texttt  {shared/results/training\_metrics.json})}}}{4}{table.caption.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Inference-Stage Classification (15 Paragraphs)}{4}{subsection.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Impact of Gating on salient sentence identification. \textit  {(Source: \texttt  {hybrid\_eval\_report.json})}}}{4}{table.caption.6}\protected@file@percent }
+\newlabel{tab:inference_results}{{3}{4}{Impact of Gating on salient sentence identification. \textit {(Source: \texttt {hybrid\_eval\_report.json})}}{table.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Observations on Feature Utilization and The Necessity of Gating}{4}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Feature Importance Analysis}{5}{subsection.5.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Permutation feature importance. The Global RST Gate exhibits 0.0 importance, empirically proving the Gate Saturation failure mode discussed in Section 5.4. \textit  {(Source: \texttt  {feature\_importance.csv})}}}{5}{table.caption.7}\protected@file@percent }
+\newlabel{tab:feature_importance}{{4}{5}{Permutation feature importance. The Global RST Gate exhibits 0.0 importance, empirically proving the Gate Saturation failure mode discussed in Section 5.4. \textit {(Source: \texttt {feature\_importance.csv})}}{table.caption.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Detailed Classification Report for Hybrid Gated model. \textit  {\relax \fontsize  {7}{8pt}\selectfont  (Source: \texttt  {shared/results/hybrid\_eval\_report.json})}}}{5}{table.caption.8}\protected@file@percent }
+\newlabel{tab:detailed_classification}{{5}{5}{Detailed Classification Report for Hybrid Gated model. \textit {\scriptsize (Source: \texttt {shared/results/hybrid\_eval\_report.json})}}{table.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Downstream QG Quality}{5}{subsection.5.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Quantitative comparison of QG quality based on validated results. \textit  {\relax \fontsize  {7}{8pt}\selectfont  (Source: \texttt  {shared/results/qg\_evaluation\_stage2\_summary.csv})}}}{5}{table.caption.9}\protected@file@percent }
+\newlabel{tab:qg_quality}{{6}{5}{Quantitative comparison of QG quality based on validated results. \textit {\scriptsize (Source: \texttt {shared/results/qg\_evaluation\_stage2\_summary.csv})}}{table.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Qualitative Analysis: Examples of Generated Questions}{5}{subsection.5.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Analysis of the Discourse Gate}{6}{subsection.5.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Extension to Reasoning-Based QG}{6}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Generalization to Reasoning Datasets}{6}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}A Path to Deep Reasoning}{6}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Limitations and Future Work}{6}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{6}{section.8}\protected@file@percent }
+\gdef \@abspage@last{7}
